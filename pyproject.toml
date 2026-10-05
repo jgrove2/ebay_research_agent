@@ -1,0 +1,29 @@
+[project]
+name = "ebay-agent"
+version = "0.1.0"
+description = "A LangGraph agent powered by DeepSeek"
+readme = "README.md"
+authors = [
+    { name = "Justin Grove", email = "26723005+jgrove2@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "grandalf>=0.8",
+    "langchain-core>=1.6.6",
+    "langchain-deepseek>=1.1.1",
+    "langgraph>=1.2.13",
+    "pydantic-settings>=2.15.0",
+]
+
+[project.scripts]
+repair-agent = "ebay_research_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
