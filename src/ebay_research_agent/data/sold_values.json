@@ -1,0 +1,34 @@
+[
+  {
+    "product": "wii",
+    "class": "console_working",
+    "condition": "working",
+    "sold_price": 40.0,
+    "currency": "USD",
+    "note": ""
+  },
+  {
+    "product": "wii",
+    "class": "console_parts",
+    "condition": "for_parts",
+    "sold_price": 12.0,
+    "currency": "USD",
+    "note": ""
+  },
+  {
+    "product": "switch",
+    "class": "console_working",
+    "condition": "working",
+    "sold_price": 150.0,
+    "currency": "USD",
+    "note": ""
+  },
+  {
+    "product": "switch",
+    "class": "console_parts",
+    "condition": "for_parts",
+    "sold_price": 60.0,
+    "currency": "USD",
+    "note": ""
+  }
+]

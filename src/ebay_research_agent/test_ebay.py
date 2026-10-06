@@ -3,7 +3,7 @@ import base64
 
 import httpx
 
-from ebay_research_agent.ebay import (
+from ebay_research_agent.tools.ebay import (
     EbayClient,
     base_url_for_env,
     build_enduserctx,
@@ -43,6 +43,8 @@ def test_parse_item_summaries() -> None:
         "itemSummaries": [
             {
                 "title": "Broken Wii",
+                "itemId": "v1|1|0",
+                "shortDescription": "Does not power on",
                 "price": {"value": "25.00", "currency": "USD"},
                 "itemWebUrl": "https://ebay.com/itm/1",
                 "condition": "For parts or not working",
@@ -59,6 +61,8 @@ def test_parse_item_summaries() -> None:
     assert items == [
         {
             "title": "Broken Wii",
+            "item_id": "v1|1|0",
+            "short_description": "Does not power on",
             "price": "25.00",
             "currency": "USD",
             "url": "https://ebay.com/itm/1",
@@ -121,7 +125,10 @@ def test_get_access_token_basic_auth() -> None:
 
     transport = httpx.MockTransport(handler)
     client = EbayClient(
-        "https://api.ebay.com", "app", "cert", client=httpx.AsyncClient(transport=transport)
+        "https://api.ebay.com",
+        "app",
+        "cert",
+        client=httpx.AsyncClient(transport=transport),
     )
     token = asyncio.run(client.get_access_token())
     assert token == "tok"
@@ -199,3 +206,72 @@ def test_search_for_parts_omits_enduserctx_without_zip() -> None:
     )
     asyncio.run(client.search_for_parts("switch", 10, 80))
     assert captured.get("enduserctx") is None
+
+
+def test_search_for_parts_detailed_enriches_description() -> None:
+    captured = {}
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.path.endswith("/oauth2/token"):
+            return httpx.Response(200, json={"access_token": "tok", "expires_in": 7200})
+        if request.url.path.startswith("/buy/browse/v1/item/"):
+            captured["item_calls"] = captured.get("item_calls", []) + [
+                str(request.url.path)
+            ]
+            return httpx.Response(200, json={"description": "Broken disc drive"})
+        return httpx.Response(
+            200,
+            json={
+                "itemSummaries": [
+                    {
+                        "itemId": "v1|1|0",
+                        "title": "Broken Wii",
+                        "price": {"value": "25.00", "currency": "USD"},
+                        "itemWebUrl": "https://ebay.com/itm/1",
+                    }
+                ]
+            },
+        )
+
+    transport = httpx.MockTransport(handler)
+    client = EbayClient(
+        "https://api.ebay.com",
+        "app",
+        "cert",
+        client=httpx.AsyncClient(transport=transport),
+    )
+    items = asyncio.run(client.search_for_parts_detailed("wii", 10, 80))
+    assert items[0]["description"] == "Broken disc drive"
+    assert captured["item_calls"] == ["/buy/browse/v1/item/v1|1|0"]
+
+
+def test_search_for_parts_detailed_skips_failed_detail() -> None:
+    def handler(request: httpx.Request) -> httpx.Response:
+        if request.url.path.endswith("/oauth2/token"):
+            return httpx.Response(200, json={"access_token": "tok", "expires_in": 7200})
+        if request.url.path.startswith("/buy/browse/v1/item/"):
+            return httpx.Response(500)
+        return httpx.Response(
+            200,
+            json={
+                "itemSummaries": [
+                    {
+                        "itemId": "v1|1|0",
+                        "title": "Broken Wii",
+                        "price": {"value": "25.00", "currency": "USD"},
+                        "itemWebUrl": "https://ebay.com/itm/1",
+                    }
+                ]
+            },
+        )
+
+    transport = httpx.MockTransport(handler)
+    client = EbayClient(
+        "https://api.ebay.com",
+        "app",
+        "cert",
+        client=httpx.AsyncClient(transport=transport),
+    )
+    items = asyncio.run(client.search_for_parts_detailed("wii", 10, 80))
+    assert "description" not in items[0]
+    assert items[0]["title"] == "Broken Wii"

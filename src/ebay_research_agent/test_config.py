@@ -24,12 +24,9 @@ def test_products_env_override(monkeypatch) -> None:
     assert settings.products == ["gamecube", "n64"]
 
 
-def test_mcp_servers_default() -> None:
+def test_searxng_url_default() -> None:
     settings = Settings(_env_file=None)
-    duckduckgo = settings.mcp_servers["duckduckgo"]
-    assert duckduckgo.command == "npx"
-    assert duckduckgo.transport == "stdio"
-    assert "-y" in duckduckgo.args
+    assert settings.searxng_url == "http://localhost:8080"
 
 
 def test_ebay_defaults() -> None:
@@ -68,3 +65,13 @@ def test_ebay_credentials_production() -> None:
         ebay_dev_id_production="prod-dev",
     )
     assert settings.ebay_credentials() == ("prod-app", "prod-cert", "prod-dev")
+
+
+def test_typesafe_defaults() -> None:
+    settings = Settings(_env_file=None)
+    assert settings.typesafe_api_key == ""
+    assert settings.typesafe_model == "jev-latest"
+    assert settings.sold_values_path == "data/sold_values.json"
+    assert settings.accept_fault_clarity_threshold == 0.7
+    assert settings.accept_legitimate_threshold == 0.7
+    assert settings.accept_profit_potential_threshold == 1.0

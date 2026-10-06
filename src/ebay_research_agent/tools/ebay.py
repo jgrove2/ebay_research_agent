@@ -38,6 +38,8 @@ def _parse_item(item: dict) -> dict:
     price = item.get("price", {}).get("value")
     return {
         "title": item.get("title", ""),
+        "item_id": item.get("itemId"),
+        "short_description": item.get("shortDescription", ""),
         "price": price,
         "currency": item.get("price", {}).get("currency"),
         "url": item.get("itemWebUrl", ""),
@@ -127,7 +129,9 @@ class EbayClient:
             "X-EBAY-C-MARKETPLACE-ID": self.marketplace_id,
         }
         if self.zip_code:
-            headers["X-EBAY-C-ENDUSERCTX"] = build_enduserctx(self.country, self.zip_code)
+            headers["X-EBAY-C-ENDUSERCTX"] = build_enduserctx(
+                self.country, self.zip_code
+            )
         response = await self._client.get(
             f"{self.base_url}/buy/browse/v1/item_summary/search",
             headers=headers,
@@ -135,6 +139,42 @@ class EbayClient:
         )
         response.raise_for_status()
         return parse_item_summaries(response.json())
+
+    async def get_item(self, item_id: str) -> dict:
+        token = await self.get_access_token()
+        response = await self._client.get(
+            f"{self.base_url}/buy/browse/v1/item/{item_id}",
+            headers={
+                "Authorization": f"Bearer {token}",
+                "X-EBAY-C-MARKETPLACE-ID": self.marketplace_id,
+            },
+        )
+        response.raise_for_status()
+        return response.json()
+
+    async def enrich_item(self, item: dict) -> dict:
+        item_id = item.get("item_id")
+        if not item_id:
+            return item
+        try:
+            detail = await self.get_item(item_id)
+        except httpx.HTTPError:
+            return item
+        item["description"] = detail.get("description", "")
+        item["short_description"] = detail.get(
+            "shortDescription", item.get("short_description", "")
+        )
+        return item
+
+    async def search_for_parts_detailed(
+        self,
+        query: str,
+        min_price: float,
+        max_price: float,
+        limit: int = 20,
+    ) -> list[dict]:
+        items = await self.search_for_parts(query, min_price, max_price, limit)
+        return [await self.enrich_item(item) for item in items]
 
 
 def build_ebay_tool(client: EbayClient):
@@ -145,7 +185,7 @@ def build_ebay_tool(client: EbayClient):
         max_price: float,
         limit: int = 20,
     ) -> str:
-        """Search eBay for 'for parts or not working' listings.
+        """Search eBay for 'for parts or not working' listings with descriptions.
 
         Args:
             query: Search keywords (e.g. a game console name).
@@ -153,7 +193,9 @@ def build_ebay_tool(client: EbayClient):
             max_price: Maximum listing price in USD.
             limit: Maximum number of results to return.
         """
-        items = await client.search_for_parts(query, min_price, max_price, limit)
+        items = await client.search_for_parts_detailed(
+            query, min_price, max_price, limit
+        )
         return json.dumps(items)
 
     return search_ebay_for_parts

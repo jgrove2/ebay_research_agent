@@ -2,9 +2,15 @@ import asyncio
 import sys
 
 from ebay_research_agent.config import get_settings
-from ebay_research_agent.ebay import EbayClient, base_url_for_env, build_ebay_tool
 from ebay_research_agent.graph import build_graph
-from ebay_research_agent.mcp import load_search_tools
+from ebay_research_agent.jev import JevClient
+from ebay_research_agent.tools import (
+    EbayClient,
+    SearXNGClient,
+    base_url_for_env,
+    build_ebay_tool,
+    build_search_tool,
+)
 
 
 async def run(products: list[str]) -> None:
@@ -16,8 +22,10 @@ async def run(products: list[str]) -> None:
             "to .env or your environment."
         )
         return
+    if not settings.typesafe_api_key:
+        print("TYPESAFE_API_KEY is not set. Add it to .env or your environment.")
+        return
 
-    search_tools = await load_search_tools()
     client = EbayClient(
         base_url=base_url_for_env(settings.ebay_env),
         app_id=app_id,
@@ -26,19 +34,26 @@ async def run(products: list[str]) -> None:
         zip_code=settings.ebay_zip_code,
         country=settings.ebay_country,
     )
+    search_client = SearXNGClient(base_url=settings.searxng_url)
+    jev = JevClient(api_key=settings.typesafe_api_key, model=settings.typesafe_model)
     try:
+        search_tool = build_search_tool(search_client)
         ebay_tool = build_ebay_tool(client)
-        graph = build_graph(search_tools, [ebay_tool])
+        graph = build_graph([search_tool], [ebay_tool], jev)
         await graph.ainvoke({"products": products})
     finally:
         await client.close()
+        await search_client.close()
+        await jev.close()
 
 
 def print_diagram() -> None:
     if not get_settings().deepseek_api_key:
         print("DEEPSEEK_API_KEY is not set. Add it to .env or your environment.")
         return
-    print(build_graph([], []).get_graph().draw_ascii())
+    settings = get_settings()
+    jev = JevClient(api_key=settings.typesafe_api_key, model=settings.typesafe_model)
+    print(build_graph([], [], jev).get_graph().draw_ascii())
 
 
 def main() -> None:

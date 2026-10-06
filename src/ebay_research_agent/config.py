@@ -1,24 +1,8 @@
 from functools import lru_cache
 from typing import Annotated, Literal
 
-from pydantic import BaseModel, Field, field_validator
+from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
-
-
-class McpServerConfig(BaseModel):
-    command: str
-    args: list[str] = Field(default_factory=list)
-    transport: str = "stdio"
-
-
-def _default_mcp_servers() -> dict[str, McpServerConfig]:
-    return {
-        "duckduckgo": McpServerConfig(
-            command="npx",
-            args=["-y", "duckduckgo-mcp-server"],
-            transport="stdio",
-        ),
-    }
 
 
 class Settings(BaseSettings):
@@ -37,9 +21,7 @@ class Settings(BaseSettings):
     products: Annotated[list[str], NoDecode] = Field(
         default_factory=lambda: ["wii", "switch"]
     )
-    mcp_servers: dict[str, McpServerConfig] = Field(
-        default_factory=_default_mcp_servers
-    )
+    searxng_url: str = "http://localhost:8080"
 
     ebay_env: Literal["sandbox", "production"] = "sandbox"
     ebay_marketplace_id: str = "EBAY_US"
@@ -51,6 +33,14 @@ class Settings(BaseSettings):
     ebay_app_id_production: str = ""
     ebay_dev_id_production: str = ""
     ebay_cert_id_production: str = ""
+
+    typesafe_api_key: str = ""
+    typesafe_model: str = "jev-latest"
+    sold_values_path: str = "data/sold_values.json"
+
+    accept_fault_clarity_threshold: float = 0.7
+    accept_legitimate_threshold: float = 0.7
+    accept_profit_potential_threshold: float = 1.0
 
     @field_validator("products", mode="before")
     @classmethod
