@@ -1,6 +1,6 @@
 from langchain_deepseek import ChatDeepSeek
 
-from repair_agent.config import get_settings
+from ebay_research_agent.config import get_settings
 
 
 def get_model() -> ChatDeepSeek:

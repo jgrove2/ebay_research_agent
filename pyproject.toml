@@ -1,7 +1,7 @@
 [project]
-name = "ebay-agent"
+name = "ebay-research-agent"
 version = "0.1.0"
-description = "A LangGraph agent powered by DeepSeek"
+description = "A LangGraph agent that researches console naming variants"
 readme = "README.md"
 authors = [
     { name = "Justin Grove", email = "26723005+jgrove2@users.noreply.github.com" }
@@ -11,6 +11,7 @@ dependencies = [
     "grandalf>=0.8",
     "langchain-core>=1.6.6",
     "langchain-deepseek>=1.1.1",
+    "langchain-mcp-adapters>=0.3.2",
     "langgraph>=1.2.13",
     "pydantic-settings>=2.15.0",
 ]

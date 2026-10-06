@@ -1,4 +1,4 @@
-from repair_agent.cli import main
+from ebay_research_agent.cli import main
 
 if __name__ == "__main__":
     main()
