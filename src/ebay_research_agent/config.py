@@ -1,5 +1,5 @@
 from functools import lru_cache
-from typing import Annotated
+from typing import Annotated, Literal
 
 from pydantic import BaseModel, Field, field_validator
 from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
@@ -41,12 +41,36 @@ class Settings(BaseSettings):
         default_factory=_default_mcp_servers
     )
 
+    ebay_env: Literal["sandbox", "production"] = "sandbox"
+    ebay_marketplace_id: str = "EBAY_US"
+    ebay_zip_code: str = ""
+    ebay_country: str = "US"
+    ebay_app_id_sandbox: str = ""
+    ebay_dev_id_sandbox: str = ""
+    ebay_cert_id_sandbox: str = ""
+    ebay_app_id_production: str = ""
+    ebay_dev_id_production: str = ""
+    ebay_cert_id_production: str = ""
+
     @field_validator("products", mode="before")
     @classmethod
     def _parse_products(cls, value: object) -> object:
         if isinstance(value, str):
             return [item.strip() for item in value.split(",") if item.strip()]
         return value
+
+    def ebay_credentials(self) -> tuple[str, str, str]:
+        if self.ebay_env == "production":
+            return (
+                self.ebay_app_id_production,
+                self.ebay_cert_id_production,
+                self.ebay_dev_id_production,
+            )
+        return (
+            self.ebay_app_id_sandbox,
+            self.ebay_cert_id_sandbox,
+            self.ebay_dev_id_sandbox,
+        )
 
 
 @lru_cache

@@ -1,7 +1,7 @@
 [project]
 name = "ebay-research-agent"
 version = "0.1.0"
-description = "A LangGraph agent that researches console naming variants"
+description = "A LangGraph agent that researches common console issues for parts/repair flipping"
 readme = "README.md"
 authors = [
     { name = "Justin Grove", email = "26723005+jgrove2@users.noreply.github.com" }

@@ -1,8 +1,10 @@
 # Repair Agent
 
-A LangGraph agent powered by DeepSeek that researches the naming variants of game
-consoles. It fans out one research worker per product; each worker first checks
-its own knowledge, then searches DuckDuckGo via an MCP server when unsure.
+A LangGraph agent powered by DeepSeek that researches the common issues and
+failure points of game consoles. It fans out one worker per product; each worker
+first checks its own knowledge, then searches DuckDuckGo via an MCP server when
+unsure, and returns the issues plus a "for-parts" blurb describing what to look
+for when browsing eBay parts/repair listings.
 
 ## Prerequisites
 
