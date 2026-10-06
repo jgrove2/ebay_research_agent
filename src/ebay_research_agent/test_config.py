@@ -71,7 +71,7 @@ def test_typesafe_defaults() -> None:
     settings = Settings(_env_file=None)
     assert settings.typesafe_api_key == ""
     assert settings.typesafe_model == "jev-latest"
-    assert settings.sold_values_path == "data/sold_values.json"
+    assert settings.sold_values_path == "data/sold_values.db"
     assert settings.accept_fault_clarity_threshold == 0.7
     assert settings.accept_legitimate_threshold == 0.7
     assert settings.accept_profit_potential_threshold == 1.0

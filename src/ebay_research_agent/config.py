@@ -36,7 +36,7 @@ class Settings(BaseSettings):
 
     typesafe_api_key: str = ""
     typesafe_model: str = "jev-latest"
-    sold_values_path: str = "data/sold_values.json"
+    sold_values_path: str = "data/sold_values.db"
 
     accept_fault_clarity_threshold: float = 0.7
     accept_legitimate_threshold: float = 0.7

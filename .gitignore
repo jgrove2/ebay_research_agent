@@ -11,3 +11,8 @@ wheels/
 
 # Environment / secrets
 .env
+
+# SQLite databases
+*.db
+*.sqlite
+*.sqlite3
