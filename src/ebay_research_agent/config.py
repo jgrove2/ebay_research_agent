@@ -38,9 +38,9 @@ class Settings(BaseSettings):
     typesafe_model: str = "jev-latest"
     sold_values_path: str = "data/sold_values.db"
 
-    accept_fault_clarity_threshold: float = 0.7
-    accept_legitimate_threshold: float = 0.7
-    accept_profit_potential_threshold: float = 1.0
+    accept_correct_product_threshold: float = 0.7
+    accept_worth_price_threshold: float = 0.7
+    reject_water_damage_threshold: float = 0.7
 
     @field_validator("products", mode="before")
     @classmethod

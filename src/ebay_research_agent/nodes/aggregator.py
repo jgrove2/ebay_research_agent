@@ -1,6 +1,9 @@
 import json
+from pathlib import Path
 
 from ebay_research_agent.state import IssuesState
+
+OUTPUT_FILE = Path("output.txt")
 
 
 def format_output(researched: list[dict], listings: list[dict]) -> str:
@@ -45,5 +48,7 @@ def aggregate(state: IssuesState) -> dict:
     print("=== Research ===")
     print(format_output(state["results"], state["listings"]))
     print("\n=== Accepted listings ===")
-    print(json.dumps(group_by_product(state.get("evaluations", [])), indent=2))
+    accepted = json.dumps(group_by_product(state.get("evaluations", [])), indent=2)
+    print(accepted)
+    OUTPUT_FILE.write_text(accepted)
     return {}

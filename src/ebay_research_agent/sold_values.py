@@ -1,5 +1,7 @@
 import sqlite3
+from collections import defaultdict
 from pathlib import Path
+from statistics import mean, median
 
 from ebay_research_agent.config import get_settings
 
@@ -48,3 +50,40 @@ def load_sold_values() -> list[dict]:
 
 def comps_for(product: str) -> list[dict]:
     return [record for record in load_sold_values() if record["console"] == product]
+
+
+def _price_stats(prices: list[float]) -> dict:
+    if not prices:
+        return {"count": 0, "average": None, "median": None, "min": None, "max": None}
+    return {
+        "count": len(prices),
+        "average": round(mean(prices), 2),
+        "median": round(median(prices), 2),
+        "min": round(min(prices), 2),
+        "max": round(max(prices), 2),
+    }
+
+
+def summarize_sold_values(records: list[dict]) -> dict:
+    prices = [r["total_price"] for r in records if r["total_price"] is not None]
+
+    by_model: dict[str, list[float]] = defaultdict(list)
+    for record in records:
+        if record["total_price"] is not None:
+            by_model[record["console_code"]].append(record["total_price"])
+
+    descriptions: list[str] = []
+    seen: set[str] = set()
+    for record in records:
+        text = (record.get("description") or "").strip()
+        if text and text not in seen:
+            seen.add(text)
+            descriptions.append(text)
+
+    return {
+        **_price_stats(prices),
+        "by_model": {
+            code: _price_stats(values) for code, values in sorted(by_model.items())
+        },
+        "descriptions": descriptions,
+    }

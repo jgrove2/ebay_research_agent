@@ -1,4 +1,4 @@
-from typesafe_sdk import AsyncTypeSafeClient, Noul, Score
+from typesafe_sdk import AsyncTypeSafeClient, Noul
 
 
 class JevClient:
@@ -35,38 +35,40 @@ class JevClient:
 
 def should_accept(
     result: dict,
-    fault_threshold: float,
-    legit_threshold: float,
-    profit_threshold: float,
+    correct_product_threshold: float,
+    worth_price_threshold: float,
+    water_damage_threshold: float,
 ) -> bool:
-    fault_clarity = result["nouls"]["fault_clarity"]["noul"]
-    legitimate = result["nouls"]["legitimate"]["noul"]
-    profit_potential = result["scores"]["profit_potential"]["score"]
+    correct_product = result["nouls"]["correct_product"]["noul"]
+    worth_price = result["nouls"]["worth_price"]["noul"]
+    water_damage = result["nouls"]["water_damage"]["noul"]
     return (
-        fault_clarity >= fault_threshold
-        and legitimate >= legit_threshold
-        and profit_potential <= profit_threshold
+        correct_product >= correct_product_threshold
+        and worth_price >= worth_price_threshold
+        and water_damage < water_damage_threshold
     )
 
 
 def build_accept_questions() -> dict:
     return {
-        "fault_clarity": Noul(
-            instructions="Does the listing clearly identify the primary fault or condition?"
-        ),
-        "legitimate": Noul(
-            instructions="Is this a legitimate 'for parts / not working' listing "
-            "(not mislabeled, not a scam)?"
-        ),
-        "profit_potential": Score(
+        "correct_product": Noul(
             instructions=(
-                "Relative to the sold-value comps provided in the state, how does the "
-                "listing's total price compare to the expected resale or parts value?"
-            ),
-            criteria=[
-                "well under expected value",
-                "near expected value",
-                "above expected value",
-            ],
+                "Is this listing a console unit matching the product named in the "
+                "state — not a game, accessory, controller, or a different console?"
+            )
+        ),
+        "worth_price": Noul(
+            instructions=(
+                "Using the sold-value summary in the state, is the listing's total "
+                "price (item + shipping) roughly half or less of the typical sold "
+                "value, meaning there is room to profit after repairing or parting "
+                "it out?"
+            )
+        ),
+        "water_damage": Noul(
+            instructions=(
+                "Does the listing indicate water damage (liquid exposure, "
+                "corrosion, waterlogged, or water damage)?"
+            )
         ),
     }

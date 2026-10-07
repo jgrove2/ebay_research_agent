@@ -6,8 +6,8 @@ from ebay_research_agent.prompts import issues_prompt
 def test_fan_out_sends_one_worker_per_product() -> None:
     commands = fan_out({"products": ["wii", "switch"]})
     assert [(command.node, command.arg) for command in commands] == [
-        ("product_worker", {"product": "wii"}),
-        ("product_worker", {"product": "switch"}),
+        ("sold_summary", {"product": "wii"}),
+        ("sold_summary", {"product": "switch"}),
     ]
 
 

@@ -1,5 +1,6 @@
 import json
 from collections.abc import Awaitable, Callable
+from itertools import batched
 
 from langchain_core.messages import HumanMessage, ToolMessage
 
@@ -50,8 +51,8 @@ def build_product_worker_node(
                 )
             ]
         )
-        issues = structured.issues
-        blurb = structured.blurb
+        issues = structured.issues if structured is not None else []
+        blurb = structured.blurb if structured is not None else ""
 
         ebay_prompt = (
             f"Console: {product}\n\n"
@@ -69,10 +70,28 @@ def build_product_worker_node(
 
         cleaned: list[dict] = []
         if items:
-            batch = await judge.ainvoke(
-                [HumanMessage(content=judgement_prompt(product, items))]
-            )
-            cleaned = [item.model_dump() for item in batch.listings]
+            raw_by_url = {item.get("url"): item for item in items}
+            for chunk in batched(items, 10):
+                batch = await judge.ainvoke(
+                    [HumanMessage(content=judgement_prompt(product, chunk))]
+                )
+                if batch is None or not batch.listings:
+                    continue
+                for judged in batch.listings:
+                    entry = judged.model_dump()
+                    entry["model"] = entry.pop("product", "")
+                    entry["product"] = product
+                    raw = raw_by_url.get(entry.get("url"))
+                    if raw:
+                        entry["title"] = raw.get("title", "")
+                        entry["description"] = raw.get("description", "")
+                        entry["short_description"] = raw.get("short_description", "")
+                        entry["price"] = raw.get("price")
+                        entry["currency"] = raw.get("currency")
+                        entry["shipping_cost"] = raw.get("shipping_cost")
+                        entry["total_cost"] = raw.get("total_cost")
+                        entry["condition"] = raw.get("condition")
+                    cleaned.append(entry)
 
         return {
             "results": [{"product": product, "issues": issues, "blurb": blurb}],

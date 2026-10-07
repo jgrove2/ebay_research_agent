@@ -9,6 +9,7 @@ from ebay_research_agent.nodes import (
     aggregate,
     build_evaluate_listing_node,
     build_product_worker_node,
+    build_sold_summary_node,
     fan_out_listings,
     join_listings,
 )
@@ -18,7 +19,7 @@ from ebay_research_agent.state import IssuesState
 
 def fan_out(state: IssuesState) -> list[Send]:
     return [
-        Send("product_worker", {"product": product}) for product in state["products"]
+        Send("sold_summary", {"product": product}) for product in state["products"]
     ]
 
 
@@ -35,6 +36,10 @@ def build_graph(
     builder = StateGraph(IssuesState)
 
     builder.add_node(
+        "sold_summary",
+        build_sold_summary_node(),
+    )
+    builder.add_node(
         "product_worker",
         build_product_worker_node(worker_agent, ebay_agent, extractor, judge),
     )
@@ -43,6 +48,7 @@ def build_graph(
     builder.add_node("aggregator", aggregate)
 
     builder.add_conditional_edges(START, fan_out)
+    builder.add_edge("sold_summary", "product_worker")
     builder.add_edge("product_worker", "join_listings")
     builder.add_conditional_edges("join_listings", fan_out_listings)
     builder.add_edge("evaluate_listing", "aggregator")
