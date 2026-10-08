@@ -85,6 +85,10 @@ def test_get_product_info_mocks_and_loads_sold_data(seeded_db) -> None:
     assert records
     assert all("product" not in record for record in records)
     assert {record["version"] for record in records} == {"RVL-001", "RVL-101"}
+    summary = result["sold_summaries"]["wii"]
+    assert summary["average"] == 45.0
+    assert summary["by_version"]["RVL-001"]["average"] == 40.0
+    assert summary["by_version"]["RVL-101"]["average"] == 50.0
 
 
 def test_issues_prompt_mentions_product() -> None:

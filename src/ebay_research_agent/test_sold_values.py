@@ -7,6 +7,7 @@ from ebay_research_agent.sold_values import (
     comps_for,
     load_sold_values,
     sold_records_for,
+    summarize_raw_sold_values,
     summarize_sold_values,
 )
 
@@ -106,4 +107,37 @@ def test_summarize_sold_values_empty() -> None:
         "totalProducts": 0,
         "by_version": {},
         "descriptions": [],
+    }
+
+
+def test_summarize_raw_sold_values_stats() -> None:
+    records = [
+        {"version": "RVL-001", "totalPrice": 40.0, "numberOfProducts": 1},
+        {"version": "RVL-001", "totalPrice": 120.0, "numberOfProducts": 2},
+        {"version": "RVL-101", "totalPrice": 50.0, "numberOfProducts": 1},
+    ]
+    summary = summarize_raw_sold_values(records)
+    assert summary["average"] == 70.0
+    assert summary["listingCount"] == 3
+    assert summary["by_version"]["RVL-001"]["average"] == 80.0
+    assert summary["by_version"]["RVL-101"]["average"] == 50.0
+    assert summary["by_number_of_products"]["1"]["average"] == 45.0
+    assert summary["by_number_of_products"]["2"]["average"] == 120.0
+    assert summary["by_version_number_of_products"]["RVL-001"]["1"]["average"] == 40.0
+    assert summary["by_version_number_of_products"]["RVL-001"]["2"]["average"] == 120.0
+    assert summary["by_version_number_of_products"]["RVL-101"]["1"]["average"] == 50.0
+
+
+def test_summarize_raw_sold_values_empty() -> None:
+    summary = summarize_raw_sold_values([])
+    assert summary == {
+        "count": 0,
+        "average": None,
+        "median": None,
+        "min": None,
+        "max": None,
+        "listingCount": 0,
+        "by_version": {},
+        "by_number_of_products": {},
+        "by_version_number_of_products": {},
     }

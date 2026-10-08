@@ -125,6 +125,46 @@ def summarize_sold_values(records: list[dict]) -> dict:
     }
 
 
+def _raw_price(record: dict) -> float | None:
+    return record.get("totalPrice")
+
+
+def summarize_raw_sold_values(records: list[dict]) -> dict:
+    by_version: dict[str, list[float]] = defaultdict(list)
+    by_number: dict[str, list[float]] = defaultdict(list)
+    by_version_number: dict[str, dict[str, list[float]]] = defaultdict(
+        lambda: defaultdict(list)
+    )
+
+    for record in records:
+        raw_price = _raw_price(record)
+        if raw_price is None:
+            continue
+        version = record["version"]
+        number = str(record.get("numberOfProducts") or 1)
+        by_version[version].append(raw_price)
+        by_number[number].append(raw_price)
+        by_version_number[version][number].append(raw_price)
+
+    return {
+        **_price_stats([r["totalPrice"] for r in records if r.get("totalPrice") is not None]),
+        "listingCount": len(records),
+        "by_version": {
+            code: _price_stats(values) for code, values in sorted(by_version.items())
+        },
+        "by_number_of_products": {
+            number: _price_stats(values) for number, values in sorted(by_number.items())
+        },
+        "by_version_number_of_products": {
+            code: {
+                number: _price_stats(values)
+                for number, values in sorted(numbers.items())
+            }
+            for code, numbers in sorted(by_version_number.items())
+        },
+    }
+
+
 def migrate_sold_values(path: Path) -> bool:
     connection = sqlite3.connect(path)
     try:
