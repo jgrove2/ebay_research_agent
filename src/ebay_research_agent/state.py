@@ -5,7 +5,7 @@ from typing import Annotated, TypedDict
 def _merge_dicts(left: dict, right: dict) -> dict:
     return {**left, **right}
 
-class IssuesState_v2(TypedDict):
+class IssuesState(TypedDict):
     products: list[str]
     product: str
     listing: dict
@@ -16,13 +16,3 @@ class IssuesState_v2(TypedDict):
     evaluations: Annotated[list[dict], operator.add]
     evaluations_by_product: dict
     combined: dict
-
-class IssuesState(TypedDict):
-    products: list[str]
-    product: str
-    listing: dict
-    results: Annotated[list[dict], operator.add]
-    listings: Annotated[list[dict], operator.add]
-    cleaned: Annotated[list[dict], operator.add]
-    evaluations: Annotated[list[dict], operator.add]
-    sold_summaries: Annotated[dict, _merge_dicts]

@@ -6,13 +6,9 @@ import pytest
 from langchain_core.messages import ToolMessage
 
 from ebay_research_agent.config import get_settings
-from ebay_research_agent.graph import fan_out
 from ebay_research_agent.nodes import (
     build_evaluate_listing_node,
-    fan_out_listings,
-    format_output,
     get_product_info,
-    group_by_product,
     split_by_listing,
 )
 from ebay_research_agent.nodes.get_ebay_listing import (
@@ -22,7 +18,6 @@ from ebay_research_agent.nodes.get_ebay_listing import (
     build_get_ebay_listings_node,
     extract_items,
 )
-from ebay_research_agent.prompts import issues_prompt
 
 
 @pytest.fixture
@@ -53,41 +48,6 @@ def seeded_db(tmp_path, monkeypatch):
     monkeypatch.setenv("SOLD_VALUES_PATH", str(db_path))
     get_settings.cache_clear()
     return db_path
-
-
-def test_fan_out_sends_one_worker_per_product() -> None:
-    commands = fan_out({"products": ["wii", "switch"]})
-    assert [(command.node, command.arg) for command in commands] == [
-        ("sold_summary", {"product": "wii"}),
-        ("sold_summary", {"product": "switch"}),
-    ]
-
-
-def test_fan_out_listings_sends_one_evaluate_per_listing() -> None:
-    commands = fan_out_listings(
-        {
-            "cleaned": [
-                {
-                    "product": "wii",
-                    "issue": "no power",
-                    "totalPrice": "$20",
-                    "url": "u1",
-                },
-                {"product": "wii", "issue": "disc", "totalPrice": "$30", "url": "u2"},
-            ]
-        }
-    )
-    assert [command.node for command in commands] == [
-        "evaluate_listing",
-        "evaluate_listing",
-    ]
-    assert commands[0].arg["product"] == "wii"
-    assert commands[0].arg["listing"]["issue"] == "no power"
-    assert commands[1].arg["listing"]["issue"] == "disc"
-
-
-def test_fan_out_listings_empty_routes_to_aggregator() -> None:
-    assert fan_out_listings({"cleaned": []}) == "aggregator"
 
 
 def test_split_by_listing_fans_out_one_evaluate_per_listing() -> None:
@@ -185,59 +145,6 @@ def test_get_product_info_mocks_and_loads_sold_data(seeded_db) -> None:
     assert summary["average"] == 45.0
     assert summary["by_version"]["RVL-001"]["average"] == 40.0
     assert summary["by_version"]["RVL-101"]["average"] == 50.0
-
-
-def test_issues_prompt_mentions_product() -> None:
-    assert "wii" in issues_prompt("wii")
-
-
-def test_format_output_includes_every_product() -> None:
-    researched = [
-        {
-            "product": "wii",
-            "issues": ["disc drive fails"],
-            "blurb": "look for dead drives",
-        },
-        {"product": "switch", "issues": ["joy-con drift"], "blurb": "look for drift"},
-    ]
-    listings = [
-        {
-            "product": "wii",
-            "items": [
-                {
-                    "title": "Broken Wii",
-                    "price": "25.00",
-                    "currency": "USD",
-                    "url": "u1",
-                }
-            ],
-        }
-    ]
-    text = format_output(researched, listings)
-    assert "wii" in text
-    assert "switch" in text
-    assert "disc drive fails" in text
-    assert "joy-con drift" in text
-    assert "look for dead drives" in text
-    assert "look for drift" in text
-    assert "Broken Wii" in text
-    assert "u1" in text
-    assert "(no listings found)" in text
-
-
-def test_group_by_product_groups_entries() -> None:
-    entries = [
-        {"product": "wii", "issue": "no power"},
-        {"product": "switch", "issue": "drift"},
-        {"product": "wii", "issue": "disc"},
-    ]
-    assert group_by_product(entries) == {
-        "wii": [
-            {"product": "wii", "issue": "no power"},
-            {"product": "wii", "issue": "disc"},
-        ],
-        "switch": [{"product": "switch", "issue": "drift"}],
-    }
 
 
 def test_build_ebay_prompt_mentions_product_issues_and_blurb() -> None:

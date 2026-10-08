@@ -1,9 +1,9 @@
 from langgraph.types import Send
 
-from ebay_research_agent.state import IssuesState_v2
+from ebay_research_agent.state import IssuesState
 
 
-def split_by_listing(state: IssuesState_v2) -> list[Send] | str:
+def split_by_listing(state: IssuesState) -> list[Send] | str:
     listings = state.get("listings", {})
     sold_summaries = state.get("sold_summaries", {})
     commands = [

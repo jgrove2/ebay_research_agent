@@ -5,9 +5,9 @@ from langchain_core.messages import HumanMessage, ToolMessage
 from langgraph.prebuilt import create_react_agent
 
 from ebay_research_agent.models import get_model
-from ebay_research_agent.state import IssuesState_v2
+from ebay_research_agent.state import IssuesState
 
-Node = Callable[[IssuesState_v2], Awaitable[dict]]
+Node = Callable[[IssuesState], Awaitable[dict]]
 
 EBAY_SYSTEM_PROMPT = (
     "You search eBay for 'for parts or not working' game console listings that "
@@ -51,7 +51,7 @@ def extract_items(messages: list) -> list[dict]:
 def build_get_ebay_listings_node(ebay_tools: list) -> Node:
     ebay_agent = create_react_agent(get_model(), ebay_tools, prompt=EBAY_SYSTEM_PROMPT)
 
-    async def get_ebay_listings(state: IssuesState_v2) -> dict:
+    async def get_ebay_listings(state: IssuesState) -> dict:
         product = state["product"]
         info = state.get("product_info", {}).get(product, {})
         issues = info.get("issues", [])

@@ -1,7 +1,7 @@
-from ebay_research_agent.state import IssuesState_v2
+from ebay_research_agent.state import IssuesState
 
 
-def aggregate_product_listings(state: IssuesState_v2) -> dict:
+def aggregate_product_listings(state: IssuesState) -> dict:
     combined = {
         product: {
             "product_info": state.get("product_info", {}).get(product),

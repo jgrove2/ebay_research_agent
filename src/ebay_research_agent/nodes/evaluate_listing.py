@@ -5,9 +5,9 @@ from typesafe_sdk import Noul
 
 from ebay_research_agent.config import get_settings
 from ebay_research_agent.jev import JevClient, should_accept
-from ebay_research_agent.state import IssuesState_v2
+from ebay_research_agent.state import IssuesState
 
-Node = Callable[[IssuesState_v2], Awaitable[dict]]
+Node = Callable[[IssuesState], Awaitable[dict]]
 
 
 def build_accept_questions() -> dict:
@@ -36,7 +36,7 @@ def build_accept_questions() -> dict:
 
 
 def build_evaluate_listing_node(jev: JevClient) -> Node:
-    async def evaluate_listing(state: IssuesState_v2) -> dict:
+    async def evaluate_listing(state: IssuesState) -> dict:
         product = state["product"]
         listing = state["listing"]
         jev_state = {

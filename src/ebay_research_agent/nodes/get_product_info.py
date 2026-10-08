@@ -2,10 +2,10 @@ from ebay_research_agent.sold_values import (
     sold_records_for,
     summarize_raw_sold_values,
 )
-from ebay_research_agent.state import IssuesState_v2
+from ebay_research_agent.state import IssuesState
 
 
-def get_product_info(state: IssuesState_v2) -> dict:
+def get_product_info(state: IssuesState) -> dict:
     product = state["product"]
     sold_listings = sold_records_for(product)
 

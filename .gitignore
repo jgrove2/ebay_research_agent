@@ -16,3 +16,6 @@ wheels/
 *.db
 *.sqlite
 *.sqlite3
+
+# Generated output
+output.txt

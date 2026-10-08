@@ -6,10 +6,8 @@ from ebay_research_agent.graph import build_graph
 from ebay_research_agent.jev import JevClient
 from ebay_research_agent.tools import (
     EbayClient,
-    SearXNGClient,
     base_url_for_env,
     build_ebay_tool,
-    build_search_tool,
 )
 
 
@@ -34,26 +32,23 @@ async def run(products: list[str]) -> None:
         zip_code=settings.ebay_zip_code,
         country=settings.ebay_country,
     )
-    search_client = SearXNGClient(base_url=settings.searxng_url)
     jev = JevClient(api_key=settings.typesafe_api_key, model=settings.typesafe_model)
     try:
-        search_tool = build_search_tool(search_client)
         ebay_tool = build_ebay_tool(client)
-        graph = build_graph([search_tool], [ebay_tool], jev)
+        graph = build_graph([ebay_tool], jev)
         await graph.ainvoke({"products": products})
     finally:
         await client.close()
-        await search_client.close()
         await jev.close()
 
 
 def print_diagram() -> None:
-    if not get_settings().deepseek_api_key:
+    settings = get_settings()
+    if not settings.deepseek_api_key:
         print("DEEPSEEK_API_KEY is not set. Add it to .env or your environment.")
         return
-    settings = get_settings()
     jev = JevClient(api_key=settings.typesafe_api_key, model=settings.typesafe_model)
-    print(build_graph([], [], jev).get_graph().draw_ascii())
+    print(build_graph([], jev).get_graph().draw_ascii())
 
 
 def main() -> None:

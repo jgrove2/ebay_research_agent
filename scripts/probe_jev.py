@@ -4,7 +4,7 @@ import json
 from ebay_research_agent.config import get_settings
 from ebay_research_agent.jev import JevClient, should_accept
 from ebay_research_agent.nodes.evaluate_listing import build_accept_questions
-from ebay_research_agent.sold_values import comps_for, summarize_sold_values
+from ebay_research_agent.sold_values import sold_records_for, summarize_raw_sold_values
 
 SAMPLES = [
     {
@@ -57,7 +57,7 @@ SAMPLES = [
 
 async def main() -> None:
     settings = get_settings()
-    summary = summarize_sold_values(comps_for("wii"))
+    summary = summarize_raw_sold_values(sold_records_for("wii"))
     print("=== sold-value summary ===")
     print(json.dumps(summary, indent=2))
     jev = JevClient(api_key=settings.typesafe_api_key, model=settings.typesafe_model)
