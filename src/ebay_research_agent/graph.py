@@ -11,10 +11,12 @@ from ebay_research_agent.nodes import (
     build_product_worker_node,
     build_sold_summary_node,
     fan_out_listings,
+    get_product_info,
     join_listings,
+    split_by_product,
 )
 from ebay_research_agent.prompts import EBAY_SYSTEM_PROMPT, SYSTEM_PROMPT
-from ebay_research_agent.state import IssuesState
+from ebay_research_agent.state import IssuesState, IssuesState_v2
 
 
 def fan_out(state: IssuesState) -> list[Send]:
@@ -22,6 +24,15 @@ def fan_out(state: IssuesState) -> list[Send]:
         Send("sold_summary", {"product": product}) for product in state["products"]
     ]
 
+def build_graph_v2() -> CompiledStateGraph:
+    builder = StateGraph(IssuesState_v2)
+
+    builder.add_node("get_product_info", get_product_info)
+
+    builder.add_conditional_edges(START, split_by_product)
+    builder.add_edge("get_product_info", END)
+
+    return builder.compile()
 
 def build_graph(
     search_tools: list,

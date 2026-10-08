@@ -5,6 +5,10 @@ from typing import Annotated, TypedDict
 def _merge_dicts(left: dict, right: dict) -> dict:
     return {**left, **right}
 
+class IssuesState_v2(TypedDict):
+    products: list[str]
+    product: str
+    product_info: Annotated[dict, _merge_dicts]
 
 class IssuesState(TypedDict):
     products: list[str]
