@@ -52,6 +52,18 @@ def comps_for(product: str) -> list[dict]:
     return [record for record in load_sold_values() if record["console"] == product]
 
 
+def sold_records_for(product: str) -> list[dict]:
+    settings = get_settings()
+    path = _resolve_path(settings.sold_values_path)
+    with _connect(path) as connection:
+        rows = connection.execute(
+            "SELECT console_code, description, total_price "
+            "FROM sold_values WHERE console = ? ORDER BY id",
+            (product,),
+        ).fetchall()
+    return [dict(zip(("console_code", "description", "total_price"), row)) for row in rows]
+
+
 def _price_stats(prices: list[float]) -> dict:
     if not prices:
         return {"count": 0, "average": None, "median": None, "min": None, "max": None}

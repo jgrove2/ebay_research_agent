@@ -1,3 +1,4 @@
+from ebay_research_agent.sold_values import sold_records_for
 from ebay_research_agent.state import IssuesState_v2
 
 
@@ -9,5 +10,6 @@ def get_product_info(state: IssuesState_v2) -> dict:
                 "issues": [],
                 "blurb": "",
             }
-        }
+        },
+        "sold_product_data": {product: sold_records_for(product)},
     }

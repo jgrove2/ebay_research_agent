@@ -6,6 +6,7 @@ from ebay_research_agent.config import get_settings
 from ebay_research_agent.sold_values import (
     comps_for,
     load_sold_values,
+    sold_records_for,
     summarize_sold_values,
 )
 
@@ -54,6 +55,21 @@ def test_comps_for_filters_by_console(seeded_db) -> None:
 
 def test_comps_for_unknown_console_empty(seeded_db) -> None:
     assert comps_for("nonexistent") == []
+
+
+def test_sold_records_for_filters_and_drops_console(seeded_db) -> None:
+    records = sold_records_for("wii")
+    assert records
+    assert all("console" not in record for record in records)
+    assert all(
+        set(record) == {"console_code", "description", "total_price"}
+        for record in records
+    )
+    assert {record["console_code"] for record in records} == {"RVL-001", "RVL-101"}
+
+
+def test_sold_records_for_unknown_console_empty(seeded_db) -> None:
+    assert sold_records_for("nonexistent") == []
 
 
 def test_summarize_sold_values_stats() -> None:
