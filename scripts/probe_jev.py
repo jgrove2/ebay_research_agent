@@ -2,7 +2,8 @@ import asyncio
 import json
 
 from ebay_research_agent.config import get_settings
-from ebay_research_agent.jev import JevClient, build_accept_questions, should_accept
+from ebay_research_agent.jev import JevClient, should_accept
+from ebay_research_agent.nodes.evaluate_listing import build_accept_questions
 from ebay_research_agent.sold_values import comps_for, summarize_sold_values
 
 SAMPLES = [

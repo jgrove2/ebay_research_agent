@@ -1,15 +1,42 @@
 import json
 from collections.abc import Awaitable, Callable
 
-from ebay_research_agent.config import get_settings
-from ebay_research_agent.jev import JevClient, build_accept_questions, should_accept
-from ebay_research_agent.state import IssuesState
+from typesafe_sdk import Noul
 
-Node = Callable[[IssuesState], Awaitable[dict]]
+from ebay_research_agent.config import get_settings
+from ebay_research_agent.jev import JevClient, should_accept
+from ebay_research_agent.state import IssuesState_v2
+
+Node = Callable[[IssuesState_v2], Awaitable[dict]]
+
+
+def build_accept_questions() -> dict:
+    return {
+        "correct_product": Noul(
+            instructions=(
+                "Is this listing a console unit matching the product named in the "
+                "state — not a game, accessory, controller, or a different console?"
+            )
+        ),
+        "worth_price": Noul(
+            instructions=(
+                "Using the sold-value summary in the state, is the listing's total "
+                "price (item + shipping) roughly half or less of the typical sold "
+                "value, meaning there is room to profit after repairing or parting "
+                "it out?"
+            )
+        ),
+        "water_damage": Noul(
+            instructions=(
+                "Does the listing indicate water damage (liquid exposure, "
+                "corrosion, waterlogged, or water damage)?"
+            )
+        ),
+    }
 
 
 def build_evaluate_listing_node(jev: JevClient) -> Node:
-    async def evaluate_listing(state: IssuesState) -> dict:
+    async def evaluate_listing(state: IssuesState_v2) -> dict:
         product = state["product"]
         listing = state["listing"]
         jev_state = {

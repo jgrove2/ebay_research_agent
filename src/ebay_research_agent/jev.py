@@ -1,4 +1,4 @@
-from typesafe_sdk import AsyncTypeSafeClient, Noul
+from typesafe_sdk import AsyncTypeSafeClient
 
 
 class JevClient:
@@ -47,28 +47,3 @@ def should_accept(
         and worth_price >= worth_price_threshold
         and water_damage < water_damage_threshold
     )
-
-
-def build_accept_questions() -> dict:
-    return {
-        "correct_product": Noul(
-            instructions=(
-                "Is this listing a console unit matching the product named in the "
-                "state — not a game, accessory, controller, or a different console?"
-            )
-        ),
-        "worth_price": Noul(
-            instructions=(
-                "Using the sold-value summary in the state, is the listing's total "
-                "price (item + shipping) roughly half or less of the typical sold "
-                "value, meaning there is room to profit after repairing or parting "
-                "it out?"
-            )
-        ),
-        "water_damage": Noul(
-            instructions=(
-                "Does the listing indicate water damage (liquid exposure, "
-                "corrosion, waterlogged, or water damage)?"
-            )
-        ),
-    }

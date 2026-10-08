@@ -14,6 +14,7 @@ from ebay_research_agent.nodes import (
     fan_out_listings,
     get_product_info,
     join_listings,
+    split_by_listing,
     split_by_product,
 )
 from ebay_research_agent.nodes.get_ebay_listing import EBAY_SYSTEM_PROMPT
@@ -26,15 +27,17 @@ def fan_out(state: IssuesState) -> list[Send]:
         Send("sold_summary", {"product": product}) for product in state["products"]
     ]
 
-def build_graph_v2(ebay_tools: list) -> CompiledStateGraph:
+def build_graph_v2(ebay_tools: list, jev: JevClient) -> CompiledStateGraph:
     builder = StateGraph(IssuesState_v2)
 
     builder.add_node("get_product_info", get_product_info)
     builder.add_node("get_ebay_listings", build_get_ebay_listings_node(ebay_tools))
+    builder.add_node("evaluate_listing", build_evaluate_listing_node(jev))
 
     builder.add_conditional_edges(START, split_by_product)
     builder.add_edge("get_product_info", "get_ebay_listings")
-    builder.add_edge("get_ebay_listings", END)
+    builder.add_conditional_edges("get_ebay_listings", split_by_listing)
+    builder.add_edge("evaluate_listing", END)
 
     return builder.compile()
 

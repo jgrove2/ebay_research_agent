@@ -8,10 +8,12 @@ from langchain_core.messages import ToolMessage
 from ebay_research_agent.config import get_settings
 from ebay_research_agent.graph import fan_out
 from ebay_research_agent.nodes import (
+    build_evaluate_listing_node,
     fan_out_listings,
     format_output,
     get_product_info,
     group_by_product,
+    split_by_listing,
 )
 from ebay_research_agent.nodes.get_ebay_listing import (
     EBAY_SYSTEM_PROMPT,
@@ -86,6 +88,90 @@ def test_fan_out_listings_sends_one_evaluate_per_listing() -> None:
 
 def test_fan_out_listings_empty_routes_to_aggregator() -> None:
     assert fan_out_listings({"cleaned": []}) == "aggregator"
+
+
+def test_split_by_listing_fans_out_one_evaluate_per_listing() -> None:
+    commands = split_by_listing(
+        {
+            "listings": {
+                "wii": [{"title": "Broken Wii", "url": "u1"}],
+                "switch": [
+                    {"title": "Dead Switch", "url": "u2"},
+                    {"title": "Cracked Switch", "url": "u3"},
+                ],
+            },
+            "sold_summaries": {"wii": {"average": 45.0}, "switch": {"average": 150.0}},
+        }
+    )
+    assert [command.node for command in commands] == [
+        "evaluate_listing",
+        "evaluate_listing",
+        "evaluate_listing",
+    ]
+    assert commands[0].arg["product"] == "wii"
+    assert commands[0].arg["listing"]["url"] == "u1"
+    assert commands[1].arg["product"] == "switch"
+    assert commands[1].arg["listing"]["url"] == "u2"
+    assert commands[2].arg["listing"]["url"] == "u3"
+    assert commands[0].arg["sold_summaries"]["wii"]["average"] == 45.0
+
+
+def test_split_by_listing_empty_routes_to_end() -> None:
+    assert split_by_listing({"listings": {}}) == "END"
+
+
+def test_build_evaluate_listing_node_returns_evaluation_when_accepted() -> None:
+    class FakeJev:
+        async def evaluate(self, state, questions):
+            return {
+                "choices": {},
+                "nouls": {
+                    "correct_product": {"noul": 0.9},
+                    "worth_price": {"noul": 0.9},
+                    "water_damage": {"noul": 0.1},
+                },
+                "scores": {},
+            }
+
+    node = build_evaluate_listing_node(FakeJev())
+    result = asyncio.run(
+        node(
+            {
+                "product": "wii",
+                "listing": {"title": "Broken Wii", "url": "u1"},
+                "sold_summaries": {"wii": {"average": 45.0}},
+            }
+        )
+    )
+    assert len(result["evaluations"]) == 1
+    assert result["evaluations"][0]["product"] == "wii"
+    assert result["evaluations"][0]["listing"]["url"] == "u1"
+
+
+def test_build_evaluate_listing_node_returns_empty_when_rejected() -> None:
+    class FakeJev:
+        async def evaluate(self, state, questions):
+            return {
+                "choices": {},
+                "nouls": {
+                    "correct_product": {"noul": 0.9},
+                    "worth_price": {"noul": 0.9},
+                    "water_damage": {"noul": 0.8},
+                },
+                "scores": {},
+            }
+
+    node = build_evaluate_listing_node(FakeJev())
+    result = asyncio.run(
+        node(
+            {
+                "product": "wii",
+                "listing": {"title": "Broken Wii", "url": "u1"},
+                "sold_summaries": {"wii": {"average": 45.0}},
+            }
+        )
+    )
+    assert result == {}
 
 
 def test_get_product_info_mocks_and_loads_sold_data(seeded_db) -> None:

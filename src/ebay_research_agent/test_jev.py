@@ -1,4 +1,5 @@
-from ebay_research_agent.jev import build_accept_questions, should_accept
+from ebay_research_agent.jev import should_accept
+from ebay_research_agent.nodes.evaluate_listing import build_accept_questions
 
 
 def test_build_accept_questions_has_expected_keys() -> None:

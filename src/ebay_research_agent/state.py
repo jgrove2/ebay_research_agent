@@ -8,10 +8,12 @@ def _merge_dicts(left: dict, right: dict) -> dict:
 class IssuesState_v2(TypedDict):
     products: list[str]
     product: str
+    listing: dict
     product_info: Annotated[dict, _merge_dicts]
     sold_product_data: Annotated[dict, _merge_dicts]
     sold_summaries: Annotated[dict, _merge_dicts]
     listings: Annotated[dict, _merge_dicts]
+    evaluations: Annotated[list[dict], operator.add]
 
 class IssuesState(TypedDict):
     products: list[str]
