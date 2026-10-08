@@ -14,6 +14,8 @@ class IssuesState_v2(TypedDict):
     sold_summaries: Annotated[dict, _merge_dicts]
     listings: Annotated[dict, _merge_dicts]
     evaluations: Annotated[list[dict], operator.add]
+    evaluations_by_product: dict
+    combined: dict
 
 class IssuesState(TypedDict):
     products: list[str]
