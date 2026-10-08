@@ -84,10 +84,9 @@ def test_build_evaluate_listing_node_returns_evaluation_when_accepted() -> None:
     class FakeJev:
         async def evaluate(self, state, questions):
             return {
-                "choices": {},
+                "choices": {"model_number": {"choice": "RVL-001"}},
                 "nouls": {
                     "correct_product": {"noul": 0.9},
-                    "worth_price": {"noul": 0.9},
                     "water_damage": {"noul": 0.1},
                 },
                 "scores": {},
@@ -98,8 +97,17 @@ def test_build_evaluate_listing_node_returns_evaluation_when_accepted() -> None:
         node(
             {
                 "product": "wii",
-                "listing": {"title": "Broken Wii", "url": "u1"},
-                "sold_summaries": {"wii": {"average": 45.0}},
+                "listing": {
+                    "title": "Broken Wii",
+                    "url": "u1",
+                    "total_cost": "20.00",
+                },
+                "sold_summaries": {
+                    "wii": {
+                        "average": 45.0,
+                        "by_version": {"RVL-001": {"average": 45.0}},
+                    }
+                },
             }
         )
     )
@@ -112,10 +120,9 @@ def test_build_evaluate_listing_node_returns_empty_when_rejected() -> None:
     class FakeJev:
         async def evaluate(self, state, questions):
             return {
-                "choices": {},
+                "choices": {"model_number": {"choice": "RVL-001"}},
                 "nouls": {
                     "correct_product": {"noul": 0.9},
-                    "worth_price": {"noul": 0.9},
                     "water_damage": {"noul": 0.8},
                 },
                 "scores": {},
@@ -126,8 +133,17 @@ def test_build_evaluate_listing_node_returns_empty_when_rejected() -> None:
         node(
             {
                 "product": "wii",
-                "listing": {"title": "Broken Wii", "url": "u1"},
-                "sold_summaries": {"wii": {"average": 45.0}},
+                "listing": {
+                    "title": "Broken Wii",
+                    "url": "u1",
+                    "total_cost": "20.00",
+                },
+                "sold_summaries": {
+                    "wii": {
+                        "average": 45.0,
+                        "by_version": {"RVL-001": {"average": 45.0}},
+                    }
+                },
             }
         )
     )

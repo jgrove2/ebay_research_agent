@@ -39,8 +39,8 @@ class Settings(BaseSettings):
     sold_values_path: str = "data/sold_values.db"
 
     accept_correct_product_threshold: float = 0.7
-    accept_worth_price_threshold: float = 0.7
     reject_water_damage_threshold: float = 0.7
+    accept_profit_margin: float = 0.10
 
     @field_validator("products", mode="before")
     @classmethod

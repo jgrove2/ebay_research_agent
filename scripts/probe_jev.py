@@ -3,7 +3,11 @@ import json
 
 from ebay_research_agent.config import get_settings
 from ebay_research_agent.jev import JevClient, should_accept
-from ebay_research_agent.nodes.evaluate_listing import build_accept_questions
+from ebay_research_agent.nodes.evaluate_listing import (
+    build_accept_questions,
+    listing_total_cost,
+    sold_average_for,
+)
 from ebay_research_agent.sold_values import sold_records_for, summarize_raw_sold_values
 
 SAMPLES = [
@@ -69,15 +73,19 @@ async def main() -> None:
                 "listing": sample["listing"],
                 "sold_value_summary": summary,
             }
-            result = await jev.evaluate(state, build_accept_questions())
+            model_numbers = list(summary.get("by_version", {}).keys())
+            result = await jev.evaluate(state, build_accept_questions(model_numbers))
             print(json.dumps(result, indent=2))
+            model_number = result["choices"]["model_number"]["choice"]
             print(
                 "ACCEPTED:",
                 should_accept(
                     result,
+                    listing_total_cost(sample["listing"]),
+                    sold_average_for(summary, model_number),
                     settings.accept_correct_product_threshold,
-                    settings.accept_worth_price_threshold,
                     settings.reject_water_damage_threshold,
+                    settings.accept_profit_margin,
                 ),
             )
     finally:

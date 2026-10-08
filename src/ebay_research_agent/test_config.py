@@ -73,5 +73,5 @@ def test_typesafe_defaults() -> None:
     assert settings.typesafe_model == "jev-latest"
     assert settings.sold_values_path == "data/sold_values.db"
     assert settings.accept_correct_product_threshold == 0.7
-    assert settings.accept_worth_price_threshold == 0.7
     assert settings.reject_water_damage_threshold == 0.7
+    assert settings.accept_profit_margin == 0.10
