@@ -10,6 +10,7 @@ def get_product_info(state: IssuesState) -> dict:
     sold_listings = sold_records_for(product)
 
     return {
+        "product": product,
         "product_info": {
             product: {
                 "issues": [],

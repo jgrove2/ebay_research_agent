@@ -1,0 +1,1442 @@
+{
+  "wii": {
+    "product_info": {
+      "issues": [],
+      "blurb": ""
+    },
+    "sold_summary": {
+      "count": 20,
+      "average": 83.05,
+      "median": 82.06,
+      "min": 0.0,
+      "max": 149.99,
+      "listingCount": 20,
+      "by_version": {
+        "RVL-001": {
+          "count": 11,
+          "average": 76.81,
+          "median": 79.99,
+          "min": 0.0,
+          "max": 99.99
+        },
+        "RVL-101": {
+          "count": 5,
+          "average": 85.19,
+          "median": 76.99,
+          "min": 44.99,
+          "max": 128.99
+        },
+        "RVL-201": {
+          "count": 1,
+          "average": 99.99,
+          "median": 99.99,
+          "min": 99.99,
+          "max": 99.99
+        },
+        "unknown": {
+          "count": 3,
+          "average": 96.72,
+          "median": 84.12,
+          "min": 56.06,
+          "max": 149.99
+        }
+      },
+      "by_number_of_products": {
+        "1": {
+          "count": 20,
+          "average": 83.05,
+          "median": 82.06,
+          "min": 0.0,
+          "max": 149.99
+        }
+      },
+      "by_version_number_of_products": {
+        "RVL-001": {
+          "1": {
+            "count": 11,
+            "average": 76.81,
+            "median": 79.99,
+            "min": 0.0,
+            "max": 99.99
+          }
+        },
+        "RVL-101": {
+          "1": {
+            "count": 5,
+            "average": 85.19,
+            "median": 76.99,
+            "min": 44.99,
+            "max": 128.99
+          }
+        },
+        "RVL-201": {
+          "1": {
+            "count": 1,
+            "average": 99.99,
+            "median": 99.99,
+            "min": 99.99,
+            "max": 99.99
+          }
+        },
+        "unknown": {
+          "1": {
+            "count": 3,
+            "average": 96.72,
+            "median": 84.12,
+            "min": 56.06,
+            "max": 149.99
+          }
+        }
+      }
+    },
+    "listings": [
+      {
+        "title": "Nintendo Wii RVL-001 Console White Bundle 3 Games - For Parts Or Not Working",
+        "item_id": "v1|189026635014|0",
+        "short_description": "Console does not work.",
+        "price": "29.99",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/189026635014?_skw=wii+for+parts+or+not+working&hash=item2c02dd8d06:g:evQAAeSwyI1qvmuq",
+        "condition": "For parts or not working",
+        "shipping_cost": "14.95",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "44.94",
+        "description": "<p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;\"><font face=\"Helvetica\" size=\"4\">Console does not work. Accessories and games were tested and in good working condition.&nbsp;</font></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;\"><font face=\"Helvetica\" size=\"4\">Shows signs of wear from being used and handled.</font></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><font size=\"4\"><br></font></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><font size=\"4\">From a nonsmoking home.</font></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><span class=\"s1\" style=\"font-kerning: none;\"><font size=\"4\">Please view all of the pictures for visual description.</font></span></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><span class=\"s1\" style=\"font-kerning: none;\"><font size=\"4\">Ask all questions before purchase.</font></span></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><span class=\"s1\" style=\"font-kerning: none;\"><font size=\"4\"><br></font></span></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><span class=\"s1\" style=\"font-kerning: none;\"><font size=\"4\">Check out my other listings. Thanks!</font></span></p>"
+      },
+      {
+        "title": "Nintendo Wii U Console 32 GB Black WUP-101(02) For Parts or Repair",
+        "item_id": "v1|960020200269|0",
+        "short_description": "The console has some scratches and scuffs. console only assume it will need worked on to become working. Sold as is no cords",
+        "price": "29.00",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/960020200269?_skw=wii+for+parts+or+not+working&hash=itemdf85a9bb4d:g:cj8AAeSwjnBqxBAd&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGZTr0pYm5AloD%2Fzc%2Bu4fnqSPm7IoIbI2cmBG4AYqmrGSI8%2BpWYfWw5r3clBHw8sUCmHcQNxaX0ocP1ZU%2BA42Dn0dO5rNjRG6rcwwJMZFaTId2nMbHrpwbHQSkGWDb6pcAY08UvIHPBjsG9pkkSqntYKAW9%2FL9wfLZkqgLdpC3hye3aCKF3x7emUJKgw2hO4TFVNXnDdAcTi1UEvx3MPBj%2Fr9qMgu%2BnlPI4e4DNDGGlnfeQZS%2FwGo917i80zKNMCGncz22uZEXet1CzcYORtsPYTg%2BPK26q12%2FST7d66rBHPDSh%2Fl%2BMh%2F28T2mB%2BLjlXs0I%3D",
+        "condition": "For parts or not working",
+        "shipping_cost": "8.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "37.00",
+        "description": "The console has some scratches and scuffs. console only assume it will need worked on to become working. Sold as is no cords "
+      },
+      {
+        "title": "Nintendo Wii  Video Console / Black Untested For Parts or Repair / AS IS",
+        "item_id": "v1|407271617586|0",
+        "short_description": "The product being described is a Nintendo Wii video console in black color. It is a home console with a NTSC-U/C region code and features Wi-Fi capability. The console has a storage capacity of 512 MB and a resolution of 480p. It weighs 4.25 lbs and comes with Component RCA connectivity. Perfect for those looking for a Nintendo Wii to use for parts or for repair. Nintendo Wii Console in black color untested for parts or repair. This unit does not come with a charger included. With a manufacturer warranty of 1 year, this console is ideal for those with technical knowledge to fix or salvage components for their own use. What you see is what you get, as the console is being sold as is with no guarantees on its functionality.",
+        "price": "20.00",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/407271617586?_skw=wii+for+parts+or+not+working&hash=item5ed347b432:g:T~0AAeSwYa5qxVXu&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb1vL6x6LM%2FfNqPB4OxD11XxwbUvB7R4EwE7wKUJXClbfUWeL86hpTN7hScY8eq8z%2FZb90nuLhYFV4ax2M%2F7cqwwKDDZta%2B1XLqLMKBRIk70FDuAqV94py%2FgH53Sew%2BsoVX2H1Gee%2BMRhW%2B1Fs5AiluEztuGke0gp9dEn4CMFdGJBoyxtOVMljDMXavzTpy5VdmuEJ8yvZSa6zcSxQ3LmZ5NNXoNwRe5GffBBH%2BOQg1FxMPkxwTGJC1lfhnnveprfkaMWXyNszQBaTjloOC2JS0BRdod0sCBGHxkzbgtMukWyxNN3gOfVTku6iDNGapU6M%3D",
+        "condition": "For parts or not working",
+        "shipping_cost": "7.52",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "CALCULATED",
+        "total_cost": "27.52",
+        "description": "<p>The product being described is a Nintendo Wii video console in black color. It is a home console with a NTSC-U/C region code and features Wi-Fi capability. The console has a storage capacity of 512 MB and a resolution of 480p. It weighs 4.25 lbs and comes with Component RCA connectivity. Perfect for those looking for a Nintendo Wii to use for parts or for repair.</p><br /><p>Nintendo Wii Console in black color untested for parts or repair. This unit does not come with a charger included. With a manufacturer warranty of 1 year, this console is ideal for those with technical knowledge to fix or salvage components for their own use. What you see is what you get, as the console is being sold as is with no guarantees on its functionality.</p>"
+      },
+      {
+        "title": "Nintendo Wii White Console Only For Parts or Repair Powers On Untested Issues",
+        "item_id": "v1|920019052439|0",
+        "short_description": "Nintendo Wii White Console \u2014 For Parts or Repair. Console powers on but has known operational issues. Sold strictly for parts or repair. Console only.",
+        "price": "19.00",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/920019052439?_skw=wii+for+parts+or+not+working&hash=itemd63568a797:g:gLcAAeSwU9tqxuTR&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbF7Q9UBKWZwUQkGWKqbiCuxdB%2BVLfof%2BPWgm4QKWTLjkwguWxvf1D0%2FMvlLQpE%2BD%2BMFdsP%2B6pqzRV0ZrDwz2jBiRkbJhI7sYDuJW8gBOngP9NNcTVJr8VcpTw8dHiGUmzjNnRJ9pnToQbboRuo9k6rapYLuQ9jIRYAWx7ge97L7VXBwYRIPJkFAKa9MV0mYUGtLfVGd11A43%2B3%2F6Blm5jsf5sB3EaKSb9JX9nkX7byODSuwICxo9zFXnZ3PTM7eovss0VgE0wZ2kTGIU48eTQUTKaQDf%2Bhc%2BHwFKYwAiD%2BGmD7q2zKNPGmE6C5K9KmWdE%3D",
+        "condition": "For parts or not working",
+        "shipping_cost": "8.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "27.00",
+        "description": "<p><b>Nintendo Wii White Console \u2014 For Parts or Repair.</b></p><br /><p><b>Console powers on but has known operational issues. The exact cause of the problems has not been determined. Full functionality is not guaranteed.</b></p><br /><p><b>Console only. No power adapter, AV cables, controllers, games, or other accessories included.</b></p><br /><p><b>Shows cosmetic wear, marks, and discoloration from previous use. Please review all photos for the exact condition.</b></p><br /><p><b>Sold strictly for parts or repair. Buyer will receive the exact console pictured.</b></p><br /><p><b>MULTI-ITEM ORDERS: Purchasing multiple items? Message us to discuss bundle discounts and possible shipping savings.</b></p><br /><p><b>Feel free to check out our store and follow us for more items!</b></p>"
+      },
+      {
+        "title": "Nintendo Wii Black Console Only RVL-001 - For Parts or Not Working Powers On",
+        "item_id": "v1|267769151352|0",
+        "short_description": "Console powers on but hasn\u2019t been tested further. Console is being sold AS-IS FOR PARTS",
+        "price": "39.99",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/267769151352?_skw=wii+for+parts+or+not+working&hash=item3e5848ff78:g:MvEAAeSwskFqkKiV",
+        "condition": "For parts or not working",
+        "shipping_cost": "0.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "39.99",
+        "description": "<p>Console powers on but hasn\u2019t been tested further. Console is being sold AS-IS FOR PARTS</p>"
+      },
+      {
+        "title": "Nintendo Wii RVL-001 Console-Red Sold As Is Parts Or Repair. Not Sure If It Work",
+        "item_id": "v1|960025950990|0",
+        "short_description": "Nintendo Wii RVL-001 Console-Red Sold As Is Parts Or Repair. Not Sure If It Work. Condition is For parts or not working. Shipped with USPS Ground Advantage.",
+        "price": "15.99",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/960025950990?_skw=wii+for+parts+or+not+working&hash=itemdf86017b0e:g:NvMAAeSw~C5qxRg5",
+        "condition": "For parts or not working",
+        "shipping_cost": "8.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "23.99",
+        "description": "Nintendo Wii RVL-001 Console-Red Sold As Is Parts Or Repair. Not Sure If It Work. Condition is For parts or not working. Shipped with USPS Ground Advantage. "
+      },
+      {
+        "title": "Nintendo Wii U Lot Of 7 Defective Discs For Parts or Repair Not Working Mario 3D",
+        "item_id": "v1|278378863479|0",
+        "short_description": "The discs have all been tested as non working and would need repair in order to function again.",
+        "price": "24.99",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/278378863479?_skw=wii+for+parts+or+not+working&hash=item40d0ac5b77:g:Le4AAeSwBa1qqGpE",
+        "condition": "For parts or not working",
+        "shipping_cost": "0.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "24.99",
+        "description": "<font rwr=\"1\" size=\"4\" style=\"font-family: Arial;\"><span style=\"font-size: 18.6667px;\">The discs are all in poor overall condition, and is being sold as PARTS OR REPAIR. Additional info available upon request.</span></font><div>The discs have all been tested as non working and would need repair in order to function again. The disc backs may feature some scratching or ware.</div><div><br></div><div><font rwr=\"1\" size=\"4\" style=\"font-family: Arial;\"><font face=\"Arial\"><span style=\"font-size: 18.6667px;\">Check my other listings for tons of other items!</span></font></font></div>"
+      },
+      {
+        "title": "Nintendo Wii Black Console Only RVL-001 - For Parts or Not Working Powers On",
+        "item_id": "v1|267769154749|0",
+        "short_description": "Console powers on but hasn\u2019t been tested further. Console is being sold AS-IS FOR PARTS Missing all doors",
+        "price": "39.99",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/267769154749?_skw=wii+for+parts+or+not+working&hash=item3e58490cbd:g:CB0AAeSwvW9qkKnH",
+        "condition": "For parts or not working",
+        "shipping_cost": "0.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "39.99",
+        "description": "<p>Console powers on but hasn\u2019t been tested further. Console is being sold AS-IS FOR PARTS</p><p>Missing all doors</p>"
+      },
+      {
+        "title": "Nintendo Wii U 32GB Black Console Only for Parts or Repair WUP-101 Not Working",
+        "item_id": "v1|407161602389|0",
+        "short_description": "Nintendo Wii U 32GB Black Console Only for Parts or Repair WUP-101 Not Working. In used condition please see pictures for details. I think it is bricked. Not working.",
+        "price": "24.99",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/407161602389?_skw=wii+for+parts+or+not+working&hash=item5eccb90155:g:JzcAAeSwCqtqiLMt",
+        "condition": "For parts or not working",
+        "shipping_cost": "12.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "36.99",
+        "description": "<p dir=\"ltr\" style=\"margin-top:0; margin-bottom:0;\">Nintendo Wii U 32GB Black Console Only for Parts or Repair WUP-101 Not Working. In used condition please see pictures for details. I think it is bricked. Not working. </p>"
+      },
+      {
+        "title": "Nintendo Wii U Controller WUP-010 NOT WORKING For Parts or Repair As Is",
+        "item_id": "v1|128069613493|0",
+        "short_description": "An item that does not function as intended and is not fully operational. For parts or not working. Display Screen is not cracked.",
+        "price": "22.49",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/128069613493?_skw=wii+for+parts+or+not+working&hash=item1dd18b37b5:g:1rcAAeSwjWtqoLPp",
+        "condition": "For parts or not working",
+        "shipping_cost": "9.50",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "31.99",
+        "description": "<font face=\"Arial\" size=\"4\">Nintendo Wii U Controller WUP-010 NOT WORKING For Parts or Repair As Is</font><br><div>Controller only</div><div>Power cord and Stylus NOT INCLUDED</div><div>Display Screen is not cracked&nbsp;</div><div>Video issues, refer to photos&nbsp;</div><div><strong style=\"color: rgb(25, 25, 25);\"><font size=\"5\">For parts or not working</font></strong></div><div><div class=\"se-radio-group__option--description\" style=\"grid-area: 3 / 2; color: rgb(112, 112, 112);\"><div id=\"s0-1-0-25-15-12-4-@dialog-16-1-5-1-0-1-10-33-1-0-17-5-2-condition-7000--description\" style=\"\"><strong><font size=\"5\">An item that does not function as intended and is not fully operational. This includes items that are defective in ways that render them difficult to use, items that require service or repair, or items missing essential components.</font></strong></div><div id=\"s0-1-0-25-15-12-4-@dialog-16-1-5-1-0-1-10-33-1-0-17-5-2-condition-7000--description\" style=\"\"><span style=\"color: rgb(0, 0, 0);\"><strong style=\"\"><font size=\"5\">Sold As Is,&nbsp;</font></strong></span></div><div id=\"s0-1-0-25-15-12-4-@dialog-16-1-5-1-0-1-10-33-1-0-17-5-2-condition-7000--description\" style=\"\"><span style=\"color: rgb(0, 0, 0);\"><strong style=\"\"><font size=\"5\">No Returns</font></strong></span></div></div></div>"
+      },
+      {
+        "title": "Nintendo Wii RVL-001 White Game Console System FOR PARTS OR REPAIR NOT WORKING",
+        "item_id": "v1|114400920932|0",
+        "short_description": "\u2022 You are viewing a Nintendo Wii RVL-001 console. FOR PARTS OR REPAIR not working. \u2022 Will be shipped within one business day and will come packed well and tight. Your item will be shipped Priority Mail by way of USPS. \u2022 Includes a 30 day return policy as does all my items. If you aren't satisfied with the product or anything is wrong with it, feel free to send it back. \u2022If you have any questions or would like more pictures please send me a message and I'll get back to you as soon as I can. \u2022Bid TODAY and don't let this auction pass you by. Also have a look at the other items I have up for sale. Thanks and have a great day.",
+        "price": "14.95",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/114400920932?_skw=wii+for+parts+or+not+working&hash=item1aa2d38564:g:9QAAAOSwDkJfWamx",
+        "condition": "For parts or not working",
+        "shipping_cost": "13.63",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "CALCULATED",
+        "total_cost": "28.58",
+        "description": "<p dir=\"ltr\">&#8226; You are viewing a Nintendo Wii RVL-001 console. FOR PARTS OR REPAIR not working. </p>\n<p dir=\"ltr\">&#8226; Will be shipped within one business day and will come packed well and tight. Your item will be shipped Priority Mail by way of USPS. </p>\n<p dir=\"ltr\">&#8226; Includes a 30 day return policy as does all my items. If you aren't satisfied with the product or anything is wrong with it, feel free to send it back. </p>\n<p dir=\"ltr\">&#8226;If you have any questions or would like more pictures please send me a message and I'll get back to you as soon as I can.&#160;&#160;&#160;</p>\n<p dir=\"ltr\">&#8226;Bid TODAY and don't let this auction pass you by. Also have a look at the other items I have up for sale. Thanks and have a great day.</p>"
+      },
+      {
+        "title": "Nintendo Wii RVL-001 - Console Only - DOES NOT ACCEPT DISC- For Parts Or Repair",
+        "item_id": "v1|206529325436|0",
+        "short_description": "Turns on but disc drive doesn't work.",
+        "price": "25.00",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/206529325436?_skw=wii+for+parts+or+not+working&hash=item30161b697c:g:HQsAAeSwrWpqljKG",
+        "condition": "For parts or not working",
+        "shipping_cost": "0.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "25.00",
+        "description": "Turns on but disc drive doesn't work."
+      },
+      {
+        "title": "Nintendo Wii Family Edition RVL-101 Black\u00a0NOT WORKING FOR PARTS OR REPAIR",
+        "item_id": "v1|147372893597|0",
+        "short_description": "Nintendo Wii Family Edition RVL-101 Black NOT WORKING FOR PARTS OR REPAIR NOT WORKING FOR PARTS OR REPAIR - NOT TESTED IN ANY RESPECT true operational condition unknown. There is nothing included other then the console as shown no power supply or any other items. There is scratches and dings and signs of heavy use. NOT WORKING FOR PARTS OR REPAIR NOT WORKING FOR PARTS OR REPAIR",
+        "price": "16.99",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/147372893597?_skw=wii+for+parts+or+not+working&hash=item22501be59d:g:gvAAAeSwQhRqLj3~",
+        "condition": "For parts or not working",
+        "shipping_cost": "12.99",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "29.98",
+        "description": "Nintendo Wii Family Edition RVL-101 Black NOT WORKING FOR PARTS OR REPAIR <br>NOT WORKING FOR PARTS OR REPAIR - NOT TESTED IN ANY RESPECT true operational condition unknown. There is nothing included other then the console as shown no power supply or any other items. There is scratches and dings and signs of heavy use. <br>NOT WORKING FOR PARTS OR REPAIR <br>NOT WORKING FOR PARTS OR REPAIR"
+      },
+      {
+        "title": "Nintendo Wii Console RVL-001 White 2 Wii Remotes Stand For Parts or Repair NTSC",
+        "item_id": "v1|267801324738|0",
+        "short_description": "Condition: This item is sold for parts or repair. The AV port is functional and the unit powers on successfully. Both Wii Remotes show typical handling wear; one includes a wrist strap. No power cables, AV cables, or sensor bar are included in this bundle.",
+        "price": "34.99",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/267801324738?_skw=wii+for+parts+or+not+working&hash=item3e5a33ecc2:g:OgQAAeSwmh9qv0dG&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb7rZG70jizPlHmg%2Bi0F6YBh3d8ygqF9MuLVEqSMP2TcNHfrn5ec7kdPsVQk47dVzotdC35geDn8cfDKyl4QRH8yIE3Y6eGwHeUn1Iy%2FD2DzuqKJv3%2FgWkHV4VHK4RH7dU6aEqItnC7tEITKbwqn3rsOJLAAnAdg7DzXynYkQyx2sho4OFBVa%2BVWyGkmskdgN0N%2FoYj8zKfXyHonPAdLIPhCVgsaBlaatOUzDRWeglNhgpwlQX5SPGKyaxvC70GRaEOYSzBEjf0bYFfwsKTAZY9TC4kiUp7tqrQ%2BBEzX3PX2UeqeZ1b08R3imOcMqMn8DU%3D",
+        "condition": "For parts or not working",
+        "shipping_cost": "8.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "42.99",
+        "description": "<!DOCTYPE html><div style=\"font-family: sans-serif\"><p><strong>Nintendo Wii Console RVL-001 Bundle</strong><br>\nNintendo Wii<br>\nWhite Model, 2000s Era</p>\n<br>\n<p>The Nintendo Wii revolutionized gaming with its motion-controlled interface, becoming one of the best-selling consoles of its generation. This RVL-001 model is specifically valued by collectors and enthusiasts for its native backward compatibility with Nintendo GameCube games and accessories, featuring dedicated controller and memory card ports under the top panel flap. While this unit requires technical attention, it remains a valuable source of authentic OEM components for the platform.</p>\n<br>\n<p>\u2022 Nintendo Wii console (Model RVL-001) in white<br>\n\u2022 Two OEM Nintendo Wii Remote controllers included<br>\n\u2022 Original gray vertical console stand<br>\n\u2022 Integrated GameCube controller and memory card ports</p>\n<br>\n<p><strong>Condition:</strong> This item is sold for parts or repair. The internal disc drive fails to read game media. The AV port is functional and the unit powers on successfully. The exterior shell shows moderate cosmetic wear, including surface scuffs and light scratches across the plastic casing. Both Wii Remotes show typical handling wear; one includes a wrist strap. No power cables, AV cables, or sensor bar are included in this bundle.</p><p></br></p><p><strong>Local Pick up:</strong></p>\n<p>We offer local pick up by <em>appointment only</em>. Please message us when you have paid for your order so that we can send you the link to book your appointment.&nbsp;</p>\n<p>Please note that we require an appointment for each order.&nbsp; We do not offer same day pick up, and require <em>2 business days notice</em> so that we can ensure that your order is ready for you.&nbsp;&nbsp;</p>\n<p>For more information, please send us a message! We currently charge a $1.99/item handling fee on all pick up items.</p>\n<p>Thank you for shopping Goodwill Southern California and for supporting our mission to provide jobs for individuals with disabilities and disadvantages. Your purchases help create jobs, hopes, and futures.</p></div>"
+      },
+      {
+        "title": "Nintendo Wii\u00a0(RVL-001) Console Only  For Parts or Repair  Not Working",
+        "item_id": "v1|325913648743|0",
+        "short_description": "Nintendo Wii (RVL-001) Console Only powers on not tested. See pics.",
+        "price": "19.99",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/325913648743?_skw=wii+for+parts+or+not+working&hash=item4be1f79e67:g:JpsAAOSwwoljby4H&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbU%2FgChzZElIng8yHhpwZwkB1DElGLkF9dqvRyMHIlMA5Pn6iIdDi5X7YYdQ7GFBKZ6KhlukDED5Vsdv8qgygSvkHhvlsWdwFY88lgu3JwJW9j%2B7AIHlkY4svgLLVG07p4QD1hHPq5GDQuCO9p3Rz5htUfTpPOc59inf3ToqxqvD1SM1MH2b7F55kPbfJfOskNUxeAIjthiyAuhFfJDW0%2Fzf3kMuNpUK6UOO6vqXvL7F7%2B%2FC09Y6t4Ql9QD8gVvOwsNDEdcv8Q2vbaoIm%2FKP3vehMyCuSIB2S1IuCJdUc3qUXrbnDXQIaVU5g3%2B1PkX%2Bzg%3D",
+        "condition": "For parts or not working",
+        "shipping_cost": "27.45",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "CALCULATED",
+        "total_cost": "47.44",
+        "description": "<p dir=\"ltr\" style=\"margin-top:0; margin-bottom:0;\">Nintendo Wii (RVL-001) Console Only powers on not tested. See pics. </p>"
+      },
+      {
+        "title": "Lot Of 2 Consoles Nintendo Wii Rvl001 NO VIDEO  Genesis No Power PARTS OR REPAIR",
+        "item_id": "v1|257745064611|0",
+        "short_description": "These consoles are NTSC-U/C (US/Canada) region coded and manufactured in 2011. These consoles are perfect for repairing or using for parts, as they both have issues with no video output and no power.",
+        "price": "31.50",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/257745064611?_skw=wii+for+parts+or+not+working&hash=item3c02cd92a3:g:u5IAAeSwLB5qqcYf&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbJheCLislEZIWaVYHOp519xRRpLf16T0jdAY5Niw%2BKYao6Cfi8828fpn7005YPcEKs8Ei0Xeqi6GPrwIjQW8pZpIftlb8fEYh8rUOHlzZrZayO7X3lga9z615dxEcQD8DjhZCchYOvPZOCN3PAE3%2BJRdcuGpO0tpmNX5KBl1oQl%2Bna98hZhKy5Nfx9PqYVlkIFUFsaSYMp4c61l63%2F916Ghrp2YlOiTBLkV1NrWacQdUcbTLjMJqIUWn35K4t4aRu1VKU2V9WySedBgY8HIkIH0iW4ZXYri7shSW%2BKhfaw9GEkbfNI10CMXRy%2BfFpRV1Q%3D",
+        "condition": "For parts or not working",
+        "shipping_cost": "0.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "31.50",
+        "description": "<p><b>The product is a lot of two consoles, specifically the Wii RVL-001 model Wii with the GameCube compatibility and the Sega Genesis classic. These consoles are NTSC-U/C (US/Canada) region coded and manufactured in 2011. They come in a sleek white and black color and do not include a charger. These consoles are perfect for repairing or using for parts, as they both have issues with no video output and no power. Made by Sega and Nintendo, these home consoles offer a classic gaming experience for fans of the brand.</b></p><br /><p><b>Genesis classic no power, doa brand new right out of the box</b></p><br /><p><b>Wii powers on sounds work no video</b></p><br /><p><b>Fast secure shipping</b></p>"
+      },
+      {
+        "title": "Nintendo Wii (RVL-001) Console Only For Parts or Repair",
+        "item_id": "v1|407268812546|0",
+        "short_description": "This item is listed in broken condition. Wii (RVL-001). Broken(for parts or repair). Want to know when your favourite products go on sale?. Every was described to the T. The grandkids and I will have fun!",
+        "price": "24.99",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/407268812546?_skw=wii+for+parts+or+not+working&hash=item5ed31ce702:g:0TsAAeSw6XxqxCAW",
+        "condition": "For parts or not working",
+        "shipping_cost": "0.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "24.99",
+        "description": "<div style=\"display: none;\"><h1>Nintendo Wii (RVL-001) Console Only For Parts or Repair</h1>\nNintendo Wii (RVL-001) Console Only For Parts or Repair Item Specifications Item Specifications Make Nintendo Model Wii (RVL-001) Category Video Game Consoles Condition Broken(for parts or repair) Color White Description Offered here is a Nintendo Wii video game console RVL-001 , in white. This item is listed in broken condition. Please review the provided details carefully before purchasing. Shipping &amp; Returns Shipping &amp; Returns Shipping Free shipping Returns 30 day eBay return policy, seller pays for return label </div>\n\n\n<html lang=\"en\">\n   <head>\n      <meta charset=\"utf-8\">\n      <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n      <title>Gadget Grabber</title>\n      <link rel=\"stylesheet\" href=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bootstrap.min.css?v=1745500751\">\n      <link rel=\"stylesheet\" href=\"https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css\">\n      <link rel=\"stylesheet\" href=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/style_c5c2cfa6-334c-40bd-a446-da59621bb29c.css?v=1745501345\">\n      <link rel=\"stylesheet\" href=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/responsive.css?v=1745500751\">\n      <link rel=\"stylesheet\" href=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/store.css?v=1745500751\">\n      <link rel=\"stylesheet\" href=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/gallery.css?v=1745500751\">\n      <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n      <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n      <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n      <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n      <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n      <link href=\"https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap\" rel=\"stylesheet\">\n   </head>\n   <body>\n      <div class=\"product_detail_page\">\n         <!------header start-------> \n         <header>\n            <div class=\"middle_section\">\n               <div class=\"container\">\n                  <div class=\"dflex\">\n                     <div class=\"logo\">\n                        <a href=\"https://www.ebay.com/str/ralphselectronics1\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/images/logo.png?width=501&nostretch&etag=U3VuIE1hciAwOSAyMDI1IDIxOjAyOjUwIEdNVCswMDAwIChVVEMp\" alt=\"logo\"></a>\n                     </div>\n                     <div class=\"middle_right_section\">\n                       <div class=\"main_menu\"> \n                     <nav>\n                        <label for=\"drop\" class=\"toggle\">\n                           <p class=\"toggle_border\">\n                              <span class=\"sr-only\"></span><span class=\"icon_bar\"></span>\n                              <span class=\"icon_bar\"></span>\n                              <span class=\"icon_bar\"></span>\n                           </p>\n                        </label>\n                        <input type=\"checkbox\" id=\"drop\">   \n                        <ul class=\"menu\">\n                           \n                           <li><a href=\"https://www.ebay.com/str/ralphselectronics1\">Home</a></li>\n                           <li><a href=\"https://www.ebay.com/str/ralphselectronics1?_tab=about\">About us</a></li>\n                           <li><a href=\"https://www.ebay.com/fdbk/feedback_profile/ralphselectronics1?filter=feedback_page%3ARECEIVED_AS_SELLER&sort=RELEVANCE\">CustomerFeedback</a></li>\n                           <li><a href=\"https://contact.ebay.com/ws/eBayISAPI.dll?ReturnUserEmail&requested=ralphselectronics1\">Contact seller</a></li>\n                           <li class=\"first_menu\">\n                              <!-- First Tier Drop Down --> \n                              <label for=\"drop-1\" class=\"toggle\">\n                              <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/menu_bar.png?v=1745500849\" alt=\"menu_bar\">\n                              shop All categories \n                              </label>\n                              <a href=\"#\">\n                              <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/menu_bar.png?v=1745500849\" alt=\"menu_bar\">\n                              shop All categories \n                              </a>\n                              <input type=\"checkbox\" id=\"drop-1\"> \n                              <ul>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Video-Games-Consoles/_i.html?_sacat=1249\">Video Games & Consoles</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Computers-Tablets-Networking/_i.html?_sacat=58058\">Computers/Tablets & Networking</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Consumer-Electronics/_i.html?_sacat=293\">Consumer Electronics</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Cell-Phones-Accessories/_i.html?_sacat=15032\">Cell Phones & Accessories</a></li>\n                              \n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Cameras-Photo/_i.html?_sacat=625\">Cameras & Photo</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Musical-Instruments-Gear/_i.html?_sacat=619\">Musical Instruments & Gear</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Everything-Else/_i.html?_sacat=99\">Everything Else</a></li>\n                               \n                              </ul>\n                           </li>\n                        </ul>\n                     </nav> \n               </div>\n                     </div>\n                  </div>\n               </div>\n            </div>\n        \n         </header>\n         <!------header end------->\n         <div class=\"body_section\">\n            <div class=\"banner_section\">\n               <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/banner_img.jpg?v=1745500849\" alt=\"banner_img\">\n            </div>\n            <div class=\"bottom_section\">\n               <div class=\"container\">\n                  <div class=\"dflex\">\n                     <div class=\"bottom_box\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bottom_img1.png?v=1745500849\" alt=\"bottom_img1\">\n                        <div class=\"bottom_desc\">\n                           <span>Fast</span>\n                           <span>Shipping</span>\n                        </div>\n                     </div>\n                     <div class=\"bottom_box\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bottom_img2.png?v=1745500849\" alt=\"bottom_img2\">\n                        <div class=\"bottom_desc\">\n                           <span>30 Days Hassle</span>\n                           <span>Free Returns</span>\n                        </div>\n                     </div>\n                     <div class=\"bottom_box\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bottom_img3.png?v=1745500849\" alt=\"bottom_img3\">\n                        <div class=\"bottom_desc\">\n                           <span>eBay Money </span>\n                           <span>Back Guarantee</span>\n                        </div>\n                     </div>\n                     <div class=\"bottom_box\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bottom_img4.png?v=1745500849\" alt=\"bottom_img4\">\n                        <div class=\"bottom_desc\">\n                           <span>100% Authentic,</span>\n                           <span>Tested Products</span>\n                        </div>\n                     </div>\n                     <div class=\"bottom_box\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bottom_img5.png?v=1745500849\" alt=\"bottom_img5\">\n                        <div class=\"bottom_desc\">\n                           <span>Top Products</span>\n                           <span>from Best Brands</span>\n                        </div>\n                     </div> \n                  </div>\n               </div>\n            </div>\n            <div class=\"product_gallery_section\">\n               <div class=\"container\">\n                  <div class=\"row\">\n                     <div class=\"col-md-6 col-sm-6\">\n                        <div class=\"product_gallery\">\n                           <div class=\"span12 text-center\">\n                              <!-- <a href=\"#img1\">\n                                 <img class=\"logo\" src=\"/productimages/.png?width=547&amp;etag=\">\n                                 </a> -->\n                              <div class=\"right_side_imgs\">\n                                 <a href=\"#_\" class=\"default_img_div\" id=\"img1\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767.png?width=800&amp;etag=h7ov6sT1oEw93vj4PGJGoA%3D%3D\" class=\"default_img\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img2\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_0.jpeg?etag=h7ov6sT1oEw93vj4PGJGoA%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img3\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_1.jpeg?etag=4L2oxPYm%252F5R28aVvv5eKXw%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img4\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_2.jpeg?etag=25V0QX8yws0laZX3ldoabQ%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img5\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_3.jpeg?etag=k0UU6t8fIsYyk%252B81XROb1w%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img6\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_4.jpeg?etag=f5YNlz2PLzAUE7I%252FNegceA%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img7\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_5.jpeg?etag=qTZXxK%252FU9NilD8tt%252Fp8Z7Q%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img8\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_6.jpeg?etag=ypIDjQTVFdFM8rE0gVHFTg%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                              </div>\n                              <div class=\"clearfix\"></div>\n                              <div class=\"bottom_imgs\">\n                                 \n                                 \n                                 <div class=\"row image-row text-center\">\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img2\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_0.jpeg?etag=h7ov6sT1oEw93vj4PGJGoA%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img3\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_1.jpeg?etag=4L2oxPYm%252F5R28aVvv5eKXw%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img4\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_2.jpeg?etag=25V0QX8yws0laZX3ldoabQ%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img5\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_3.jpeg?etag=k0UU6t8fIsYyk%252B81XROb1w%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                 </div>\n                                 \n                                 <div class=\"row image-row text-center\">\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img6\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_4.jpeg?etag=f5YNlz2PLzAUE7I%252FNegceA%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img7\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_5.jpeg?etag=qTZXxK%252FU9NilD8tt%252Fp8Z7Q%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img8\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_6.jpeg?etag=ypIDjQTVFdFM8rE0gVHFTg%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                 </div>\n                                 \n                                 <br>\n                              </div>\n                           </div>\n                        </div>\n                     </div>\n                     <div class=\"col-md-6 col-sm-6\">\n                        <div class=\"product_description\">\n                           <h2>Nintendo Wii (RVL-001) Console Only For Parts or Repair</h2>\n                           <h3>$24.99</h3> \n                            <div class=\"table-responsive\">\n                                   \n                                 </div>\n                        <div class=\"button_section dflex\">\n                           <a href=\"https://www.ebay.com/str/ralphselectronics1\"><button type=\"button\" class=\"btn btn-default\"><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/button_img1.png?v=1745500849\" alt=\"button_img1\">visit store</button></a>\n                           <a href=\"https://contact.ebay.com/ws/eBayISAPI.dll?ReturnUserEmail&requested=ralphselectronics1\"><button type=\"button\" class=\"btn btn-default grey_btn\"><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/button_img2.png?v=1745500849\" alt=\"button_img2\">Contact seller</button></a>\n                           </div>\n                           <div class=\"sidemenu_btmbox\">\n\n                                 <div class=\"dflex\">\n                                    <div class=\"sidemenu_btmbox1\">\n                                       <div class=\"dflex\">\n                                    <div class=\"sidemenu_btm_img\">\n                                       <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/sidemenu_btmbox_img1.png?v=1745500849\" alt=\"sidemenu_btmbox1\">\n                                    </div>\n                                    <div class=\"sidemenu_btm_desc\"> \n                                       <span>Great Customer Service</span>\n                                    </div>\n                                 </div>\n                                 </div>\n                                 <div class=\"sidemenu_btmbox2\">\n                                 <div class=\"dflex\">\n                                    <div class=\"sidemenu_btm_img\">\n                                       <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/sidemenu_btmbox_img2.png?v=1745500849\" alt=\"sidemenu_btmbox2\">\n                                    </div>\n                                    <div class=\"sidemenu_btm_desc\"> \n                                       <span>Great Feedback</span>\n                                    </div>\n                                 </div>\n                              </div>\n                              </div>\n                        </div>\n                     </div>\n                  </div>\n               </div>\n            </div>\n         </div>\n            <div class=\"tabs_box\">\n               <div class=\"container\">\n                  <div class=\"tab_section\">\n                     <input type=\"radio\" name=\"group1\" id=\"tabone\" checked=\"checked\">\n                     <label for=\"tabone\">Product Description</label>\n                     <div class=\"tab\">\n                     <p><h2 style=\"color: #0073ea; margin-bottom: 8px;\">Nintendo Wii (RVL-001) Console Only For Parts or Repair</h2>\n<h2 style=\"color: #0073ea; margin-bottom: 8px;\">Item Specifications</h2>\n<table style=\"width: 100%; border-collapse: collapse;\">\n<tbody>\n<tr style=\"background-color: #0073ea; color: white;\">\n<th colspan=\"2\" style=\"text-align: left; padding: 8px;\">\n<div>Item Specifications</div>\n</th>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Make</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>Nintendo</div>\n</td>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Model</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>Wii (RVL-001)\u00a0</div>\n</td>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Category</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>Video Game Consoles</div>\n</td>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Condition</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>Broken(for parts or repair)</div>\n</td>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Color</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>White</div>\n</td>\n</tr>\n</tbody>\n</table>\n<h2 style=\"color: #0073ea; margin-bottom: 8px;\">Description</h2>\n<p>Offered here is a Nintendo Wii video game console RVL-001 , in white. This item is listed in broken condition. Please review the provided details carefully before purchasing.</p>\n<h2 style=\"color: #0073ea; margin-bottom: 8px;\">Shipping &amp; Returns</h2>\n<table style=\"width: 100%; border-collapse: collapse;\">\n<tbody>\n<tr style=\"background-color: #0073ea; color: white;\">\n<th colspan=\"2\" style=\"text-align: left; padding: 8px;\">\n<div>Shipping &amp; Returns</div>\n</th>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Shipping</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>Free shipping</div>\n</td>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Returns</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>30 day eBay return policy, seller pays for return label</div>\n</td>\n</tr>\n</tbody>\n</table></p>\n\n                        <div class=\"table-responsive\">\n                        \n                     </div>\n                     </div>\n                    \n                  </div>\n              \n                  <div class=\"tab_section second_tab\">\n                     <input type=\"radio\" name=\"group2\" id=\"tabfour\" checked=\"checked\">\n                     <label for=\"tabfour\">Shipping &amp; returns</label>\n                     <div class=\"tab\">\n                        <p>With any purchase from Gadget Grabber, you\u00e2re also purchasing a guaranteed satisfaction with your item and your experience. Our team members are dedicated to making it happen, but mistakes do happen. If for any reason you are not satisfied with your purchase, please contact us before installing the item.</p>\n                     </div>\n                     <input type=\"radio\" name=\"group2\" id=\"tabfive\">\n                     <label for=\"tabfive\">payment</label>\n                     <div class=\"tab\">\n                        <p>Immediate payment is required upon selecting \"Buy It Now\" or upon checking out through the cart.</p>\n\n<p>We accept payment via U.S. PayPal accounts and all Major Credit Cards, Debit Cards & Google Pay.</p>\n\n<p>We are legally required to collect sales tax in those states and localities where we maintain a physical presence (nexus).</p>\n\n<p>The applicable amount of sales tax charged to an order will be calculated based on the shipment destination's state and local sales tax laws.</p>\n\n<p>Thank you for shopping with us on eBay!</p>\n                     </div>\n                  </div> \n                   </div>\n            </div> \n            <div class=\"featured_category\">\n               <div class=\"container\">\n                  <h2>Featured Category</h2>\n                  <div class=\"dflex\">\n                     <div class=\"featured_first_block\">\n                        <div class=\"featured_category_block\">\n                           <div class=\"featured_category_abs\">\n                              <a href=\"https://www.ebay.com/usr/ralphselectronics1/Video-Games-Consoles/_i.html?_sacat=1249\">\n                              <div class=\"featured_category_box\">\n                                 <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/featured_category_img1.png?v=1745500850\" alt=\"featured_category_img1\">\n                              </div>\n                              <div class=\"featured_category_desc\">\n                                 <h3>Video Games &</h3>\n                                 <h3>Consoles</h3>\n                                 <button type=\"button\" class=\"btn shop_now\"> Shop Now</button>\n                              </div>\n                           </a>\n                           </div>\n                        </div> \n                     </div>\n                     <div class=\"featured_second_block\">\n                        <div class=\"featured_category_block\">\n                           <div class=\"dflex\">\n                              <div class=\"featured_category_abs\">\n                              <a href=\"https://www.ebay.com/usr/ralphselectronics1/Computers-Tablets-Networking/_i.html?_sacat=58058\">\n                                 <div class=\"featured_category_box\">\n                                    <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/featured_category_img2.png?v=1745500850\" alt=\"featured_category_img2\">\n                                 </div>\n                                 <div class=\"featured_category_desc\">\n                                    <h3>Computer Tablet/</h3>\n                                    <h3>Networking</h3>\n                                    <button type=\"button\" class=\"btn shop_now\"> Shop Now</button>\n                                 </div>\n                              </a>   \n                              </div>\n                              <div class=\"featured_category_abs\">\n                              <a href=\"https://www.ebay.com/usr/ralphselectronics1/Consumer-Electronics/_i.html?_sacat=293\">\n                                 <div class=\"featured_category_box\">\n                                    <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/featured_category_img3.png?v=1745500850\" alt=\"featured_category_img3\">\n                                 </div>\n                                 <div class=\"featured_category_desc\">\n                                    <h3>Consumer</h3>\n                                    <h3>Electronics</h3>\n                                    <button type=\"button\" class=\"btn shop_now\"> Shop Now</button>\n                                 </div>\n                              </a>   \n                              </div>\n                           </div>\n                        </div>\n                        <div class=\"featured_category_block\">\n                           <div class=\"dflex\">\n                              <div class=\"featured_category_abs\">\n                              <a href=\"\">\n                                 <div class=\"featured_category_box\">\n                                    <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/featured_category_img4.png?v=1745500850\" alt=\"featured_category_img4\">\n                                 </div>\n                                 <div class=\"featured_category_desc\">\n                                    <h3>Smartphones/</h3>\n                                    <h3>Cellphones</h3>\n                                    <button type=\"button\" class=\"btn shop_now\"> Shop Now</button>\n                                 </div>\n                              </a>   \n                              </div>\n                              <div class=\"featured_category_abs\">\n                              <a href=\"https://www.ebay.com/usr/ralphselectronics1/Cell-Phones-Accessories/_i.html?_sacat=15032\">\n                                 <div class=\"featured_category_box\">\n                                    <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/featured_category_img5.png?v=1745500850\" alt=\"featured_category_img5\">\n                                 </div>\n                                 <div class=\"featured_category_desc\">\n                                    <h3>Cell Phones &</h3>\n                                    <h3>Accessories </h3>\n                                    <button type=\"button\" class=\"btn shop_now\"> Shop Now</button>\n                                 </div>\n                              </a>   \n                              </div>\n                           </div>\n                        </div>\n                     </div>\n                  </div>\n               </div>\n            </div>  \n            <div class=\"customer_testimonial\">\n               <div class=\"container\">\n                  <h2>CUSTOMER REVIEWS</h2>\n                  <ul class=\"customer_slides\" id=\"group5\">\n                     <input type=\"radio\" name=\"group5\" id=\"img-1\" checked=\"\">\n                     <li class=\"slide-container\">\n                        <a href=\"#img1\">\n                           <div class=\"slide\">\n                              <div class=\"row\">\n                                 <div class=\"dflex\">\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>8***0 (90)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Received the camera very quickly. It was packaged well and secured with nothing broken upon arrival. Everything looked just like the photos and i feel as if i got a great price for what i received. Highly recommend this seller! Thank you</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>n***6 (15)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Great seller, item arrived as described, excellent communication and packaging, highly recommend!</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>x***e (1539)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Item as described. Item well packaged. Fast shipping Great communication with seller. Highly recommended seller. I'I deal with you again.</p>\n                                       </div>\n                                    </div>\n                                 </div>\n                              </div>\n                           </div>\n                        </a>\n                     </li>\n                     <input type=\"radio\" name=\"group5\" id=\"img-2\">\n                     <li class=\"slide-container\">\n                        <a href=\"#img2\">\n                           <div class=\"slide\">\n                              <div class=\"row\">\n                                 <div class=\"dflex\">\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>a***r (146)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Great seller! The device was packaged welled and arrived before the expected date. The device was exactly as described and works perfectly. I would recommend this seller to others!</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>m***n (22)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Everything was great and price was even better! Quick shipping, packaged well, as described.</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>a***n (49)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Good price and game worked great! Game was shipped right away and was packaged safely. It was exactly as described.</p>\n                                       </div>\n                                    </div>\n                                 </div>\n                              </div>\n                           </div>\n                        </a>\n                     </li>\n                     <input type=\"radio\" name=\"group5\" id=\"img-3\">\n                     <li class=\"slide-container\">\n                        <a href=\"#img3\">\n                           <div class=\"slide\">\n                              <div class=\"row\">\n                                 <div class=\"dflex\">\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>t***k (475)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Great price, shipped quickly and with good packaging. As described, thank you!</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>j***m (49)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Shipping was fast. So well packed. Every was described to the T... The grandkids and I will have fun!! Would buy again from seller. A+++++. Thank you.</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>c***a (20)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Fast shipping, good price, and nice packaging. Would buy from again.</p>\n                                       </div>\n                                    </div>\n                                 </div>\n                              </div>\n                           </div>\n                        </a>\n                     </li>\n                     <li class=\"nav-dots\">\n                        <label for=\"img-1\" class=\"nav-dot\" id=\"img-dot-1\"></label>\n                        <label for=\"img-2\" class=\"nav-dot\" id=\"img-dot-2\"></label>\n                        <label for=\"img-3\" class=\"nav-dot\" id=\"img-dot-3\"></label> \n                     </li>\n                  </ul>\n               </div>\n            </div>\n         </div>\n           <footer> \n            <div class=\"big_footer\">\n               <div class=\"container\">\n                  <div class=\"row\">\n                      <div class=\"col-md-5 col-sm-5\">\n                              <h3>GET THE LATEST WERKO DISCOUNT &amp; NEWS</h3>\n                              <p>Want to know when your favourite products go on sale? Access exclusive discounts &amp; stay on top of the latest products. Subscribe to our mailing list for insider news, product launches, and more.</p>\n                              <button type=\"button\" class=\"btn btn-default subscribe_now\">subscribe now</button>\n                           </div>\n                    \n                     <div class=\"col-md-7 col-sm-7\">\n                        <div class=\"row\">\n                           <div class=\"col-md-4 col-sm-4\">\n                              <h3>information</h3>\n                              <ul>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/\">Store Home</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1?_tab=about\">About Us</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1?_tab=sales\">Sale</a></li>\n                                 <li><a href=\"https://www.ebay.com/fdbk/feedback_profile/ralphselectronics1?filter=feedback_page%3ARECEIVED_AS_SELLER&sort=RELEVANCE\">Customer Feedback</a></li>\n                                 <li><a href=\"https://contact.ebay.com/ws/eBayISAPI.dll?ReturnUserEmail&requested=ralphselectronics1\">Contact Seller</a></li> \n                              </ul>\n                           </div>\n                           \n                           <div class=\"col-md-4 col-sm-4\">\n                              <h3>our categories</h3>\n                              <ul>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Video-Games-Consoles/_i.html?_sacat=1249\">Video Games & Consoles</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Computers-Tablets-Networking/_i.html?_sacat=58058\">Computers/Tablets & Networking</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Consumer-Electronics/_i.html?_sacat=293\">Consumer Electronics</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Cell-Phones-Accessories/_i.html?_sacat=15032\">Cell Phones & Accessories</a></li>\n                              \n                                 \n                              </ul>\n                           </div>\n                            <div class=\"col-md-4 col-sm-4\">\n                              <h3></h3>\n                        <ul>                                      <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Cameras-Photo/_i.html?_sacat=625\">Cameras & Photo</a></li>\n\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Musical-Instruments-Gear/_i.html?_sacat=619\">Musical Instruments & Gear</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Everything-Else/_i.html?_sacat=99\">Everything Else</a></li>\n                              </ul>\n                     </div>\n                          \n                        </div>\n                     </div>\n                  </div>\n               </div>\n            </div>\n            <div class=\"small_footer\">\n               <div class=\"container\">\n                  <span>Copyright \u00c2\u00a9 Gadget Grabber 2025. All Right Reserved. &nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;Design by <b> eStoreNinja.com</b></span> \n               </div>\n            </div>\n      </footer>\n      </div>\n   </body>\n</html><div style=\"text-align:center; background:#fff; padding:5px 0px 5px 0px; clear:both; width:100%;\"><div style=\"padding-bottom:5px;\"><span>eBay integration</span> by </div><img width=\"120\" src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz//images/codisto-connect.png?width=200&amp;nostretch&amp;v=1\"/></div>"
+      },
+      {
+        "title": "Nintendo Wii U Game Pad Console WUP-010 JAPAN JPN For Parts or Not Working",
+        "item_id": "v1|267731960108|0",
+        "short_description": "",
+        "price": "25.00",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/267731960108?_skw=wii+for+parts+or+not+working&hash=item3e5611812c:g:jA4AAeSw4VJqXCa-",
+        "condition": "For parts or not working",
+        "shipping_cost": "15.00",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "40.00",
+        "description": "<font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><font style=\"\" rwr=\"1\"><div style=\"\"><span class=\"short_text\" id=\"result_box\" lang=\"en\" style=\"\"><span class=\"short_text\" lang=\"en\" style=\"\"><span class=\"short_text\" id=\"result_box\" lang=\"en\" style=\"\"><span class=\"short_text\" lang=\"en\" style=\"\"><span class=\"short_text\" lang=\"en\" style=\"\"><span id=\"result_box\" lang=\"en\" style=\"\"><span class=\"short_text\" lang=\"en\" style=\"\"><span style=\"text-align: left; text-indent: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; orphans: 2; float: none; background-color: rgb(245, 245, 245); display: inline !important;\"><font size=\"4\" style=\"\"><div style=\"font-variant-numeric: normal; font-variant-east-asian: normal; font-variant-alternates: normal; font-variant-position: normal; font-variant-emoji: normal; orphans: 2; text-align: left; text-indent: 0px;\"><span style=\"font-family: Arial;\">Shipped from Japan.</span></div></font></span></span></span></span></span></span></span></span></div><div style=\"font-family: Arial;\"><span class=\"short_text\" id=\"result_box\" lang=\"en\"><span class=\"short_text\" lang=\"en\"><span class=\"short_text\" id=\"result_box\" lang=\"en\"><span class=\"short_text\" lang=\"en\"><span class=\"short_text\" lang=\"en\"><span id=\"result_box\" lang=\"en\"><div><div><div><span class=\"short_text\" lang=\"en\"><font size=\"4\"></font><br></span></div><div><span class=\"short_text\" lang=\"en\"><span class=\"short_text\" id=\"result_box\" lang=\"en\"><font size=\"4\">Shipped by air mail.&nbsp;</font></span></span></div><div><span class=\"short_text\" lang=\"en\"><span class=\"short_text\" lang=\"en\"><font size=\"4\">There is no tracking number.</font></span></span></div></div></div></span></span></span></span></span></span></div><span class=\"short_text\" lang=\"en\" style=\"font-family: Arial;\"><span class=\"short_text\" id=\"result_box\" lang=\"en\"><div><font size=\"4\"></font><br></div><div><font rwr=\"1\" style=\"font-family: Meiryo; font-size: medium;\"><font rwr=\"1\"><font rwr=\"1\"><div style=\"font-family: Arial;\"><span class=\"short_text\" lang=\"en\"><span class=\"short_text\" lang=\"en\"><span id=\"result_box\" lang=\"en\"><font size=\"5\" color=\"#ff0010\">Payment</font></span></span></span></div><div style=\"font-family: Arial;\"><span class=\"short_text\" lang=\"en\"><span class=\"short_text\" lang=\"en\"><span lang=\"en\"><font face=\"helvetica\" size=\"4\">I accept ONLY&nbsp;</font><font style=\"font-size: x-large;\"><font face=\"helvetica\"><font style=\"font-family: Arial;\"><font face=\"helvetica\"><b><font color=\"#002cfd\">Payoneer</font>.</b></font></font></font></font></span></span></span></div></font></font></font><div style=\"font-family: Meiryo; font-size: medium;\"><b><font rwr=\"1\"><font rwr=\"1\"><font rwr=\"1\"><span class=\"short_text\" lang=\"en\"><span class=\"short_text\" lang=\"en\"><span lang=\"en\"><font face=\"helvetica\" size=\"4\">Paypal is not accepted.</font></span></span></span></font></font></font></b></div></div></span></span></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font></font>"
+      },
+      {
+        "title": "Nintendo Wii RVL-001 Black For Parts or Repair Console Only Untested",
+        "item_id": "v1|287615081317|0",
+        "short_description": "For parts/repair. Haven\u2019t tested it.",
+        "price": "26.99",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/287615081317?_skw=wii+for+parts+or+not+working&hash=item42f731db65:g:NBwAAeSwmQhquvYU&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYUQjQKRY%2Ffp32IkxJR8wRdpH6xhd1TdT4rq7rHYrcdieSexAifhqNB%2FhBgbtTirO4W9Lh%2F2jNMi9nz5IcsdVYpE2KNLgaebIgs5oXOLy49g8xlIOZ%2FOqM0QNIx%2F5yQX%2BQ2Z9WDq52A6YdpaYCJyC4ebroat5VZjmhc9csQmfP4EyDFHlO9W%2BtQNFPdrmjwiXZ2cyMFA3v5%2FZeJwp4P3TghM%2Fpc3hEzGbTqorn1ieoZ2yxl8aVPtcYjQcPfkFmXzZLvn0bLgD6bATc3pOyuoc71KDJ2F9XpDK8AGpwBPYObkS0GD%2BxUB4HOoUeyouafbmc%3D",
+        "condition": "For parts or not working",
+        "shipping_cost": "7.99",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "FIXED",
+        "total_cost": "34.98",
+        "description": "<p>For parts/repair.</p><br /><p>Haven\u2019t tested it.</p>"
+      },
+      {
+        "title": "Nintendo Wii Console for Parts or Repair",
+        "item_id": "v1|800366783869|0",
+        "short_description": "For part",
+        "price": "35.00",
+        "currency": "USD",
+        "url": "https://www.ebay.com/itm/800366783869?_skw=wii+for+parts+or+not+working&hash=itemba5993ed7d:g:9d0AAeSw6PpqW9vy&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYP7y2wyM7kWnQnzBaXtcC2MU0XbXsbMSoxPWVXLPranq3aRbwhIdNRPB26ptRehgYDai4ioF7lpW8G18aLn16QTpTN2nIQxTjJiiiPdTP0nuKGx9GHfXtakPKRnu%2FWpprc0AvEjI5%2BpfaKU3huDsGnzKPhwx%2B0Zhdbx7DqN5ihWTRodom1%2B%2BgagfVCx9TfZqJRHahEIQjqijD6IIazOyjr9IZEE8NomHn46Eq0RcYlqV86qiKTLKUcwVdMHJxEI8MSWzieNU8RIDl0u%2Bg53cXbEX6tFeZDCgsWwsDmuFBbKjGPuiicDcqPADvbAJh315o%3D",
+        "condition": "For parts or not working",
+        "shipping_cost": "22.30",
+        "shipping_currency": "USD",
+        "shipping_cost_type": "CALCULATED",
+        "total_cost": "57.30",
+        "description": "For part"
+      }
+    ],
+    "evaluations": [
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii RVL-001 Console White Bundle 3 Games - For Parts Or Not Working",
+          "item_id": "v1|189026635014|0",
+          "short_description": "Console does not work.",
+          "price": "29.99",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/189026635014?_skw=wii+for+parts+or+not+working&hash=item2c02dd8d06:g:evQAAeSwyI1qvmuq",
+          "condition": "For parts or not working",
+          "shipping_cost": "14.95",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "FIXED",
+          "total_cost": "44.94",
+          "description": "<p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;\"><font face=\"Helvetica\" size=\"4\">Console does not work. Accessories and games were tested and in good working condition.&nbsp;</font></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal;\"><font face=\"Helvetica\" size=\"4\">Shows signs of wear from being used and handled.</font></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><font size=\"4\"><br></font></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><font size=\"4\">From a nonsmoking home.</font></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><span class=\"s1\" style=\"font-kerning: none;\"><font size=\"4\">Please view all of the pictures for visual description.</font></span></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><span class=\"s1\" style=\"font-kerning: none;\"><font size=\"4\">Ask all questions before purchase.</font></span></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><span class=\"s1\" style=\"font-kerning: none;\"><font size=\"4\"><br></font></span></p><p class=\"p1\" style=\"margin: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: normal; font-family: Helvetica;\"><span class=\"s1\" style=\"font-kerning: none;\"><font size=\"4\">Check out my other listings. Thanks!</font></span></p>"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_cords_controllers",
+              "confidence": 0.76,
+              "probabilities": {
+                "console_only": 0.11,
+                "console_cords": 0.02,
+                "console_cords_controllers": 0.82,
+                "console_controllers": 0.05
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-001",
+              "confidence": 1.0,
+              "probabilities": {
+                "unknown": 0.0,
+                "RVL-101": 0.0,
+                "RVL-001": 1.0,
+                "RVL-201": 0.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "2": 0.0,
+                "5": 0.0,
+                "8": 0.0,
+                "7": 0.0,
+                "9": 0.0,
+                "10+": 0.0,
+                "3": 0.0,
+                "1": 1.0,
+                "4": 0.0,
+                "6": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.97
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.02
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii  Video Console / Black Untested For Parts or Repair / AS IS",
+          "item_id": "v1|407271617586|0",
+          "short_description": "The product being described is a Nintendo Wii video console in black color. It is a home console with a NTSC-U/C region code and features Wi-Fi capability. The console has a storage capacity of 512 MB and a resolution of 480p. It weighs 4.25 lbs and comes with Component RCA connectivity. Perfect for those looking for a Nintendo Wii to use for parts or for repair. Nintendo Wii Console in black color untested for parts or repair. This unit does not come with a charger included. With a manufacturer warranty of 1 year, this console is ideal for those with technical knowledge to fix or salvage components for their own use. What you see is what you get, as the console is being sold as is with no guarantees on its functionality.",
+          "price": "20.00",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/407271617586?_skw=wii+for+parts+or+not+working&hash=item5ed347b432:g:T~0AAeSwYa5qxVXu&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb1vL6x6LM%2FfNqPB4OxD11XxwbUvB7R4EwE7wKUJXClbfUWeL86hpTN7hScY8eq8z%2FZb90nuLhYFV4ax2M%2F7cqwwKDDZta%2B1XLqLMKBRIk70FDuAqV94py%2FgH53Sew%2BsoVX2H1Gee%2BMRhW%2B1Fs5AiluEztuGke0gp9dEn4CMFdGJBoyxtOVMljDMXavzTpy5VdmuEJ8yvZSa6zcSxQ3LmZ5NNXoNwRe5GffBBH%2BOQg1FxMPkxwTGJC1lfhnnveprfkaMWXyNszQBaTjloOC2JS0BRdod0sCBGHxkzbgtMukWyxNN3gOfVTku6iDNGapU6M%3D",
+          "condition": "For parts or not working",
+          "shipping_cost": "7.52",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "CALCULATED",
+          "total_cost": "27.52",
+          "description": "<p>The product being described is a Nintendo Wii video console in black color. It is a home console with a NTSC-U/C region code and features Wi-Fi capability. The console has a storage capacity of 512 MB and a resolution of 480p. It weighs 4.25 lbs and comes with Component RCA connectivity. Perfect for those looking for a Nintendo Wii to use for parts or for repair.</p><br /><p>Nintendo Wii Console in black color untested for parts or repair. This unit does not come with a charger included. With a manufacturer warranty of 1 year, this console is ideal for those with technical knowledge to fix or salvage components for their own use. What you see is what you get, as the console is being sold as is with no guarantees on its functionality.</p>"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 0.89,
+              "probabilities": {
+                "console_only": 0.92,
+                "console_controllers": 0.0,
+                "console_cords_controllers": 0.0,
+                "console_cords": 0.08
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "unknown",
+              "confidence": 0.45,
+              "probabilities": {
+                "RVL-101": 0.07,
+                "RVL-001": 0.33,
+                "unknown": 0.59,
+                "RVL-201": 0.01
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "9": 0.0,
+                "3": 0.0,
+                "8": 0.0,
+                "4": 0.0,
+                "2": 0.0,
+                "6": 0.0,
+                "7": 0.0,
+                "10+": 0.0,
+                "1": 1.0,
+                "5": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.02
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii White Console Only For Parts or Repair Powers On Untested Issues",
+          "item_id": "v1|920019052439|0",
+          "short_description": "Nintendo Wii White Console \u2014 For Parts or Repair. Console powers on but has known operational issues. Sold strictly for parts or repair. Console only.",
+          "price": "19.00",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/920019052439?_skw=wii+for+parts+or+not+working&hash=itemd63568a797:g:gLcAAeSwU9tqxuTR&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbF7Q9UBKWZwUQkGWKqbiCuxdB%2BVLfof%2BPWgm4QKWTLjkwguWxvf1D0%2FMvlLQpE%2BD%2BMFdsP%2B6pqzRV0ZrDwz2jBiRkbJhI7sYDuJW8gBOngP9NNcTVJr8VcpTw8dHiGUmzjNnRJ9pnToQbboRuo9k6rapYLuQ9jIRYAWx7ge97L7VXBwYRIPJkFAKa9MV0mYUGtLfVGd11A43%2B3%2F6Blm5jsf5sB3EaKSb9JX9nkX7byODSuwICxo9zFXnZ3PTM7eovss0VgE0wZ2kTGIU48eTQUTKaQDf%2Bhc%2BHwFKYwAiD%2BGmD7q2zKNPGmE6C5K9KmWdE%3D",
+          "condition": "For parts or not working",
+          "shipping_cost": "8.00",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "FIXED",
+          "total_cost": "27.00",
+          "description": "<p><b>Nintendo Wii White Console \u2014 For Parts or Repair.</b></p><br /><p><b>Console powers on but has known operational issues. The exact cause of the problems has not been determined. Full functionality is not guaranteed.</b></p><br /><p><b>Console only. No power adapter, AV cables, controllers, games, or other accessories included.</b></p><br /><p><b>Shows cosmetic wear, marks, and discoloration from previous use. Please review all photos for the exact condition.</b></p><br /><p><b>Sold strictly for parts or repair. Buyer will receive the exact console pictured.</b></p><br /><p><b>MULTI-ITEM ORDERS: Purchasing multiple items? Message us to discuss bundle discounts and possible shipping savings.</b></p><br /><p><b>Feel free to check out our store and follow us for more items!</b></p>"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_cords_controllers": 0.0,
+                "console_controllers": 0.0,
+                "console_only": 1.0,
+                "console_cords": 0.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "unknown",
+              "confidence": 0.32,
+              "probabilities": {
+                "RVL-201": 0.0,
+                "RVL-101": 0.04,
+                "RVL-001": 0.47,
+                "unknown": 0.49
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "8": 0.0,
+                "4": 0.0,
+                "7": 0.0,
+                "5": 0.0,
+                "10+": 0.0,
+                "1": 1.0,
+                "3": 0.0,
+                "9": 0.0,
+                "2": 0.0,
+                "6": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.03
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii Black Console Only RVL-001 - For Parts or Not Working Powers On",
+          "item_id": "v1|267769151352|0",
+          "short_description": "Console powers on but hasn\u2019t been tested further. Console is being sold AS-IS FOR PARTS",
+          "price": "39.99",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/267769151352?_skw=wii+for+parts+or+not+working&hash=item3e5848ff78:g:MvEAAeSwskFqkKiV",
+          "condition": "For parts or not working",
+          "shipping_cost": "0.00",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "FIXED",
+          "total_cost": "39.99",
+          "description": "<p>Console powers on but hasn\u2019t been tested further. Console is being sold AS-IS FOR PARTS</p>"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_cords_controllers": 0.0,
+                "console_controllers": 0.0,
+                "console_only": 1.0,
+                "console_cords": 0.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-001",
+              "confidence": 1.0,
+              "probabilities": {
+                "RVL-101": 0.0,
+                "RVL-001": 1.0,
+                "unknown": 0.0,
+                "RVL-201": 0.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "5": 0.0,
+                "4": 0.0,
+                "6": 0.0,
+                "10+": 0.0,
+                "7": 0.0,
+                "8": 0.0,
+                "3": 0.0,
+                "1": 1.0,
+                "9": 0.0,
+                "2": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.02
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii RVL-001 Console-Red Sold As Is Parts Or Repair. Not Sure If It Work",
+          "item_id": "v1|960025950990|0",
+          "short_description": "Nintendo Wii RVL-001 Console-Red Sold As Is Parts Or Repair. Not Sure If It Work. Condition is For parts or not working. Shipped with USPS Ground Advantage.",
+          "price": "15.99",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/960025950990?_skw=wii+for+parts+or+not+working&hash=itemdf86017b0e:g:NvMAAeSw~C5qxRg5",
+          "condition": "For parts or not working",
+          "shipping_cost": "8.00",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "FIXED",
+          "total_cost": "23.99",
+          "description": "Nintendo Wii RVL-001 Console-Red Sold As Is Parts Or Repair. Not Sure If It Work. Condition is For parts or not working. Shipped with USPS Ground Advantage. "
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_cords": 0.0,
+                "console_controllers": 0.0,
+                "console_only": 1.0,
+                "console_cords_controllers": 0.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-001",
+              "confidence": 1.0,
+              "probabilities": {
+                "RVL-101": 0.0,
+                "RVL-201": 0.0,
+                "RVL-001": 1.0,
+                "unknown": 0.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "4": 0.0,
+                "9": 0.0,
+                "3": 0.0,
+                "1": 1.0,
+                "8": 0.0,
+                "5": 0.0,
+                "2": 0.0,
+                "7": 0.0,
+                "10+": 0.0,
+                "6": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.03
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii Black Console Only RVL-001 - For Parts or Not Working Powers On",
+          "item_id": "v1|267769154749|0",
+          "short_description": "Console powers on but hasn\u2019t been tested further. Console is being sold AS-IS FOR PARTS Missing all doors",
+          "price": "39.99",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/267769154749?_skw=wii+for+parts+or+not+working&hash=item3e58490cbd:g:CB0AAeSwvW9qkKnH",
+          "condition": "For parts or not working",
+          "shipping_cost": "0.00",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "FIXED",
+          "total_cost": "39.99",
+          "description": "<p>Console powers on but hasn\u2019t been tested further. Console is being sold AS-IS FOR PARTS</p><p>Missing all doors</p>"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_only": 1.0,
+                "console_cords": 0.0,
+                "console_cords_controllers": 0.0,
+                "console_controllers": 0.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-001",
+              "confidence": 1.0,
+              "probabilities": {
+                "RVL-201": 0.0,
+                "unknown": 0.0,
+                "RVL-001": 1.0,
+                "RVL-101": 0.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "6": 0.0,
+                "2": 0.0,
+                "9": 0.0,
+                "8": 0.0,
+                "3": 0.0,
+                "1": 1.0,
+                "10+": 0.0,
+                "5": 0.0,
+                "7": 0.0,
+                "4": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.03
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii RVL-001 White Game Console System FOR PARTS OR REPAIR NOT WORKING",
+          "item_id": "v1|114400920932|0",
+          "short_description": "\u2022 You are viewing a Nintendo Wii RVL-001 console. FOR PARTS OR REPAIR not working. \u2022 Will be shipped within one business day and will come packed well and tight. Your item will be shipped Priority Mail by way of USPS. \u2022 Includes a 30 day return policy as does all my items. If you aren't satisfied with the product or anything is wrong with it, feel free to send it back. \u2022If you have any questions or would like more pictures please send me a message and I'll get back to you as soon as I can. \u2022Bid TODAY and don't let this auction pass you by. Also have a look at the other items I have up for sale. Thanks and have a great day.",
+          "price": "14.95",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/114400920932?_skw=wii+for+parts+or+not+working&hash=item1aa2d38564:g:9QAAAOSwDkJfWamx",
+          "condition": "For parts or not working",
+          "shipping_cost": "13.63",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "CALCULATED",
+          "total_cost": "28.58",
+          "description": "<p dir=\"ltr\">&#8226; You are viewing a Nintendo Wii RVL-001 console. FOR PARTS OR REPAIR not working. </p>\n<p dir=\"ltr\">&#8226; Will be shipped within one business day and will come packed well and tight. Your item will be shipped Priority Mail by way of USPS. </p>\n<p dir=\"ltr\">&#8226; Includes a 30 day return policy as does all my items. If you aren't satisfied with the product or anything is wrong with it, feel free to send it back. </p>\n<p dir=\"ltr\">&#8226;If you have any questions or would like more pictures please send me a message and I'll get back to you as soon as I can.&#160;&#160;&#160;</p>\n<p dir=\"ltr\">&#8226;Bid TODAY and don't let this auction pass you by. Also have a look at the other items I have up for sale. Thanks and have a great day.</p>"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_only": 1.0,
+                "console_cords_controllers": 0.0,
+                "console_controllers": 0.0,
+                "console_cords": 0.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-001",
+              "confidence": 1.0,
+              "probabilities": {
+                "unknown": 0.0,
+                "RVL-001": 1.0,
+                "RVL-101": 0.0,
+                "RVL-201": 0.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "2": 0.0,
+                "9": 0.0,
+                "8": 0.0,
+                "1": 1.0,
+                "7": 0.0,
+                "4": 0.0,
+                "6": 0.0,
+                "5": 0.0,
+                "10+": 0.0,
+                "3": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.03
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii RVL-001 - Console Only - DOES NOT ACCEPT DISC- For Parts Or Repair",
+          "item_id": "v1|206529325436|0",
+          "short_description": "Turns on but disc drive doesn't work.",
+          "price": "25.00",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/206529325436?_skw=wii+for+parts+or+not+working&hash=item30161b697c:g:HQsAAeSwrWpqljKG",
+          "condition": "For parts or not working",
+          "shipping_cost": "0.00",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "FIXED",
+          "total_cost": "25.00",
+          "description": "Turns on but disc drive doesn't work."
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_only": 1.0,
+                "console_cords": 0.0,
+                "console_cords_controllers": 0.0,
+                "console_controllers": 0.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-001",
+              "confidence": 1.0,
+              "probabilities": {
+                "RVL-201": 0.0,
+                "unknown": 0.0,
+                "RVL-001": 1.0,
+                "RVL-101": 0.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "6": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "8": 0.0,
+                "9": 0.0,
+                "1": 1.0,
+                "5": 0.0,
+                "10+": 0.0,
+                "7": 0.0,
+                "4": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.02
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii Family Edition RVL-101 Black\u00a0NOT WORKING FOR PARTS OR REPAIR",
+          "item_id": "v1|147372893597|0",
+          "short_description": "Nintendo Wii Family Edition RVL-101 Black NOT WORKING FOR PARTS OR REPAIR NOT WORKING FOR PARTS OR REPAIR - NOT TESTED IN ANY RESPECT true operational condition unknown. There is nothing included other then the console as shown no power supply or any other items. There is scratches and dings and signs of heavy use. NOT WORKING FOR PARTS OR REPAIR NOT WORKING FOR PARTS OR REPAIR",
+          "price": "16.99",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/147372893597?_skw=wii+for+parts+or+not+working&hash=item22501be59d:g:gvAAAeSwQhRqLj3~",
+          "condition": "For parts or not working",
+          "shipping_cost": "12.99",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "FIXED",
+          "total_cost": "29.98",
+          "description": "Nintendo Wii Family Edition RVL-101 Black NOT WORKING FOR PARTS OR REPAIR <br>NOT WORKING FOR PARTS OR REPAIR - NOT TESTED IN ANY RESPECT true operational condition unknown. There is nothing included other then the console as shown no power supply or any other items. There is scratches and dings and signs of heavy use. <br>NOT WORKING FOR PARTS OR REPAIR <br>NOT WORKING FOR PARTS OR REPAIR"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_only": 1.0,
+                "console_cords_controllers": 0.0,
+                "console_controllers": 0.0,
+                "console_cords": 0.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-101",
+              "confidence": 1.0,
+              "probabilities": {
+                "unknown": 0.0,
+                "RVL-001": 0.0,
+                "RVL-101": 1.0,
+                "RVL-201": 0.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "2": 0.0,
+                "9": 0.0,
+                "6": 0.0,
+                "1": 1.0,
+                "7": 0.0,
+                "4": 0.0,
+                "8": 0.0,
+                "5": 0.0,
+                "10+": 0.0,
+                "3": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.03
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii Console RVL-001 White 2 Wii Remotes Stand For Parts or Repair NTSC",
+          "item_id": "v1|267801324738|0",
+          "short_description": "Condition: This item is sold for parts or repair. The AV port is functional and the unit powers on successfully. Both Wii Remotes show typical handling wear; one includes a wrist strap. No power cables, AV cables, or sensor bar are included in this bundle.",
+          "price": "34.99",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/267801324738?_skw=wii+for+parts+or+not+working&hash=item3e5a33ecc2:g:OgQAAeSwmh9qv0dG&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGb7rZG70jizPlHmg%2Bi0F6YBh3d8ygqF9MuLVEqSMP2TcNHfrn5ec7kdPsVQk47dVzotdC35geDn8cfDKyl4QRH8yIE3Y6eGwHeUn1Iy%2FD2DzuqKJv3%2FgWkHV4VHK4RH7dU6aEqItnC7tEITKbwqn3rsOJLAAnAdg7DzXynYkQyx2sho4OFBVa%2BVWyGkmskdgN0N%2FoYj8zKfXyHonPAdLIPhCVgsaBlaatOUzDRWeglNhgpwlQX5SPGKyaxvC70GRaEOYSzBEjf0bYFfwsKTAZY9TC4kiUp7tqrQ%2BBEzX3PX2UeqeZ1b08R3imOcMqMn8DU%3D",
+          "condition": "For parts or not working",
+          "shipping_cost": "8.00",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "FIXED",
+          "total_cost": "42.99",
+          "description": "<!DOCTYPE html><div style=\"font-family: sans-serif\"><p><strong>Nintendo Wii Console RVL-001 Bundle</strong><br>\nNintendo Wii<br>\nWhite Model, 2000s Era</p>\n<br>\n<p>The Nintendo Wii revolutionized gaming with its motion-controlled interface, becoming one of the best-selling consoles of its generation. This RVL-001 model is specifically valued by collectors and enthusiasts for its native backward compatibility with Nintendo GameCube games and accessories, featuring dedicated controller and memory card ports under the top panel flap. While this unit requires technical attention, it remains a valuable source of authentic OEM components for the platform.</p>\n<br>\n<p>\u2022 Nintendo Wii console (Model RVL-001) in white<br>\n\u2022 Two OEM Nintendo Wii Remote controllers included<br>\n\u2022 Original gray vertical console stand<br>\n\u2022 Integrated GameCube controller and memory card ports</p>\n<br>\n<p><strong>Condition:</strong> This item is sold for parts or repair. The internal disc drive fails to read game media. The AV port is functional and the unit powers on successfully. The exterior shell shows moderate cosmetic wear, including surface scuffs and light scratches across the plastic casing. Both Wii Remotes show typical handling wear; one includes a wrist strap. No power cables, AV cables, or sensor bar are included in this bundle.</p><p></br></p><p><strong>Local Pick up:</strong></p>\n<p>We offer local pick up by <em>appointment only</em>. Please message us when you have paid for your order so that we can send you the link to book your appointment.&nbsp;</p>\n<p>Please note that we require an appointment for each order.&nbsp; We do not offer same day pick up, and require <em>2 business days notice</em> so that we can ensure that your order is ready for you.&nbsp;&nbsp;</p>\n<p>For more information, please send us a message! We currently charge a $1.99/item handling fee on all pick up items.</p>\n<p>Thank you for shopping Goodwill Southern California and for supporting our mission to provide jobs for individuals with disabilities and disadvantages. Your purchases help create jobs, hopes, and futures.</p></div>"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_controllers",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_cords": 0.0,
+                "console_cords_controllers": 0.0,
+                "console_controllers": 1.0,
+                "console_only": 0.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-001",
+              "confidence": 1.0,
+              "probabilities": {
+                "RVL-201": 0.0,
+                "unknown": 0.0,
+                "RVL-101": 0.0,
+                "RVL-001": 1.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "8": 0.0,
+                "1": 1.0,
+                "9": 0.0,
+                "4": 0.0,
+                "10+": 0.0,
+                "6": 0.0,
+                "7": 0.0,
+                "2": 0.0,
+                "5": 0.0,
+                "3": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.97
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.02
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii\u00a0(RVL-001) Console Only  For Parts or Repair  Not Working",
+          "item_id": "v1|325913648743|0",
+          "short_description": "Nintendo Wii (RVL-001) Console Only powers on not tested. See pics.",
+          "price": "19.99",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/325913648743?_skw=wii+for+parts+or+not+working&hash=item4be1f79e67:g:JpsAAOSwwoljby4H&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbU%2FgChzZElIng8yHhpwZwkB1DElGLkF9dqvRyMHIlMA5Pn6iIdDi5X7YYdQ7GFBKZ6KhlukDED5Vsdv8qgygSvkHhvlsWdwFY88lgu3JwJW9j%2B7AIHlkY4svgLLVG07p4QD1hHPq5GDQuCO9p3Rz5htUfTpPOc59inf3ToqxqvD1SM1MH2b7F55kPbfJfOskNUxeAIjthiyAuhFfJDW0%2Fzf3kMuNpUK6UOO6vqXvL7F7%2B%2FC09Y6t4Ql9QD8gVvOwsNDEdcv8Q2vbaoIm%2FKP3vehMyCuSIB2S1IuCJdUc3qUXrbnDXQIaVU5g3%2B1PkX%2Bzg%3D",
+          "condition": "For parts or not working",
+          "shipping_cost": "27.45",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "CALCULATED",
+          "total_cost": "47.44",
+          "description": "<p dir=\"ltr\" style=\"margin-top:0; margin-bottom:0;\">Nintendo Wii (RVL-001) Console Only powers on not tested. See pics. </p>"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_cords": 0.0,
+                "console_controllers": 0.0,
+                "console_cords_controllers": 0.0,
+                "console_only": 1.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-001",
+              "confidence": 1.0,
+              "probabilities": {
+                "RVL-101": 0.0,
+                "RVL-201": 0.0,
+                "RVL-001": 1.0,
+                "unknown": 0.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "4": 0.0,
+                "9": 0.0,
+                "3": 0.0,
+                "1": 1.0,
+                "8": 0.0,
+                "5": 0.0,
+                "2": 0.0,
+                "7": 0.0,
+                "10+": 0.0,
+                "6": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.03
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Lot Of 2 Consoles Nintendo Wii Rvl001 NO VIDEO  Genesis No Power PARTS OR REPAIR",
+          "item_id": "v1|257745064611|0",
+          "short_description": "These consoles are NTSC-U/C (US/Canada) region coded and manufactured in 2011. These consoles are perfect for repairing or using for parts, as they both have issues with no video output and no power.",
+          "price": "31.50",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/257745064611?_skw=wii+for+parts+or+not+working&hash=item3c02cd92a3:g:u5IAAeSwLB5qqcYf&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGbJheCLislEZIWaVYHOp519xRRpLf16T0jdAY5Niw%2BKYao6Cfi8828fpn7005YPcEKs8Ei0Xeqi6GPrwIjQW8pZpIftlb8fEYh8rUOHlzZrZayO7X3lga9z615dxEcQD8DjhZCchYOvPZOCN3PAE3%2BJRdcuGpO0tpmNX5KBl1oQl%2Bna98hZhKy5Nfx9PqYVlkIFUFsaSYMp4c61l63%2F916Ghrp2YlOiTBLkV1NrWacQdUcbTLjMJqIUWn35K4t4aRu1VKU2V9WySedBgY8HIkIH0iW4ZXYri7shSW%2BKhfaw9GEkbfNI10CMXRy%2BfFpRV1Q%3D",
+          "condition": "For parts or not working",
+          "shipping_cost": "0.00",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "FIXED",
+          "total_cost": "31.50",
+          "description": "<p><b>The product is a lot of two consoles, specifically the Wii RVL-001 model Wii with the GameCube compatibility and the Sega Genesis classic. These consoles are NTSC-U/C (US/Canada) region coded and manufactured in 2011. They come in a sleek white and black color and do not include a charger. These consoles are perfect for repairing or using for parts, as they both have issues with no video output and no power. Made by Sega and Nintendo, these home consoles offer a classic gaming experience for fans of the brand.</b></p><br /><p><b>Genesis classic no power, doa brand new right out of the box</b></p><br /><p><b>Wii powers on sounds work no video</b></p><br /><p><b>Fast secure shipping</b></p>"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_cords_controllers": 0.0,
+                "console_cords": 0.0,
+                "console_controllers": 0.0,
+                "console_only": 1.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-001",
+              "confidence": 0.99,
+              "probabilities": {
+                "RVL-201": 0.0,
+                "RVL-101": 0.0,
+                "RVL-001": 0.99,
+                "unknown": 0.01
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "2",
+              "confidence": 1.0,
+              "probabilities": {
+                "7": 0.0,
+                "6": 0.0,
+                "9": 0.0,
+                "4": 0.0,
+                "1": 0.0,
+                "3": 0.0,
+                "5": 0.0,
+                "10+": 0.0,
+                "8": 0.0,
+                "2": 1.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.86
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.02
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii (RVL-001) Console Only For Parts or Repair",
+          "item_id": "v1|407268812546|0",
+          "short_description": "This item is listed in broken condition. Wii (RVL-001). Broken(for parts or repair). Want to know when your favourite products go on sale?. Every was described to the T. The grandkids and I will have fun!",
+          "price": "24.99",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/407268812546?_skw=wii+for+parts+or+not+working&hash=item5ed31ce702:g:0TsAAeSw6XxqxCAW",
+          "condition": "For parts or not working",
+          "shipping_cost": "0.00",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "FIXED",
+          "total_cost": "24.99",
+          "description": "<div style=\"display: none;\"><h1>Nintendo Wii (RVL-001) Console Only For Parts or Repair</h1>\nNintendo Wii (RVL-001) Console Only For Parts or Repair Item Specifications Item Specifications Make Nintendo Model Wii (RVL-001) Category Video Game Consoles Condition Broken(for parts or repair) Color White Description Offered here is a Nintendo Wii video game console RVL-001 , in white. This item is listed in broken condition. Please review the provided details carefully before purchasing. Shipping &amp; Returns Shipping &amp; Returns Shipping Free shipping Returns 30 day eBay return policy, seller pays for return label </div>\n\n\n<html lang=\"en\">\n   <head>\n      <meta charset=\"utf-8\">\n      <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n      <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n      <title>Gadget Grabber</title>\n      <link rel=\"stylesheet\" href=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bootstrap.min.css?v=1745500751\">\n      <link rel=\"stylesheet\" href=\"https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css\">\n      <link rel=\"stylesheet\" href=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/style_c5c2cfa6-334c-40bd-a446-da59621bb29c.css?v=1745501345\">\n      <link rel=\"stylesheet\" href=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/responsive.css?v=1745500751\">\n      <link rel=\"stylesheet\" href=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/store.css?v=1745500751\">\n      <link rel=\"stylesheet\" href=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/gallery.css?v=1745500751\">\n      <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\n      <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n      <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n      <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n      <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n      <link href=\"https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap\" rel=\"stylesheet\">\n   </head>\n   <body>\n      <div class=\"product_detail_page\">\n         <!------header start-------> \n         <header>\n            <div class=\"middle_section\">\n               <div class=\"container\">\n                  <div class=\"dflex\">\n                     <div class=\"logo\">\n                        <a href=\"https://www.ebay.com/str/ralphselectronics1\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/images/logo.png?width=501&nostretch&etag=U3VuIE1hciAwOSAyMDI1IDIxOjAyOjUwIEdNVCswMDAwIChVVEMp\" alt=\"logo\"></a>\n                     </div>\n                     <div class=\"middle_right_section\">\n                       <div class=\"main_menu\"> \n                     <nav>\n                        <label for=\"drop\" class=\"toggle\">\n                           <p class=\"toggle_border\">\n                              <span class=\"sr-only\"></span><span class=\"icon_bar\"></span>\n                              <span class=\"icon_bar\"></span>\n                              <span class=\"icon_bar\"></span>\n                           </p>\n                        </label>\n                        <input type=\"checkbox\" id=\"drop\">   \n                        <ul class=\"menu\">\n                           \n                           <li><a href=\"https://www.ebay.com/str/ralphselectronics1\">Home</a></li>\n                           <li><a href=\"https://www.ebay.com/str/ralphselectronics1?_tab=about\">About us</a></li>\n                           <li><a href=\"https://www.ebay.com/fdbk/feedback_profile/ralphselectronics1?filter=feedback_page%3ARECEIVED_AS_SELLER&sort=RELEVANCE\">CustomerFeedback</a></li>\n                           <li><a href=\"https://contact.ebay.com/ws/eBayISAPI.dll?ReturnUserEmail&requested=ralphselectronics1\">Contact seller</a></li>\n                           <li class=\"first_menu\">\n                              <!-- First Tier Drop Down --> \n                              <label for=\"drop-1\" class=\"toggle\">\n                              <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/menu_bar.png?v=1745500849\" alt=\"menu_bar\">\n                              shop All categories \n                              </label>\n                              <a href=\"#\">\n                              <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/menu_bar.png?v=1745500849\" alt=\"menu_bar\">\n                              shop All categories \n                              </a>\n                              <input type=\"checkbox\" id=\"drop-1\"> \n                              <ul>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Video-Games-Consoles/_i.html?_sacat=1249\">Video Games & Consoles</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Computers-Tablets-Networking/_i.html?_sacat=58058\">Computers/Tablets & Networking</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Consumer-Electronics/_i.html?_sacat=293\">Consumer Electronics</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Cell-Phones-Accessories/_i.html?_sacat=15032\">Cell Phones & Accessories</a></li>\n                              \n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Cameras-Photo/_i.html?_sacat=625\">Cameras & Photo</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Musical-Instruments-Gear/_i.html?_sacat=619\">Musical Instruments & Gear</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Everything-Else/_i.html?_sacat=99\">Everything Else</a></li>\n                               \n                              </ul>\n                           </li>\n                        </ul>\n                     </nav> \n               </div>\n                     </div>\n                  </div>\n               </div>\n            </div>\n        \n         </header>\n         <!------header end------->\n         <div class=\"body_section\">\n            <div class=\"banner_section\">\n               <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/banner_img.jpg?v=1745500849\" alt=\"banner_img\">\n            </div>\n            <div class=\"bottom_section\">\n               <div class=\"container\">\n                  <div class=\"dflex\">\n                     <div class=\"bottom_box\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bottom_img1.png?v=1745500849\" alt=\"bottom_img1\">\n                        <div class=\"bottom_desc\">\n                           <span>Fast</span>\n                           <span>Shipping</span>\n                        </div>\n                     </div>\n                     <div class=\"bottom_box\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bottom_img2.png?v=1745500849\" alt=\"bottom_img2\">\n                        <div class=\"bottom_desc\">\n                           <span>30 Days Hassle</span>\n                           <span>Free Returns</span>\n                        </div>\n                     </div>\n                     <div class=\"bottom_box\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bottom_img3.png?v=1745500849\" alt=\"bottom_img3\">\n                        <div class=\"bottom_desc\">\n                           <span>eBay Money </span>\n                           <span>Back Guarantee</span>\n                        </div>\n                     </div>\n                     <div class=\"bottom_box\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bottom_img4.png?v=1745500849\" alt=\"bottom_img4\">\n                        <div class=\"bottom_desc\">\n                           <span>100% Authentic,</span>\n                           <span>Tested Products</span>\n                        </div>\n                     </div>\n                     <div class=\"bottom_box\">\n                        <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/bottom_img5.png?v=1745500849\" alt=\"bottom_img5\">\n                        <div class=\"bottom_desc\">\n                           <span>Top Products</span>\n                           <span>from Best Brands</span>\n                        </div>\n                     </div> \n                  </div>\n               </div>\n            </div>\n            <div class=\"product_gallery_section\">\n               <div class=\"container\">\n                  <div class=\"row\">\n                     <div class=\"col-md-6 col-sm-6\">\n                        <div class=\"product_gallery\">\n                           <div class=\"span12 text-center\">\n                              <!-- <a href=\"#img1\">\n                                 <img class=\"logo\" src=\"/productimages/.png?width=547&amp;etag=\">\n                                 </a> -->\n                              <div class=\"right_side_imgs\">\n                                 <a href=\"#_\" class=\"default_img_div\" id=\"img1\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767.png?width=800&amp;etag=h7ov6sT1oEw93vj4PGJGoA%3D%3D\" class=\"default_img\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img2\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_0.jpeg?etag=h7ov6sT1oEw93vj4PGJGoA%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img3\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_1.jpeg?etag=4L2oxPYm%252F5R28aVvv5eKXw%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img4\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_2.jpeg?etag=25V0QX8yws0laZX3ldoabQ%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img5\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_3.jpeg?etag=k0UU6t8fIsYyk%252B81XROb1w%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img6\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_4.jpeg?etag=f5YNlz2PLzAUE7I%252FNegceA%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img7\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_5.jpeg?etag=qTZXxK%252FU9NilD8tt%252Fp8Z7Q%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                                 <a href=\"#_\" class=\"gallery_images\" id=\"img8\">\n                                    <!-- <div class=\"close-img\">&times</div> -->\n                                    <img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_6.jpeg?etag=ypIDjQTVFdFM8rE0gVHFTg%253D%253D&amp;width=800&amp;height=600&amp;nostretch\">\n                                 </a>\n                                 \n                              </div>\n                              <div class=\"clearfix\"></div>\n                              <div class=\"bottom_imgs\">\n                                 \n                                 \n                                 <div class=\"row image-row text-center\">\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img2\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_0.jpeg?etag=h7ov6sT1oEw93vj4PGJGoA%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img3\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_1.jpeg?etag=4L2oxPYm%252F5R28aVvv5eKXw%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img4\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_2.jpeg?etag=25V0QX8yws0laZX3ldoabQ%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img5\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_3.jpeg?etag=k0UU6t8fIsYyk%252B81XROb1w%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                 </div>\n                                 \n                                 <div class=\"row image-row text-center\">\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img6\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_4.jpeg?etag=f5YNlz2PLzAUE7I%252FNegceA%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img7\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_5.jpeg?etag=qTZXxK%252FU9NilD8tt%252Fp8Z7Q%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                    <div class=\"span2\"><a class=\"image\" href=\"#img8\"><img src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz/productimages/8767_6.jpeg?etag=ypIDjQTVFdFM8rE0gVHFTg%253D%253D&amp;width=200&amp;height=200\"></a></div>\n                                    \n                                 </div>\n                                 \n                                 <br>\n                              </div>\n                           </div>\n                        </div>\n                     </div>\n                     <div class=\"col-md-6 col-sm-6\">\n                        <div class=\"product_description\">\n                           <h2>Nintendo Wii (RVL-001) Console Only For Parts or Repair</h2>\n                           <h3>$24.99</h3> \n                            <div class=\"table-responsive\">\n                                   \n                                 </div>\n                        <div class=\"button_section dflex\">\n                           <a href=\"https://www.ebay.com/str/ralphselectronics1\"><button type=\"button\" class=\"btn btn-default\"><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/button_img1.png?v=1745500849\" alt=\"button_img1\">visit store</button></a>\n                           <a href=\"https://contact.ebay.com/ws/eBayISAPI.dll?ReturnUserEmail&requested=ralphselectronics1\"><button type=\"button\" class=\"btn btn-default grey_btn\"><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/button_img2.png?v=1745500849\" alt=\"button_img2\">Contact seller</button></a>\n                           </div>\n                           <div class=\"sidemenu_btmbox\">\n\n                                 <div class=\"dflex\">\n                                    <div class=\"sidemenu_btmbox1\">\n                                       <div class=\"dflex\">\n                                    <div class=\"sidemenu_btm_img\">\n                                       <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/sidemenu_btmbox_img1.png?v=1745500849\" alt=\"sidemenu_btmbox1\">\n                                    </div>\n                                    <div class=\"sidemenu_btm_desc\"> \n                                       <span>Great Customer Service</span>\n                                    </div>\n                                 </div>\n                                 </div>\n                                 <div class=\"sidemenu_btmbox2\">\n                                 <div class=\"dflex\">\n                                    <div class=\"sidemenu_btm_img\">\n                                       <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/sidemenu_btmbox_img2.png?v=1745500849\" alt=\"sidemenu_btmbox2\">\n                                    </div>\n                                    <div class=\"sidemenu_btm_desc\"> \n                                       <span>Great Feedback</span>\n                                    </div>\n                                 </div>\n                              </div>\n                              </div>\n                        </div>\n                     </div>\n                  </div>\n               </div>\n            </div>\n         </div>\n            <div class=\"tabs_box\">\n               <div class=\"container\">\n                  <div class=\"tab_section\">\n                     <input type=\"radio\" name=\"group1\" id=\"tabone\" checked=\"checked\">\n                     <label for=\"tabone\">Product Description</label>\n                     <div class=\"tab\">\n                     <p><h2 style=\"color: #0073ea; margin-bottom: 8px;\">Nintendo Wii (RVL-001) Console Only For Parts or Repair</h2>\n<h2 style=\"color: #0073ea; margin-bottom: 8px;\">Item Specifications</h2>\n<table style=\"width: 100%; border-collapse: collapse;\">\n<tbody>\n<tr style=\"background-color: #0073ea; color: white;\">\n<th colspan=\"2\" style=\"text-align: left; padding: 8px;\">\n<div>Item Specifications</div>\n</th>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Make</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>Nintendo</div>\n</td>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Model</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>Wii (RVL-001)\u00a0</div>\n</td>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Category</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>Video Game Consoles</div>\n</td>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Condition</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>Broken(for parts or repair)</div>\n</td>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Color</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>White</div>\n</td>\n</tr>\n</tbody>\n</table>\n<h2 style=\"color: #0073ea; margin-bottom: 8px;\">Description</h2>\n<p>Offered here is a Nintendo Wii video game console RVL-001 , in white. This item is listed in broken condition. Please review the provided details carefully before purchasing.</p>\n<h2 style=\"color: #0073ea; margin-bottom: 8px;\">Shipping &amp; Returns</h2>\n<table style=\"width: 100%; border-collapse: collapse;\">\n<tbody>\n<tr style=\"background-color: #0073ea; color: white;\">\n<th colspan=\"2\" style=\"text-align: left; padding: 8px;\">\n<div>Shipping &amp; Returns</div>\n</th>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Shipping</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>Free shipping</div>\n</td>\n</tr>\n<tr>\n<td style=\"border: 1px solid #ddd; padding: 8px; color: #0073ea;\">\n<div>Returns</div>\n</td>\n<td style=\"border: 1px solid #ddd; padding: 8px;\">\n<div>30 day eBay return policy, seller pays for return label</div>\n</td>\n</tr>\n</tbody>\n</table></p>\n\n                        <div class=\"table-responsive\">\n                        \n                     </div>\n                     </div>\n                    \n                  </div>\n              \n                  <div class=\"tab_section second_tab\">\n                     <input type=\"radio\" name=\"group2\" id=\"tabfour\" checked=\"checked\">\n                     <label for=\"tabfour\">Shipping &amp; returns</label>\n                     <div class=\"tab\">\n                        <p>With any purchase from Gadget Grabber, you\u00e2re also purchasing a guaranteed satisfaction with your item and your experience. Our team members are dedicated to making it happen, but mistakes do happen. If for any reason you are not satisfied with your purchase, please contact us before installing the item.</p>\n                     </div>\n                     <input type=\"radio\" name=\"group2\" id=\"tabfive\">\n                     <label for=\"tabfive\">payment</label>\n                     <div class=\"tab\">\n                        <p>Immediate payment is required upon selecting \"Buy It Now\" or upon checking out through the cart.</p>\n\n<p>We accept payment via U.S. PayPal accounts and all Major Credit Cards, Debit Cards & Google Pay.</p>\n\n<p>We are legally required to collect sales tax in those states and localities where we maintain a physical presence (nexus).</p>\n\n<p>The applicable amount of sales tax charged to an order will be calculated based on the shipment destination's state and local sales tax laws.</p>\n\n<p>Thank you for shopping with us on eBay!</p>\n                     </div>\n                  </div> \n                   </div>\n            </div> \n            <div class=\"featured_category\">\n               <div class=\"container\">\n                  <h2>Featured Category</h2>\n                  <div class=\"dflex\">\n                     <div class=\"featured_first_block\">\n                        <div class=\"featured_category_block\">\n                           <div class=\"featured_category_abs\">\n                              <a href=\"https://www.ebay.com/usr/ralphselectronics1/Video-Games-Consoles/_i.html?_sacat=1249\">\n                              <div class=\"featured_category_box\">\n                                 <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/featured_category_img1.png?v=1745500850\" alt=\"featured_category_img1\">\n                              </div>\n                              <div class=\"featured_category_desc\">\n                                 <h3>Video Games &</h3>\n                                 <h3>Consoles</h3>\n                                 <button type=\"button\" class=\"btn shop_now\"> Shop Now</button>\n                              </div>\n                           </a>\n                           </div>\n                        </div> \n                     </div>\n                     <div class=\"featured_second_block\">\n                        <div class=\"featured_category_block\">\n                           <div class=\"dflex\">\n                              <div class=\"featured_category_abs\">\n                              <a href=\"https://www.ebay.com/usr/ralphselectronics1/Computers-Tablets-Networking/_i.html?_sacat=58058\">\n                                 <div class=\"featured_category_box\">\n                                    <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/featured_category_img2.png?v=1745500850\" alt=\"featured_category_img2\">\n                                 </div>\n                                 <div class=\"featured_category_desc\">\n                                    <h3>Computer Tablet/</h3>\n                                    <h3>Networking</h3>\n                                    <button type=\"button\" class=\"btn shop_now\"> Shop Now</button>\n                                 </div>\n                              </a>   \n                              </div>\n                              <div class=\"featured_category_abs\">\n                              <a href=\"https://www.ebay.com/usr/ralphselectronics1/Consumer-Electronics/_i.html?_sacat=293\">\n                                 <div class=\"featured_category_box\">\n                                    <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/featured_category_img3.png?v=1745500850\" alt=\"featured_category_img3\">\n                                 </div>\n                                 <div class=\"featured_category_desc\">\n                                    <h3>Consumer</h3>\n                                    <h3>Electronics</h3>\n                                    <button type=\"button\" class=\"btn shop_now\"> Shop Now</button>\n                                 </div>\n                              </a>   \n                              </div>\n                           </div>\n                        </div>\n                        <div class=\"featured_category_block\">\n                           <div class=\"dflex\">\n                              <div class=\"featured_category_abs\">\n                              <a href=\"\">\n                                 <div class=\"featured_category_box\">\n                                    <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/featured_category_img4.png?v=1745500850\" alt=\"featured_category_img4\">\n                                 </div>\n                                 <div class=\"featured_category_desc\">\n                                    <h3>Smartphones/</h3>\n                                    <h3>Cellphones</h3>\n                                    <button type=\"button\" class=\"btn shop_now\"> Shop Now</button>\n                                 </div>\n                              </a>   \n                              </div>\n                              <div class=\"featured_category_abs\">\n                              <a href=\"https://www.ebay.com/usr/ralphselectronics1/Cell-Phones-Accessories/_i.html?_sacat=15032\">\n                                 <div class=\"featured_category_box\">\n                                    <img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/featured_category_img5.png?v=1745500850\" alt=\"featured_category_img5\">\n                                 </div>\n                                 <div class=\"featured_category_desc\">\n                                    <h3>Cell Phones &</h3>\n                                    <h3>Accessories </h3>\n                                    <button type=\"button\" class=\"btn shop_now\"> Shop Now</button>\n                                 </div>\n                              </a>   \n                              </div>\n                           </div>\n                        </div>\n                     </div>\n                  </div>\n               </div>\n            </div>  \n            <div class=\"customer_testimonial\">\n               <div class=\"container\">\n                  <h2>CUSTOMER REVIEWS</h2>\n                  <ul class=\"customer_slides\" id=\"group5\">\n                     <input type=\"radio\" name=\"group5\" id=\"img-1\" checked=\"\">\n                     <li class=\"slide-container\">\n                        <a href=\"#img1\">\n                           <div class=\"slide\">\n                              <div class=\"row\">\n                                 <div class=\"dflex\">\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>8***0 (90)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Received the camera very quickly. It was packaged well and secured with nothing broken upon arrival. Everything looked just like the photos and i feel as if i got a great price for what i received. Highly recommend this seller! Thank you</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>n***6 (15)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Great seller, item arrived as described, excellent communication and packaging, highly recommend!</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>x***e (1539)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Item as described. Item well packaged. Fast shipping Great communication with seller. Highly recommended seller. I'I deal with you again.</p>\n                                       </div>\n                                    </div>\n                                 </div>\n                              </div>\n                           </div>\n                        </a>\n                     </li>\n                     <input type=\"radio\" name=\"group5\" id=\"img-2\">\n                     <li class=\"slide-container\">\n                        <a href=\"#img2\">\n                           <div class=\"slide\">\n                              <div class=\"row\">\n                                 <div class=\"dflex\">\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>a***r (146)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Great seller! The device was packaged welled and arrived before the expected date. The device was exactly as described and works perfectly. I would recommend this seller to others!</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>m***n (22)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Everything was great and price was even better! Quick shipping, packaged well, as described.</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>a***n (49)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Good price and game worked great! Game was shipped right away and was packaged safely. It was exactly as described.</p>\n                                       </div>\n                                    </div>\n                                 </div>\n                              </div>\n                           </div>\n                        </a>\n                     </li>\n                     <input type=\"radio\" name=\"group5\" id=\"img-3\">\n                     <li class=\"slide-container\">\n                        <a href=\"#img3\">\n                           <div class=\"slide\">\n                              <div class=\"row\">\n                                 <div class=\"dflex\">\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>t***k (475)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Great price, shipped quickly and with good packaging. As described, thank you!</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>j***m (49)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Shipping was fast. So well packed. Every was described to the T... The grandkids and I will have fun!! Would buy again from seller. A+++++. Thank you.</p>\n                                       </div>\n                                    </div>\n                                    <div class=\"col-md-4 col-sm-4\">\n                                       <div class=\"customer_block\">\n                                          <h6>c***a (20)</h6>\n                                          <div class=\"star_icons\">\n                                             <ul>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                                <li><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/star_icon_d2ce85cb-476d-403f-a890-1cbda76b8f5b.jpg?v=1745500849\" alt=\"star_icon\"></li>\n                                             </ul>\n                                          </div>\n                                          <h3><img src=\"https://cdn.shopify.com/s/files/1/0698/2451/2152/files/badge.jpg?v=1745500849\" alt=\"badge\"> Verified purchase</h3>\n                                          <p>Fast shipping, good price, and nice packaging. Would buy from again.</p>\n                                       </div>\n                                    </div>\n                                 </div>\n                              </div>\n                           </div>\n                        </a>\n                     </li>\n                     <li class=\"nav-dots\">\n                        <label for=\"img-1\" class=\"nav-dot\" id=\"img-dot-1\"></label>\n                        <label for=\"img-2\" class=\"nav-dot\" id=\"img-dot-2\"></label>\n                        <label for=\"img-3\" class=\"nav-dot\" id=\"img-dot-3\"></label> \n                     </li>\n                  </ul>\n               </div>\n            </div>\n         </div>\n           <footer> \n            <div class=\"big_footer\">\n               <div class=\"container\">\n                  <div class=\"row\">\n                      <div class=\"col-md-5 col-sm-5\">\n                              <h3>GET THE LATEST WERKO DISCOUNT &amp; NEWS</h3>\n                              <p>Want to know when your favourite products go on sale? Access exclusive discounts &amp; stay on top of the latest products. Subscribe to our mailing list for insider news, product launches, and more.</p>\n                              <button type=\"button\" class=\"btn btn-default subscribe_now\">subscribe now</button>\n                           </div>\n                    \n                     <div class=\"col-md-7 col-sm-7\">\n                        <div class=\"row\">\n                           <div class=\"col-md-4 col-sm-4\">\n                              <h3>information</h3>\n                              <ul>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/\">Store Home</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1?_tab=about\">About Us</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1?_tab=sales\">Sale</a></li>\n                                 <li><a href=\"https://www.ebay.com/fdbk/feedback_profile/ralphselectronics1?filter=feedback_page%3ARECEIVED_AS_SELLER&sort=RELEVANCE\">Customer Feedback</a></li>\n                                 <li><a href=\"https://contact.ebay.com/ws/eBayISAPI.dll?ReturnUserEmail&requested=ralphselectronics1\">Contact Seller</a></li> \n                              </ul>\n                           </div>\n                           \n                           <div class=\"col-md-4 col-sm-4\">\n                              <h3>our categories</h3>\n                              <ul>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Video-Games-Consoles/_i.html?_sacat=1249\">Video Games & Consoles</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Computers-Tablets-Networking/_i.html?_sacat=58058\">Computers/Tablets & Networking</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Consumer-Electronics/_i.html?_sacat=293\">Consumer Electronics</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Cell-Phones-Accessories/_i.html?_sacat=15032\">Cell Phones & Accessories</a></li>\n                              \n                                 \n                              </ul>\n                           </div>\n                            <div class=\"col-md-4 col-sm-4\">\n                              <h3></h3>\n                        <ul>                                      <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Cameras-Photo/_i.html?_sacat=625\">Cameras & Photo</a></li>\n\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Musical-Instruments-Gear/_i.html?_sacat=619\">Musical Instruments & Gear</a></li>\n                                 <li><a href=\"https://www.ebay.com/str/ralphselectronics1/Everything-Else/_i.html?_sacat=99\">Everything Else</a></li>\n                              </ul>\n                     </div>\n                          \n                        </div>\n                     </div>\n                  </div>\n               </div>\n            </div>\n            <div class=\"small_footer\">\n               <div class=\"container\">\n                  <span>Copyright \u00c2\u00a9 Gadget Grabber 2025. All Right Reserved. &nbsp;&nbsp;&nbsp;  | &nbsp;&nbsp;&nbsp;Design by <b> eStoreNinja.com</b></span> \n               </div>\n            </div>\n      </footer>\n      </div>\n   </body>\n</html><div style=\"text-align:center; background:#fff; padding:5px 0px 5px 0px; clear:both; width:100%;\"><div style=\"padding-bottom:5px;\"><span>eBay integration</span> by </div><img width=\"120\" src=\"https://d31wxntiwn0x96.cloudfront.net/fmnfbz//images/codisto-connect.png?width=200&amp;nostretch&amp;v=1\"/></div>"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_cords": 0.0,
+                "console_cords_controllers": 0.0,
+                "console_controllers": 0.0,
+                "console_only": 1.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-001",
+              "confidence": 1.0,
+              "probabilities": {
+                "RVL-001": 1.0,
+                "unknown": 0.0,
+                "RVL-201": 0.0,
+                "RVL-101": 0.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "3": 0.0,
+                "1": 1.0,
+                "7": 0.0,
+                "9": 0.0,
+                "2": 0.0,
+                "6": 0.0,
+                "5": 0.0,
+                "8": 0.0,
+                "4": 0.0,
+                "10+": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.03
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii RVL-001 Black For Parts or Repair Console Only Untested",
+          "item_id": "v1|287615081317|0",
+          "short_description": "For parts/repair. Haven\u2019t tested it.",
+          "price": "26.99",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/287615081317?_skw=wii+for+parts+or+not+working&hash=item42f731db65:g:NBwAAeSwmQhquvYU&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYUQjQKRY%2Ffp32IkxJR8wRdpH6xhd1TdT4rq7rHYrcdieSexAifhqNB%2FhBgbtTirO4W9Lh%2F2jNMi9nz5IcsdVYpE2KNLgaebIgs5oXOLy49g8xlIOZ%2FOqM0QNIx%2F5yQX%2BQ2Z9WDq52A6YdpaYCJyC4ebroat5VZjmhc9csQmfP4EyDFHlO9W%2BtQNFPdrmjwiXZ2cyMFA3v5%2FZeJwp4P3TghM%2Fpc3hEzGbTqorn1ieoZ2yxl8aVPtcYjQcPfkFmXzZLvn0bLgD6bATc3pOyuoc71KDJ2F9XpDK8AGpwBPYObkS0GD%2BxUB4HOoUeyouafbmc%3D",
+          "condition": "For parts or not working",
+          "shipping_cost": "7.99",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "FIXED",
+          "total_cost": "34.98",
+          "description": "<p>For parts/repair.</p><br /><p>Haven\u2019t tested it.</p>"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_cords_controllers": 0.0,
+                "console_cords": 0.0,
+                "console_controllers": 0.0,
+                "console_only": 1.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "RVL-001",
+              "confidence": 1.0,
+              "probabilities": {
+                "RVL-201": 0.0,
+                "RVL-101": 0.0,
+                "RVL-001": 1.0,
+                "unknown": 0.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "7": 0.0,
+                "6": 0.0,
+                "10+": 0.0,
+                "4": 0.0,
+                "1": 1.0,
+                "3": 0.0,
+                "8": 0.0,
+                "9": 0.0,
+                "5": 0.0,
+                "2": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.98
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.03
+            }
+          },
+          "scores": {}
+        }
+      },
+      {
+        "product": "wii",
+        "listing": {
+          "title": "Nintendo Wii Console for Parts or Repair",
+          "item_id": "v1|800366783869|0",
+          "short_description": "For part",
+          "price": "35.00",
+          "currency": "USD",
+          "url": "https://www.ebay.com/itm/800366783869?_skw=wii+for+parts+or+not+working&hash=itemba5993ed7d:g:9d0AAeSw6PpqW9vy&amdata=enc%3AAQALAAABAACCtXRWQnOEpyOqnQQ8KGYP7y2wyM7kWnQnzBaXtcC2MU0XbXsbMSoxPWVXLPranq3aRbwhIdNRPB26ptRehgYDai4ioF7lpW8G18aLn16QTpTN2nIQxTjJiiiPdTP0nuKGx9GHfXtakPKRnu%2FWpprc0AvEjI5%2BpfaKU3huDsGnzKPhwx%2B0Zhdbx7DqN5ihWTRodom1%2B%2BgagfVCx9TfZqJRHahEIQjqijD6IIazOyjr9IZEE8NomHn46Eq0RcYlqV86qiKTLKUcwVdMHJxEI8MSWzieNU8RIDl0u%2Bg53cXbEX6tFeZDCgsWwsDmuFBbKjGPuiicDcqPADvbAJh315o%3D",
+          "condition": "For parts or not working",
+          "shipping_cost": "22.30",
+          "shipping_currency": "USD",
+          "shipping_cost_type": "CALCULATED",
+          "total_cost": "57.30",
+          "description": "For part"
+        },
+        "decision": {
+          "choices": {
+            "included_in_listing": {
+              "type": "choice",
+              "choice": "console_only",
+              "confidence": 1.0,
+              "probabilities": {
+                "console_cords_controllers": 0.0,
+                "console_controllers": 0.0,
+                "console_only": 1.0,
+                "console_cords": 0.0
+              }
+            },
+            "model_number": {
+              "type": "choice",
+              "choice": "unknown",
+              "confidence": 0.89,
+              "probabilities": {
+                "RVL-001": 0.07,
+                "RVL-101": 0.01,
+                "unknown": 0.92,
+                "RVL-201": 0.0
+              }
+            },
+            "number_of_consoles": {
+              "type": "choice",
+              "choice": "1",
+              "confidence": 1.0,
+              "probabilities": {
+                "9": 0.0,
+                "4": 0.0,
+                "6": 0.0,
+                "5": 0.0,
+                "7": 0.0,
+                "8": 0.0,
+                "3": 0.0,
+                "1": 1.0,
+                "10+": 0.0,
+                "2": 0.0
+              }
+            }
+          },
+          "nouls": {
+            "correct_product": {
+              "type": "noul",
+              "noul": 0.97
+            },
+            "water_damage": {
+              "type": "noul",
+              "noul": 0.03
+            }
+          },
+          "scores": {}
+        }
+      }
+    ]
+  }
+}
