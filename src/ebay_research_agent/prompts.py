@@ -12,20 +12,6 @@ SYSTEM_PROMPT = (
     "fails, base your answer only on what you already know."
 )
 
-EBAY_SYSTEM_PROMPT = (
-    "You search eBay for 'for parts or not working' game console listings that "
-    "could be profitable to buy, repair, or part out. Given a console, its "
-    "common issues, and a blurb describing what to look for, decide a price "
-    "range where the listing is cheap enough to make a profit. Use the "
-    "search_ebay_for_parts tool to find listings within that range. Judge "
-    "profitability by the total cost (item price plus shipping), not just the "
-    "item price. Then report each listing with its title, price, shipping cost, "
-    "total cost, and URL. If the search returns no results, say so."
-)
-
-EBAY_TOOL_NAME = "search_ebay_for_parts"
-
-
 def issues_prompt(product: str) -> str:
     return (
         f"Console: {product}\n\n"

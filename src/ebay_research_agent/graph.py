@@ -8,6 +8,7 @@ from ebay_research_agent.models import IssuesResult, JudgementBatch, get_model
 from ebay_research_agent.nodes import (
     aggregate,
     build_evaluate_listing_node,
+    build_get_ebay_listings_node,
     build_product_worker_node,
     build_sold_summary_node,
     fan_out_listings,
@@ -15,7 +16,8 @@ from ebay_research_agent.nodes import (
     join_listings,
     split_by_product,
 )
-from ebay_research_agent.prompts import EBAY_SYSTEM_PROMPT, SYSTEM_PROMPT
+from ebay_research_agent.nodes.get_ebay_listing import EBAY_SYSTEM_PROMPT
+from ebay_research_agent.prompts import SYSTEM_PROMPT
 from ebay_research_agent.state import IssuesState, IssuesState_v2
 
 
@@ -24,13 +26,15 @@ def fan_out(state: IssuesState) -> list[Send]:
         Send("sold_summary", {"product": product}) for product in state["products"]
     ]
 
-def build_graph_v2() -> CompiledStateGraph:
+def build_graph_v2(ebay_tools: list) -> CompiledStateGraph:
     builder = StateGraph(IssuesState_v2)
 
     builder.add_node("get_product_info", get_product_info)
+    builder.add_node("get_ebay_listings", build_get_ebay_listings_node(ebay_tools))
 
     builder.add_conditional_edges(START, split_by_product)
-    builder.add_edge("get_product_info", END)
+    builder.add_edge("get_product_info", "get_ebay_listings")
+    builder.add_edge("get_ebay_listings", END)
 
     return builder.compile()
 

@@ -1,6 +1,9 @@
+import asyncio
+import json
 import sqlite3
 
 import pytest
+from langchain_core.messages import ToolMessage
 
 from ebay_research_agent.config import get_settings
 from ebay_research_agent.graph import fan_out
@@ -9,6 +12,13 @@ from ebay_research_agent.nodes import (
     format_output,
     get_product_info,
     group_by_product,
+)
+from ebay_research_agent.nodes.get_ebay_listing import (
+    EBAY_SYSTEM_PROMPT,
+    EBAY_TOOL_NAME,
+    build_ebay_prompt,
+    build_get_ebay_listings_node,
+    extract_items,
 )
 from ebay_research_agent.prompts import issues_prompt
 
@@ -142,3 +152,71 @@ def test_group_by_product_groups_entries() -> None:
         ],
         "switch": [{"product": "switch", "issue": "drift"}],
     }
+
+
+def test_build_ebay_prompt_mentions_product_issues_and_blurb() -> None:
+    prompt = build_ebay_prompt("wii", ["no power", "disc drive"], "look for dead drives")
+    assert "wii" in prompt
+    assert "no power" in prompt
+    assert "disc drive" in prompt
+    assert "look for dead drives" in prompt
+
+
+def test_extract_items_parses_only_ebay_tool_messages() -> None:
+    messages = [
+        ToolMessage(
+            content=json.dumps([{"title": "Broken Wii", "price": "20.00"}]),
+            name=EBAY_TOOL_NAME,
+            tool_call_id="1",
+        ),
+        ToolMessage(content="not json", name=EBAY_TOOL_NAME, tool_call_id="2"),
+        ToolMessage(content='{"not": "a list"}', name=EBAY_TOOL_NAME, tool_call_id="3"),
+        ToolMessage(
+            content=json.dumps([{"title": "other"}]),
+            name="other_tool",
+            tool_call_id="4",
+        ),
+    ]
+    assert extract_items(messages) == [{"title": "Broken Wii", "price": "20.00"}]
+
+
+def test_get_ebay_listings_node_returns_listings_by_product(monkeypatch) -> None:
+    captured: dict = {}
+
+    class FakeAgent:
+        async def ainvoke(self, state):
+            captured["content"] = state["messages"][-1].content
+            return {
+                "messages": [
+                    ToolMessage(
+                        content=json.dumps([{"title": "Broken Wii", "url": "u1"}]),
+                        name=EBAY_TOOL_NAME,
+                        tool_call_id="1",
+                    )
+                ]
+            }
+
+    def fake_create_react_agent(model, tools, prompt=None):
+        captured["system"] = prompt
+        return FakeAgent()
+
+    monkeypatch.setattr(
+        "ebay_research_agent.nodes.get_ebay_listing.create_react_agent",
+        fake_create_react_agent,
+    )
+
+    node = build_get_ebay_listings_node([])
+    result = asyncio.run(
+        node(
+            {
+                "product": "wii",
+                "product_info": {"wii": {"issues": ["no power"], "blurb": "blurb"}},
+            }
+        )
+    )
+
+    assert result["product"] == "wii"
+    assert result["listings"] == {"wii": [{"title": "Broken Wii", "url": "u1"}]}
+    assert "wii" in captured["content"]
+    assert "no power" in captured["content"]
+    assert captured["system"] == EBAY_SYSTEM_PROMPT

@@ -1,30 +1,13 @@
-import json
 from collections.abc import Awaitable, Callable
 from itertools import batched
 
-from langchain_core.messages import HumanMessage, ToolMessage
+from langchain_core.messages import HumanMessage
 
-from ebay_research_agent.prompts import (
-    EBAY_TOOL_NAME,
-    issues_prompt,
-    judgement_prompt,
-)
+from ebay_research_agent.nodes.get_ebay_listing import build_ebay_prompt, extract_items
+from ebay_research_agent.prompts import issues_prompt, judgement_prompt
 from ebay_research_agent.state import IssuesState
 
 Node = Callable[[IssuesState], Awaitable[dict]]
-
-
-def extract_items(messages: list) -> list[dict]:
-    items: list[dict] = []
-    for message in messages:
-        if isinstance(message, ToolMessage) and message.name == EBAY_TOOL_NAME:
-            try:
-                parsed = json.loads(message.content)
-            except (json.JSONDecodeError, TypeError):
-                continue
-            if isinstance(parsed, list):
-                items.extend(parsed)
-    return items
 
 
 def build_product_worker_node(
@@ -54,15 +37,7 @@ def build_product_worker_node(
         issues = structured.issues if structured is not None else []
         blurb = structured.blurb if structured is not None else ""
 
-        ebay_prompt = (
-            f"Console: {product}\n\n"
-            f"Common issues:\n"
-            + "\n".join(f"- {issue}" for issue in issues)
-            + f"\n\nFor-parts blurb:\n{blurb}\n\n"
-            f"Find 'for parts or not working' listings for this console within a "
-            f"profitable price range (accounting for shipping), and report each "
-            f"listing's title, price, shipping cost, total cost, and URL."
-        )
+        ebay_prompt = build_ebay_prompt(product, issues, blurb)
         ebay_result = await ebay_agent.ainvoke(
             {"messages": [HumanMessage(content=ebay_prompt)]}
         )
