@@ -7,17 +7,20 @@ from ebay_research_agent.config import get_settings
 
 DEFAULT_SOLD_VALUES_PATH = Path(__file__).parent / "data" / "sold_values.db"
 
-_COLUMNS = ("console", "console_code", "description", "total_price")
+_COLUMNS = ("product", "version", "shortDescription", "totalPrice", "numberOfProducts")
 
 _SCHEMA = """
 CREATE TABLE IF NOT EXISTS sold_values (
-    id           INTEGER PRIMARY KEY AUTOINCREMENT,
-    console      TEXT NOT NULL,
-    console_code TEXT NOT NULL,
-    description  TEXT NOT NULL DEFAULT '',
-    total_price  REAL NOT NULL
+    id               INTEGER PRIMARY KEY AUTOINCREMENT,
+    product          TEXT NOT NULL,
+    version          TEXT NOT NULL,
+    shortDescription TEXT NOT NULL DEFAULT '',
+    totalPrice       REAL NOT NULL,
+    numberOfProducts INTEGER NOT NULL DEFAULT 1
 );
 """
+
+_OLD_COLUMNS = ("console", "console_code", "description", "total_price")
 
 
 def _resolve_path(path: str) -> Path:
@@ -42,26 +45,27 @@ def load_sold_values() -> list[dict]:
     path = _resolve_path(settings.sold_values_path)
     with _connect(path) as connection:
         rows = connection.execute(
-            "SELECT console, console_code, description, total_price "
+            "SELECT product, version, shortDescription, totalPrice, numberOfProducts "
             "FROM sold_values ORDER BY id"
         ).fetchall()
     return [dict(zip(_COLUMNS, row)) for row in rows]
 
 
 def comps_for(product: str) -> list[dict]:
-    return [record for record in load_sold_values() if record["console"] == product]
+    return [record for record in load_sold_values() if record["product"] == product]
 
 
 def sold_records_for(product: str) -> list[dict]:
     settings = get_settings()
     path = _resolve_path(settings.sold_values_path)
+    columns = _COLUMNS[1:]
     with _connect(path) as connection:
         rows = connection.execute(
-            "SELECT console_code, description, total_price "
-            "FROM sold_values WHERE console = ? ORDER BY id",
+            "SELECT version, shortDescription, totalPrice, numberOfProducts "
+            "FROM sold_values WHERE product = ? ORDER BY id",
             (product,),
         ).fetchall()
-    return [dict(zip(("console_code", "description", "total_price"), row)) for row in rows]
+    return [dict(zip(columns, row)) for row in rows]
 
 
 def _price_stats(prices: list[float]) -> dict:
@@ -76,26 +80,83 @@ def _price_stats(prices: list[float]) -> dict:
     }
 
 
-def summarize_sold_values(records: list[dict]) -> dict:
-    prices = [r["total_price"] for r in records if r["total_price"] is not None]
+def _unit_price(record: dict) -> float | None:
+    total = record.get("totalPrice")
+    if total is None:
+        return None
+    try:
+        count = int(record.get("numberOfProducts") or 1)
+    except (TypeError, ValueError):
+        count = 1
+    if count <= 0:
+        return total
+    return total / count
 
-    by_model: dict[str, list[float]] = defaultdict(list)
+
+def summarize_sold_values(records: list[dict]) -> dict:
+    unit_prices = [
+        unit_price for record in records if (unit_price := _unit_price(record)) is not None
+    ]
+
+    by_version: dict[str, list[float]] = defaultdict(list)
     for record in records:
-        if record["total_price"] is not None:
-            by_model[record["console_code"]].append(record["total_price"])
+        unit_price = _unit_price(record)
+        if unit_price is not None:
+            by_version[record["version"]].append(unit_price)
 
     descriptions: list[str] = []
     seen: set[str] = set()
     for record in records:
-        text = (record.get("description") or "").strip()
+        text = (record.get("shortDescription") or "").strip()
         if text and text not in seen:
             seen.add(text)
             descriptions.append(text)
 
+    total_products = sum(int(r.get("numberOfProducts") or 1) for r in records)
+
     return {
-        **_price_stats(prices),
-        "by_model": {
-            code: _price_stats(values) for code, values in sorted(by_model.items())
+        **_price_stats(unit_prices),
+        "listingCount": len(records),
+        "totalProducts": total_products,
+        "by_version": {
+            code: _price_stats(values) for code, values in sorted(by_version.items())
         },
         "descriptions": descriptions,
     }
+
+
+def migrate_sold_values(path: Path) -> bool:
+    connection = sqlite3.connect(path)
+    try:
+        columns = {
+            row[1] for row in connection.execute("PRAGMA table_info(sold_values)")
+        }
+        if "product" in columns:
+            return False
+        if not set(_OLD_COLUMNS).issubset(columns):
+            raise ValueError(f"Unexpected sold_values schema: {sorted(columns)}")
+
+        connection.execute(
+            "CREATE TABLE sold_values_new ("
+            "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+            "product TEXT NOT NULL,"
+            "version TEXT NOT NULL,"
+            "shortDescription TEXT NOT NULL DEFAULT '',"
+            "totalPrice REAL NOT NULL,"
+            "numberOfProducts INTEGER NOT NULL DEFAULT 1)"
+        )
+        connection.execute(
+            "INSERT INTO sold_values_new "
+            "(id, product, version, shortDescription, totalPrice, numberOfProducts) "
+            "SELECT id, console, console_code, description, total_price, 1 "
+            "FROM sold_values ORDER BY id"
+        )
+        connection.execute("DROP TABLE sold_values")
+        connection.execute("ALTER TABLE sold_values_new RENAME TO sold_values")
+        connection.execute(
+            "DELETE FROM sqlite_sequence WHERE name IN ('sold_values', 'sold_values_new')"
+        )
+        connection.commit()
+        return True
+    finally:
+        connection.close()

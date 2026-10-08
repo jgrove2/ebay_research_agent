@@ -20,18 +20,20 @@ def seeded_db(tmp_path, monkeypatch):
     conn.execute(
         "CREATE TABLE sold_values ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT,"
-        "console TEXT NOT NULL,"
-        "console_code TEXT NOT NULL,"
-        "description TEXT NOT NULL DEFAULT '',"
-        "total_price REAL NOT NULL)"
+        "product TEXT NOT NULL,"
+        "version TEXT NOT NULL,"
+        "shortDescription TEXT NOT NULL DEFAULT '',"
+        "totalPrice REAL NOT NULL,"
+        "numberOfProducts INTEGER NOT NULL DEFAULT 1)"
     )
     conn.executemany(
-        "INSERT INTO sold_values (console, console_code, description, total_price) "
-        "VALUES (?, ?, ?, ?)",
+        "INSERT INTO sold_values "
+        "(product, version, shortDescription, totalPrice, numberOfProducts) "
+        "VALUES (?, ?, ?, ?, ?)",
         [
-            ("wii", "RVL-001", "console only", 40.0),
-            ("wii", "RVL-101", "console + cables", 50.0),
-            ("switch", "HAC-001", "console + dock", 150.0),
+            ("wii", "RVL-001", "console only", 40.0, 1),
+            ("wii", "RVL-101", "console + cables", 50.0, 1),
+            ("switch", "HAC-001", "console + dock", 150.0, 1),
         ],
     )
     conn.commit()
@@ -81,8 +83,8 @@ def test_get_product_info_mocks_and_loads_sold_data(seeded_db) -> None:
     assert result["product_info"]["wii"] == {"issues": [], "blurb": ""}
     records = result["sold_product_data"]["wii"]
     assert records
-    assert all("console" not in record for record in records)
-    assert {record["console_code"] for record in records} == {"RVL-001", "RVL-101"}
+    assert all("product" not in record for record in records)
+    assert {record["version"] for record in records} == {"RVL-001", "RVL-101"}
 
 
 def test_issues_prompt_mentions_product() -> None:

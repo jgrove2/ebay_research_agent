@@ -18,18 +18,20 @@ def seeded_db(tmp_path, monkeypatch):
     conn.execute(
         "CREATE TABLE sold_values ("
         "id INTEGER PRIMARY KEY AUTOINCREMENT,"
-        "console TEXT NOT NULL,"
-        "console_code TEXT NOT NULL,"
-        "description TEXT NOT NULL DEFAULT '',"
-        "total_price REAL NOT NULL)"
+        "product TEXT NOT NULL,"
+        "version TEXT NOT NULL,"
+        "shortDescription TEXT NOT NULL DEFAULT '',"
+        "totalPrice REAL NOT NULL,"
+        "numberOfProducts INTEGER NOT NULL DEFAULT 1)"
     )
     conn.executemany(
-        "INSERT INTO sold_values (console, console_code, description, total_price) "
-        "VALUES (?, ?, ?, ?)",
+        "INSERT INTO sold_values "
+        "(product, version, shortDescription, totalPrice, numberOfProducts) "
+        "VALUES (?, ?, ?, ?, ?)",
         [
-            ("wii", "RVL-001", "console only", 40.0),
-            ("wii", "RVL-101", "console + cables", 50.0),
-            ("switch", "HAC-001", "console + dock", 150.0),
+            ("wii", "RVL-001", "console only", 40.0, 1),
+            ("wii", "RVL-101", "console + cables", 50.0, 1),
+            ("switch", "HAC-001", "console + dock", 150.0, 1),
         ],
     )
     conn.commit()
@@ -42,30 +44,30 @@ def seeded_db(tmp_path, monkeypatch):
 def test_load_sold_values_returns_records(seeded_db) -> None:
     records = load_sold_values()
     assert isinstance(records, list)
-    assert all("console" in record for record in records)
-    assert all("total_price" in record for record in records)
+    assert all("product" in record for record in records)
+    assert all("totalPrice" in record for record in records)
 
 
-def test_comps_for_filters_by_console(seeded_db) -> None:
+def test_comps_for_filters_by_product(seeded_db) -> None:
     records = comps_for("wii")
     assert records
-    assert all(record["console"] == "wii" for record in records)
-    assert {record["console_code"] for record in records} == {"RVL-001", "RVL-101"}
+    assert all(record["product"] == "wii" for record in records)
+    assert {record["version"] for record in records} == {"RVL-001", "RVL-101"}
 
 
 def test_comps_for_unknown_console_empty(seeded_db) -> None:
     assert comps_for("nonexistent") == []
 
 
-def test_sold_records_for_filters_and_drops_console(seeded_db) -> None:
+def test_sold_records_for_filters_and_drops_product(seeded_db) -> None:
     records = sold_records_for("wii")
     assert records
-    assert all("console" not in record for record in records)
+    assert all("product" not in record for record in records)
     assert all(
-        set(record) == {"console_code", "description", "total_price"}
+        set(record) == {"version", "shortDescription", "totalPrice", "numberOfProducts"}
         for record in records
     )
-    assert {record["console_code"] for record in records} == {"RVL-001", "RVL-101"}
+    assert {record["version"] for record in records} == {"RVL-001", "RVL-101"}
 
 
 def test_sold_records_for_unknown_console_empty(seeded_db) -> None:
@@ -74,9 +76,9 @@ def test_sold_records_for_unknown_console_empty(seeded_db) -> None:
 
 def test_summarize_sold_values_stats() -> None:
     records = [
-        {"console": "wii", "console_code": "RVL-001", "description": "console only", "total_price": 40.0},
-        {"console": "wii", "console_code": "RVL-001", "description": "console only", "total_price": 60.0},
-        {"console": "wii", "console_code": "RVL-101", "description": "console + cables", "total_price": 50.0},
+        {"product": "wii", "version": "RVL-001", "shortDescription": "console only", "totalPrice": 40.0, "numberOfProducts": 1},
+        {"product": "wii", "version": "RVL-001", "shortDescription": "console only", "totalPrice": 120.0, "numberOfProducts": 2},
+        {"product": "wii", "version": "RVL-101", "shortDescription": "console + cables", "totalPrice": 50.0, "numberOfProducts": 1},
     ]
     summary = summarize_sold_values(records)
     assert summary["count"] == 3
@@ -84,9 +86,11 @@ def test_summarize_sold_values_stats() -> None:
     assert summary["median"] == 50.0
     assert summary["min"] == 40.0
     assert summary["max"] == 60.0
-    assert summary["by_model"]["RVL-001"]["count"] == 2
-    assert summary["by_model"]["RVL-001"]["average"] == 50.0
-    assert summary["by_model"]["RVL-101"]["count"] == 1
+    assert summary["listingCount"] == 3
+    assert summary["totalProducts"] == 4
+    assert summary["by_version"]["RVL-001"]["count"] == 2
+    assert summary["by_version"]["RVL-001"]["average"] == 50.0
+    assert summary["by_version"]["RVL-101"]["count"] == 1
     assert summary["descriptions"] == ["console only", "console + cables"]
 
 
@@ -98,6 +102,8 @@ def test_summarize_sold_values_empty() -> None:
         "median": None,
         "min": None,
         "max": None,
-        "by_model": {},
+        "listingCount": 0,
+        "totalProducts": 0,
+        "by_version": {},
         "descriptions": [],
     }
