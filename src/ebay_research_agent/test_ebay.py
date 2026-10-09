@@ -174,7 +174,7 @@ def test_search_for_parts_builds_request_and_parses() -> None:
         zip_code="19406",
         client=httpx.AsyncClient(transport=transport),
     )
-    items = asyncio.run(client.search_for_parts("switch", 10, 80, limit=5))
+    items = asyncio.run(client.search_for_parts("switch", max_results=5))
     assert captured["auth"] == "Bearer tok"
     assert captured["marketplace"] == "EBAY_US"
     assert captured["enduserctx"] == "contextualLocation=country%3DUS%2Czip%3D19406"
@@ -204,7 +204,7 @@ def test_search_for_parts_omits_enduserctx_without_zip() -> None:
         "cert",
         client=httpx.AsyncClient(transport=transport),
     )
-    asyncio.run(client.search_for_parts("switch", 10, 80))
+    asyncio.run(client.search_for_parts("switch"))
     assert captured.get("enduserctx") is None
 
 
@@ -240,7 +240,7 @@ def test_search_for_parts_detailed_enriches_description() -> None:
         "cert",
         client=httpx.AsyncClient(transport=transport),
     )
-    items = asyncio.run(client.search_for_parts_detailed("wii", 10, 80))
+    items = asyncio.run(client.search_for_parts_detailed("wii"))
     assert items[0]["description"] == "Broken disc drive"
     assert captured["item_calls"] == ["/buy/browse/v1/item/v1|1|0"]
 
@@ -272,6 +272,6 @@ def test_search_for_parts_detailed_skips_failed_detail() -> None:
         "cert",
         client=httpx.AsyncClient(transport=transport),
     )
-    items = asyncio.run(client.search_for_parts_detailed("wii", 10, 80))
+    items = asyncio.run(client.search_for_parts_detailed("wii"))
     assert "description" not in items[0]
     assert items[0]["title"] == "Broken Wii"

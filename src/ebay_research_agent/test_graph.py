@@ -1,5 +1,4 @@
 import asyncio
-import json
 import sqlite3
 
 import pytest
@@ -152,7 +151,7 @@ def test_build_evaluate_listing_node_returns_empty_when_rejected() -> None:
 
 def test_get_product_info_mocks_and_loads_sold_data(seeded_db) -> None:
     result = get_product_info({"product": "wii"})
-    assert result["product_info"]["wii"] == {"issues": [], "blurb": ""}
+    assert "product_info" not in result
     records = result["sold_product_data"]["wii"]
     assert records
     assert all("product" not in record for record in records)
@@ -163,30 +162,32 @@ def test_get_product_info_mocks_and_loads_sold_data(seeded_db) -> None:
     assert summary["by_version"]["RVL-101"]["average"] == 50.0
 
 
-def test_build_ebay_prompt_mentions_product_issues_and_blurb() -> None:
-    prompt = build_ebay_prompt("wii", ["no power", "disc drive"], "look for dead drives")
+def test_build_ebay_prompt_mentions_product() -> None:
+    prompt = build_ebay_prompt("wii")
     assert "wii" in prompt
-    assert "no power" in prompt
-    assert "disc drive" in prompt
-    assert "look for dead drives" in prompt
+    assert "for parts or not working" in prompt
 
 
 def test_extract_items_parses_only_ebay_tool_messages() -> None:
     messages = [
         ToolMessage(
-            content=json.dumps([{"title": "Broken Wii", "price": "20.00"}]),
+            content="summary",
             name=EBAY_TOOL_NAME,
             tool_call_id="1",
+            artifact=[{"title": "Broken Wii", "item_id": "1", "price": "20.00"}],
         ),
-        ToolMessage(content="not json", name=EBAY_TOOL_NAME, tool_call_id="2"),
+        ToolMessage(content="not a list", name=EBAY_TOOL_NAME, tool_call_id="2"),
         ToolMessage(content='{"not": "a list"}', name=EBAY_TOOL_NAME, tool_call_id="3"),
         ToolMessage(
-            content=json.dumps([{"title": "other"}]),
+            content="other",
             name="other_tool",
             tool_call_id="4",
+            artifact=[{"title": "other"}],
         ),
     ]
-    assert extract_items(messages) == [{"title": "Broken Wii", "price": "20.00"}]
+    assert extract_items(messages) == [
+        {"title": "Broken Wii", "item_id": "1", "price": "20.00"}
+    ]
 
 
 def test_get_ebay_listings_node_returns_listings_by_product(monkeypatch) -> None:
@@ -198,9 +199,10 @@ def test_get_ebay_listings_node_returns_listings_by_product(monkeypatch) -> None
             return {
                 "messages": [
                     ToolMessage(
-                        content=json.dumps([{"title": "Broken Wii", "url": "u1"}]),
+                        content="summary",
                         name=EBAY_TOOL_NAME,
                         tool_call_id="1",
+                        artifact=[{"title": "Broken Wii", "url": "u1"}],
                     )
                 ]
             }
@@ -219,7 +221,6 @@ def test_get_ebay_listings_node_returns_listings_by_product(monkeypatch) -> None
         node(
             {
                 "product": "wii",
-                "product_info": {"wii": {"issues": ["no power"], "blurb": "blurb"}},
             }
         )
     )
@@ -227,5 +228,4 @@ def test_get_ebay_listings_node_returns_listings_by_product(monkeypatch) -> None
     assert result["product"] == "wii"
     assert result["listings"] == {"wii": [{"title": "Broken Wii", "url": "u1"}]}
     assert "wii" in captured["content"]
-    assert "no power" in captured["content"]
     assert captured["system"] == EBAY_SYSTEM_PROMPT

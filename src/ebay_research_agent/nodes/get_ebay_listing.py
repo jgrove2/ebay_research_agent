@@ -1,4 +1,3 @@
-import json
 from collections.abc import Awaitable, Callable
 
 from langchain_core.messages import HumanMessage, ToolMessage
@@ -23,8 +22,8 @@ def build_ebay_prompt(product: str) -> str:
     return (
         f"Console: {product}\n\n"
         f"Find 'for parts or not working' listings for this console within a "
-        f"profitable price range (accounting for shipping), and report each "
-        f"listing's title, price, shipping cost, total cost, and URL."
+        f"profitable price range (accounting for shipping), and summarize the "
+        f"count and the best-looking deals."
     )
 
 

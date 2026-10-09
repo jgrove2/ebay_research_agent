@@ -69,7 +69,6 @@ def _raw_price(record: dict) -> float | None:
 
 def summarize_raw_sold_values(records: list[dict]) -> dict:
     by_version: dict[str, list[float]] = defaultdict(list)
-    by_number: dict[str, list[float]] = defaultdict(list)
     by_version_number: dict[str, dict[str, list[float]]] = defaultdict(
         lambda: defaultdict(list)
     )
@@ -81,7 +80,6 @@ def summarize_raw_sold_values(records: list[dict]) -> dict:
         version = record["version"]
         number = str(record.get("numberOfProducts") or 1)
         by_version[version].append(raw_price)
-        by_number[number].append(raw_price)
         by_version_number[version][number].append(raw_price)
 
     return {

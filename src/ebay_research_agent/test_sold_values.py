@@ -65,8 +65,6 @@ def test_summarize_raw_sold_values_stats() -> None:
     assert summary["listingCount"] == 3
     assert summary["by_version"]["RVL-001"]["average"] == 80.0
     assert summary["by_version"]["RVL-101"]["average"] == 50.0
-    assert summary["by_number_of_products"]["1"]["average"] == 45.0
-    assert summary["by_number_of_products"]["2"]["average"] == 120.0
     assert summary["by_version_number_of_products"]["RVL-001"]["1"]["average"] == 40.0
     assert summary["by_version_number_of_products"]["RVL-001"]["2"]["average"] == 120.0
     assert summary["by_version_number_of_products"]["RVL-101"]["1"]["average"] == 50.0
@@ -82,6 +80,5 @@ def test_summarize_raw_sold_values_empty() -> None:
         "max": None,
         "listingCount": 0,
         "by_version": {},
-        "by_number_of_products": {},
         "by_version_number_of_products": {},
     }

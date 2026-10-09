@@ -1,10 +1,10 @@
+import asyncio
 import base64
 import json
 import time
 
 import httpx
 from langchain_core.tools import tool
-import asyncio
 
 SANDBOX_BASE_URL = "https://api.sandbox.ebay.com"
 PRODUCTION_BASE_URL = "https://api.ebay.com"
@@ -118,7 +118,7 @@ class EbayClient:
         self._token_expires_at = time.time() + int(payload.get("expires_in", 7200)) - 60
         return self._access_token
 
-async def _search_page(self, query: str, limit: int, offset: int) -> dict:
+    async def _search_page(self, query: str, limit: int, offset: int) -> dict:
         token = await self.get_access_token()
         params = {
             "q": query,
@@ -142,54 +142,80 @@ async def _search_page(self, query: str, limit: int, offset: int) -> dict:
         response.raise_for_status()
         return response.json()
 
-async def search_for_parts(
-    self,
-    query: str,
-    max_results: int = MAX_RESULTS,
-) -> list[dict]:
-    max_results = min(max_results, EBAY_MAX_WINDOW)
-    items: list[dict] = []
-    seen: set[str] = set()
-    offset = 0
+    async def search_for_parts(
+        self,
+        query: str,
+        max_results: int = MAX_RESULTS,
+    ) -> list[dict]:
+        max_results = min(max_results, EBAY_MAX_WINDOW)
+        items: list[dict] = []
+        seen: set[str] = set()
+        offset = 0
 
-    while len(items) < max_results:
-        page_size = min(PAGE_SIZE, max_results - len(items))
-        payload = await self._search_page(query, page_size, offset)
-        page = parse_item_summaries(payload)
-        if not page:
-            break
+        while len(items) < max_results:
+            page_size = min(PAGE_SIZE, max_results - len(items))
+            payload = await self._search_page(query, page_size, offset)
+            page = parse_item_summaries(payload)
+            if not page:
+                break
 
-        for item in page:
-            item_id = item.get("item_id")
-            if item_id and item_id in seen:
-                continue
-            if item_id:
-                seen.add(item_id)
-            items.append(item)
+            for item in page:
+                item_id = item.get("item_id")
+                if item_id and item_id in seen:
+                    continue
+                if item_id:
+                    seen.add(item_id)
+                items.append(item)
 
-        offset += len(page)
-        total = payload.get("total", 0)
-        if "next" not in payload or offset >= total:
-            break
+            offset += len(page)
+            total = payload.get("total", 0)
+            if "next" not in payload or offset >= total:
+                break
 
-    return items
+        return items
 
-async def enrich_items(self, items: list[dict]) -> list[dict]:
-    sem = asyncio.Semaphore(ENRICH_CONCURRENCY)
+    async def get_item(self, item_id: str) -> dict:
+        token = await self.get_access_token()
+        response = await self._client.get(
+            f"{self.base_url}/buy/browse/v1/item/{item_id}",
+            headers={
+                "Authorization": f"Bearer {token}",
+                "X-EBAY-C-MARKETPLACE-ID": self.marketplace_id,
+            },
+        )
+        response.raise_for_status()
+        return response.json()
 
-    async def _enrich(item: dict) -> dict:
-        async with sem:
-            return await self.enrich_item(item)
+    async def enrich_item(self, item: dict) -> dict:
+        item_id = item.get("item_id")
+        if not item_id:
+            return item
+        try:
+            detail = await self.get_item(item_id)
+        except httpx.HTTPError:
+            return item
+        item["description"] = detail.get("description", "")
+        item["short_description"] = detail.get(
+            "shortDescription", item.get("short_description", "")
+        )
+        return item
 
-    return list(await asyncio.gather(*(_enrich(i) for i in items)))
+    async def enrich_items(self, items: list[dict]) -> list[dict]:
+        sem = asyncio.Semaphore(ENRICH_CONCURRENCY)
 
-async def search_for_parts_detailed(
-    self,
-    query: str,
-    max_results: int = MAX_RESULTS,
-) -> list[dict]:
-    items = await self.search_for_parts(query, max_results)
-    return await self.enrich_items(items)
+        async def _enrich(item: dict) -> dict:
+            async with sem:
+                return await self.enrich_item(item)
+
+        return list(await asyncio.gather(*(_enrich(i) for i in items)))
+
+    async def search_for_parts_detailed(
+        self,
+        query: str,
+        max_results: int = MAX_RESULTS,
+    ) -> list[dict]:
+        items = await self.search_for_parts(query, max_results)
+        return await self.enrich_items(items)
 
 def build_ebay_tool(client: EbayClient):
     @tool(response_format="content_and_artifact")
