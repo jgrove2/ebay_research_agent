@@ -11,12 +11,6 @@ def get_product_info(state: IssuesState) -> dict:
 
     return {
         "product": product,
-        "product_info": {
-            product: {
-                "issues": [],
-                "blurb": "",
-            }
-        },
         "sold_product_data": {product: sold_listings},
         "sold_summaries": {product: summarize_raw_sold_values(sold_listings)},
     }

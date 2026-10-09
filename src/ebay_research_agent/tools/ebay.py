@@ -4,12 +4,19 @@ import time
 
 import httpx
 from langchain_core.tools import tool
+import asyncio
 
 SANDBOX_BASE_URL = "https://api.sandbox.ebay.com"
 PRODUCTION_BASE_URL = "https://api.ebay.com"
 OAUTH_SCOPE = "https://api.ebay.com/oauth/api_scope"
 FOR_PARTS_CONDITION_ID = "7000"
 
+MAX_PRICE = 500
+MIN_PRICE = 0
+PAGE_SIZE = 200  # Browse API max per request
+MAX_RESULTS = 500  # total cap per search
+EBAY_MAX_WINDOW = 10_000  # offset + limit hard limit
+ENRICH_CONCURRENCY = 10
 
 def base_url_for_env(env: str) -> str:
     return PRODUCTION_BASE_URL if env == "production" else SANDBOX_BASE_URL
@@ -111,18 +118,13 @@ class EbayClient:
         self._token_expires_at = time.time() + int(payload.get("expires_in", 7200)) - 60
         return self._access_token
 
-    async def search_for_parts(
-        self,
-        query: str,
-        min_price: float,
-        max_price: float,
-        limit: int = 20,
-    ) -> list[dict]:
+async def _search_page(self, query: str, limit: int, offset: int) -> dict:
         token = await self.get_access_token()
         params = {
             "q": query,
             "limit": str(limit),
-            "filter": build_search_filter(min_price, max_price),
+            "offset": str(offset),
+            "filter": build_search_filter(MIN_PRICE, MAX_PRICE),
         }
         headers = {
             "Authorization": f"Bearer {token}",
@@ -138,64 +140,87 @@ class EbayClient:
             params=params,
         )
         response.raise_for_status()
-        return parse_item_summaries(response.json())
-
-    async def get_item(self, item_id: str) -> dict:
-        token = await self.get_access_token()
-        response = await self._client.get(
-            f"{self.base_url}/buy/browse/v1/item/{item_id}",
-            headers={
-                "Authorization": f"Bearer {token}",
-                "X-EBAY-C-MARKETPLACE-ID": self.marketplace_id,
-            },
-        )
-        response.raise_for_status()
         return response.json()
 
-    async def enrich_item(self, item: dict) -> dict:
-        item_id = item.get("item_id")
-        if not item_id:
-            return item
-        try:
-            detail = await self.get_item(item_id)
-        except httpx.HTTPError:
-            return item
-        item["description"] = detail.get("description", "")
-        item["short_description"] = detail.get(
-            "shortDescription", item.get("short_description", "")
-        )
-        return item
+async def search_for_parts(
+    self,
+    query: str,
+    max_results: int = MAX_RESULTS,
+) -> list[dict]:
+    max_results = min(max_results, EBAY_MAX_WINDOW)
+    items: list[dict] = []
+    seen: set[str] = set()
+    offset = 0
 
-    async def search_for_parts_detailed(
-        self,
-        query: str,
-        min_price: float,
-        max_price: float,
-        limit: int = 20,
-    ) -> list[dict]:
-        items = await self.search_for_parts(query, min_price, max_price, limit)
-        return [await self.enrich_item(item) for item in items]
+    while len(items) < max_results:
+        page_size = min(PAGE_SIZE, max_results - len(items))
+        payload = await self._search_page(query, page_size, offset)
+        page = parse_item_summaries(payload)
+        if not page:
+            break
 
+        for item in page:
+            item_id = item.get("item_id")
+            if item_id and item_id in seen:
+                continue
+            if item_id:
+                seen.add(item_id)
+            items.append(item)
+
+        offset += len(page)
+        total = payload.get("total", 0)
+        if "next" not in payload or offset >= total:
+            break
+
+    return items
+
+async def enrich_items(self, items: list[dict]) -> list[dict]:
+    sem = asyncio.Semaphore(ENRICH_CONCURRENCY)
+
+    async def _enrich(item: dict) -> dict:
+        async with sem:
+            return await self.enrich_item(item)
+
+    return list(await asyncio.gather(*(_enrich(i) for i in items)))
+
+async def search_for_parts_detailed(
+    self,
+    query: str,
+    max_results: int = MAX_RESULTS,
+) -> list[dict]:
+    items = await self.search_for_parts(query, max_results)
+    return await self.enrich_items(items)
 
 def build_ebay_tool(client: EbayClient):
-    @tool
-    async def search_ebay_for_parts(
-        query: str,
-        min_price: float,
-        max_price: float,
-        limit: int = 20,
-    ) -> str:
-        """Search eBay for 'for parts or not working' listings with descriptions.
+    @tool(response_format="content_and_artifact")
+    async def search_ebay_for_parts(query: str) -> tuple[str, list[dict]]:
+        """Search eBay for 'for parts or not working' listings.
+
+        Fetches up to several hundred listings (paged automatically) priced
+        within a fixed range. Full results are stored for downstream
+        processing; you receive a summary.
 
         Args:
             query: Search keywords (e.g. a game console name).
-            min_price: Minimum listing price in USD.
-            max_price: Maximum listing price in USD.
-            limit: Maximum number of results to return.
         """
-        items = await client.search_for_parts_detailed(
-            query, min_price, max_price, limit
-        )
-        return json.dumps(items)
+        items = await client.search_for_parts(query)
+
+        def total(i: dict) -> float:
+            try:
+                return float(i["total_cost"])
+            except (TypeError, ValueError, KeyError):
+                return float("inf")
+
+        cheapest = sorted(items, key=total)[:10]
+        summary = {
+            "count": len(items),
+            "note": "Full results saved. Showing 10 cheapest by total cost.",
+            "cheapest": [
+                {k: i.get(k) for k in ("title", "price", "shipping_cost",
+                                       "total_cost", "url")}
+                for i in cheapest
+            ],
+        }
+        return json.dumps(summary), items
 
     return search_ebay_for_parts

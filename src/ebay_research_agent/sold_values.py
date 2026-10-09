@@ -90,9 +90,6 @@ def summarize_raw_sold_values(records: list[dict]) -> dict:
         "by_version": {
             code: _price_stats(values) for code, values in sorted(by_version.items())
         },
-        "by_number_of_products": {
-            number: _price_stats(values) for number, values in sorted(by_number.items())
-        },
         "by_version_number_of_products": {
             code: {
                 number: _price_stats(values)
