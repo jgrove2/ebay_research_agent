@@ -2,7 +2,7 @@ import asyncio
 import json
 
 from ebay_research_agent.config import get_settings
-from ebay_research_agent.jev import JevClient, should_accept
+from ebay_research_agent.jev import JevClient, number_of_consoles, should_accept
 from ebay_research_agent.nodes.evaluate_listing import (
     build_accept_questions,
     listing_total_cost,
@@ -77,11 +77,14 @@ async def main() -> None:
             result = await jev.evaluate(state, build_accept_questions(model_numbers))
             print(json.dumps(result, indent=2))
             model_number = result["choices"]["model_number"]["choice"]
+            total_cost = listing_total_cost(sample["listing"])
+            consoles = number_of_consoles(result)
+            per_console_cost = total_cost / consoles if total_cost is not None else None
             print(
                 "ACCEPTED:",
                 should_accept(
                     result,
-                    listing_total_cost(sample["listing"]),
+                    per_console_cost,
                     sold_average_for(summary, model_number),
                     settings.accept_correct_product_threshold,
                     settings.reject_water_damage_threshold,

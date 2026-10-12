@@ -61,12 +61,12 @@ def test_summarize_raw_sold_values_stats() -> None:
         {"version": "RVL-101", "totalPrice": 50.0, "numberOfProducts": 1},
     ]
     summary = summarize_raw_sold_values(records)
-    assert summary["average"] == 70.0
+    assert summary["average"] == 50.0
     assert summary["listingCount"] == 3
-    assert summary["by_version"]["RVL-001"]["average"] == 80.0
+    assert summary["by_version"]["RVL-001"]["average"] == 50.0
     assert summary["by_version"]["RVL-101"]["average"] == 50.0
     assert summary["by_version_number_of_products"]["RVL-001"]["1"]["average"] == 40.0
-    assert summary["by_version_number_of_products"]["RVL-001"]["2"]["average"] == 120.0
+    assert summary["by_version_number_of_products"]["RVL-001"]["2"]["average"] == 60.0
     assert summary["by_version_number_of_products"]["RVL-101"]["1"]["average"] == 50.0
 
 

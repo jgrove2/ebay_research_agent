@@ -1,7 +1,9 @@
-from ebay_research_agent.jev import has_profit, should_accept
+from ebay_research_agent.jev import has_profit, number_of_consoles, should_accept
 from ebay_research_agent.nodes.evaluate_listing import (
     build_accept_questions,
+    included_flags,
     listing_total_cost,
+    noul_value,
     sold_average_for,
 )
 
@@ -11,7 +13,9 @@ def test_build_accept_questions_has_expected_keys() -> None:
     assert set(questions) == {
         "correct_product",
         "water_damage",
-        "included_in_listing",
+        "includes_controllers",
+        "includes_games",
+        "includes_cords",
         "model_number",
         "number_of_consoles",
     }
@@ -73,6 +77,18 @@ def test_has_profit_requires_ten_percent_margin() -> None:
     assert has_profit(45.0, 0.0, 0.10) is False
 
 
+def test_number_of_consoles_parses_choice() -> None:
+    def result(choice: object) -> dict:
+        return {"choices": {"number_of_consoles": {"choice": choice}}}
+
+    assert number_of_consoles(result("3")) == 3
+    assert number_of_consoles(result("10+")) == 10
+    assert number_of_consoles(result("1")) == 1
+    assert number_of_consoles(result(None)) == 1
+    assert number_of_consoles({"choices": {}}) == 1
+    assert number_of_consoles({}) == 1
+
+
 def test_listing_total_cost_parses_fields() -> None:
     assert listing_total_cost({"total_cost": "25.00"}) == 25.0
     assert listing_total_cost({"totalPrice": "$25.00"}) == 25.0
@@ -91,3 +107,43 @@ def test_sold_average_for_uses_version_and_falls_back() -> None:
     assert sold_average_for(summary, "RVL-101") == 45.0
     assert sold_average_for(summary, "unknown") == 45.0
     assert sold_average_for({}, "RVL-001") is None
+
+
+def test_noul_value_reads_nested_noul() -> None:
+    result = {"nouls": {"includes_games": {"noul": 0.9}}}
+    assert noul_value(result, "includes_games") == 0.9
+
+
+def test_noul_value_falls_back_to_zero() -> None:
+    assert noul_value({}, "includes_games") == 0.0
+    assert noul_value({"nouls": {}}, "includes_games") == 0.0
+    assert noul_value({"nouls": {"includes_games": {}}}, "includes_games") == 0.0
+    assert noul_value({"nouls": {"includes_games": {"noul": None}}}, "includes_games") == 0.0
+
+
+def test_included_flags_uses_threshold() -> None:
+    result = {
+        "nouls": {
+            "includes_controllers": {"noul": 0.8},
+            "includes_games": {"noul": 0.2},
+            "includes_cords": {"noul": 0.5},
+        }
+    }
+    assert included_flags(result, 0.5) == {
+        "controllers": True,
+        "games": False,
+        "cords": True,
+    }
+    assert included_flags(result, 0.7) == {
+        "controllers": True,
+        "games": False,
+        "cords": False,
+    }
+
+
+def test_included_flags_all_false_when_missing() -> None:
+    assert included_flags({}, 0.5) == {
+        "controllers": False,
+        "games": False,
+        "cords": False,
+    }

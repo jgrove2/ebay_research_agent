@@ -63,8 +63,16 @@ def _price_stats(prices: list[float]) -> dict:
     }
 
 
-def _raw_price(record: dict) -> float | None:
-    return record.get("totalPrice")
+def _per_console_price(record: dict) -> float | None:
+    raw_price = record.get("totalPrice")
+    if raw_price is None:
+        return None
+    number = record.get("numberOfProducts") or 1
+    try:
+        number = int(number)
+    except (TypeError, ValueError):
+        number = 1
+    return raw_price / max(number, 1)
 
 
 def summarize_raw_sold_values(records: list[dict]) -> dict:
@@ -74,16 +82,22 @@ def summarize_raw_sold_values(records: list[dict]) -> dict:
     )
 
     for record in records:
-        raw_price = _raw_price(record)
-        if raw_price is None:
+        per_console = _per_console_price(record)
+        if per_console is None:
             continue
         version = record["version"]
         number = str(record.get("numberOfProducts") or 1)
-        by_version[version].append(raw_price)
-        by_version_number[version][number].append(raw_price)
+        by_version[version].append(per_console)
+        by_version_number[version][number].append(per_console)
 
     return {
-        **_price_stats([r["totalPrice"] for r in records if r.get("totalPrice") is not None]),
+        **_price_stats(
+            [
+                _per_console_price(r)
+                for r in records
+                if _per_console_price(r) is not None
+            ]
+        ),
         "listingCount": len(records),
         "by_version": {
             code: _price_stats(values) for code, values in sorted(by_version.items())

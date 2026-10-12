@@ -83,7 +83,10 @@ def test_build_evaluate_listing_node_returns_evaluation_when_accepted() -> None:
     class FakeJev:
         async def evaluate(self, state, questions):
             return {
-                "choices": {"model_number": {"choice": "RVL-001"}},
+                "choices": {
+                    "model_number": {"choice": "RVL-001"},
+                    "number_of_consoles": {"choice": "1"},
+                },
                 "nouls": {
                     "correct_product": {"noul": 0.9},
                     "water_damage": {"noul": 0.1},
@@ -115,11 +118,54 @@ def test_build_evaluate_listing_node_returns_evaluation_when_accepted() -> None:
     assert result["evaluations"][0]["listing"]["url"] == "u1"
 
 
+def test_build_evaluate_listing_node_adds_included_flags() -> None:
+    class FakeJev:
+        async def evaluate(self, state, questions):
+            return {
+                "choices": {
+                    "model_number": {"choice": "RVL-001"},
+                    "number_of_consoles": {"choice": "1"},
+                },
+                "nouls": {
+                    "correct_product": {"noul": 0.9},
+                    "water_damage": {"noul": 0.1},
+                    "includes_controllers": {"noul": 0.8},
+                    "includes_games": {"noul": 0.2},
+                    "includes_cords": {"noul": 0.9},
+                },
+                "scores": {},
+            }
+
+    node = build_evaluate_listing_node(FakeJev())
+    result = asyncio.run(
+        node(
+            {
+                "product": "wii",
+                "listing": {"title": "Broken Wii", "url": "u1", "total_cost": "20.00"},
+                "sold_summaries": {
+                    "wii": {
+                        "average": 45.0,
+                        "by_version": {"RVL-001": {"average": 45.0}},
+                    }
+                },
+            }
+        )
+    )
+    assert result["evaluations"][0]["listing"]["included"] == {
+        "controllers": True,
+        "games": False,
+        "cords": True,
+    }
+
+
 def test_build_evaluate_listing_node_returns_empty_when_rejected() -> None:
     class FakeJev:
         async def evaluate(self, state, questions):
             return {
-                "choices": {"model_number": {"choice": "RVL-001"}},
+                "choices": {
+                    "model_number": {"choice": "RVL-001"},
+                    "number_of_consoles": {"choice": "1"},
+                },
                 "nouls": {
                     "correct_product": {"noul": 0.9},
                     "water_damage": {"noul": 0.8},
@@ -136,6 +182,80 @@ def test_build_evaluate_listing_node_returns_empty_when_rejected() -> None:
                     "title": "Broken Wii",
                     "url": "u1",
                     "total_cost": "20.00",
+                },
+                "sold_summaries": {
+                    "wii": {
+                        "average": 45.0,
+                        "by_version": {"RVL-001": {"average": 45.0}},
+                    }
+                },
+            }
+        )
+    )
+    assert result == {}
+
+
+def test_build_evaluate_listing_node_divides_cost_by_console_count() -> None:
+    class FakeJev:
+        async def evaluate(self, state, questions):
+            return {
+                "choices": {
+                    "model_number": {"choice": "RVL-001"},
+                    "number_of_consoles": {"choice": "3"},
+                },
+                "nouls": {
+                    "correct_product": {"noul": 0.9},
+                    "water_damage": {"noul": 0.1},
+                },
+                "scores": {},
+            }
+
+    node = build_evaluate_listing_node(FakeJev())
+    result = asyncio.run(
+        node(
+            {
+                "product": "wii",
+                "listing": {
+                    "title": "Lot of 3 Broken Wiis",
+                    "url": "u1",
+                    "total_cost": "60.00",
+                },
+                "sold_summaries": {
+                    "wii": {
+                        "average": 45.0,
+                        "by_version": {"RVL-001": {"average": 45.0}},
+                    }
+                },
+            }
+        )
+    )
+    assert len(result["evaluations"]) == 1
+
+
+def test_build_evaluate_listing_node_rejects_when_per_console_too_expensive() -> None:
+    class FakeJev:
+        async def evaluate(self, state, questions):
+            return {
+                "choices": {
+                    "model_number": {"choice": "RVL-001"},
+                    "number_of_consoles": {"choice": "3"},
+                },
+                "nouls": {
+                    "correct_product": {"noul": 0.9},
+                    "water_damage": {"noul": 0.1},
+                },
+                "scores": {},
+            }
+
+    node = build_evaluate_listing_node(FakeJev())
+    result = asyncio.run(
+        node(
+            {
+                "product": "wii",
+                "listing": {
+                    "title": "Lot of 3 Broken Wiis",
+                    "url": "u1",
+                    "total_cost": "150.00",
                 },
                 "sold_summaries": {
                     "wii": {

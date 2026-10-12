@@ -148,12 +148,12 @@ class EbayClient:
         max_results: int = MAX_RESULTS,
     ) -> list[dict]:
         max_results = min(max_results, EBAY_MAX_WINDOW)
+        page_size = min(PAGE_SIZE, max_results)
         items: list[dict] = []
         seen: set[str] = set()
         offset = 0
 
         while len(items) < max_results:
-            page_size = min(PAGE_SIZE, max_results - len(items))
             payload = await self._search_page(query, page_size, offset)
             page = parse_item_summaries(payload)
             if not page:
@@ -167,12 +167,12 @@ class EbayClient:
                     seen.add(item_id)
                 items.append(item)
 
-            offset += len(page)
+            offset += page_size
             total = payload.get("total", 0)
             if "next" not in payload or offset >= total:
                 break
 
-        return items
+        return items[:max_results]
 
     async def get_item(self, item_id: str) -> dict:
         token = await self.get_access_token()

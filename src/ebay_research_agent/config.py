@@ -38,9 +38,16 @@ class Settings(BaseSettings):
     typesafe_model: str = "jev-latest"
     sold_values_path: str = "data/sold_values.db"
 
+    repair_lab_api_url: str = ""
+    logto_endpoint: str = ""
+    logto_api_resource: str = ""
+    logto_client_id: str = ""
+    logto_client_secret: str = ""
+
     accept_correct_product_threshold: float = 0.7
     reject_water_damage_threshold: float = 0.7
     accept_profit_margin: float = 0.10
+    include_item_threshold: float = 0.5
 
     @field_validator("products", mode="before")
     @classmethod

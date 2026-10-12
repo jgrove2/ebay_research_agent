@@ -33,22 +33,31 @@ class JevClient:
             await self._client.aclose()
 
 
+def number_of_consoles(result: dict) -> int:
+    raw = result.get("choices", {}).get("number_of_consoles", {}).get("choice")
+    try:
+        count = 10 if raw == "10+" else int(raw)
+    except (TypeError, ValueError):
+        return 1
+    return max(count, 1)
+
+
 def has_profit(
-    listing_total: float | None,
+    per_console_cost: float | None,
     sold_average: float | None,
     profit_margin: float,
 ) -> bool:
     return (
-        listing_total is not None
+        per_console_cost is not None
         and sold_average is not None
         and sold_average > 0
-        and (sold_average - listing_total) / sold_average >= profit_margin
+        and (sold_average - per_console_cost) / sold_average >= profit_margin
     )
 
 
 def should_accept(
     result: dict,
-    listing_total: float | None,
+    per_console_cost: float | None,
     sold_average: float | None,
     correct_product_threshold: float,
     water_damage_threshold: float,
@@ -59,5 +68,5 @@ def should_accept(
     return (
         correct_product >= correct_product_threshold
         and water_damage < water_damage_threshold
-        and has_profit(listing_total, sold_average, profit_margin)
+        and has_profit(per_console_cost, sold_average, profit_margin)
     )
